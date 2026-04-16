@@ -1,4 +1,4 @@
-# 📊 ExcelPintar - Media Pembelajaran Interaktif
+# 📊 ExcelPintar - Interactive Learning Media with Quizzes
 
 **ExcelPintar** is a state-of-the-art, web-based interactive learning media designed to help students master Microsoft Excel fundementals. It seamlessly integrates structured learning modules, video tutorials, practice exercises, and evaluation quizzes into a unified, user-friendly platform.
 
