@@ -1,6 +1,6 @@
-# 📊 Bootstrap - Interactive Learning Media with Quizzes
+# 📊 Javex - Interactive Learning Media Bootstrap Template with Quizzes
 
-**ExcelPintar** is a state-of-the-art, web-based interactive learning media designed to help students master Microsoft Excel fundamentals. It seamlessly integrates structured learning modules, practice exercises, and evaluation quizzes into a unified, mobile-first platform with a modern **Samsung OneUI-inspired design**.
+**Javex** is a fully static, client-side web application built with **HTML5**, **Bootstrap 5**, and **Vanilla JavaScript** — requiring zero backend infrastructure. It implements a custom **Samsung OneUI-inspired design system** (`oneui.css`) featuring CSS custom properties, responsive card-based layouts, and a fixed bottom navigation bar optimized for mobile viewports. Learning content is delivered as structured semantic HTML converted via OCR from source material images, ensuring optimal readability across all screen densities. Assessment logic is handled entirely in-browser using an event-driven quiz engine with modal-based score reporting.
 
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -12,7 +12,7 @@
 
 ## 📸 Application Showcase
 
-Explore the comprehensive features of **ExcelPintar** through our gallery.
+Explore the comprehensive features of **Javex** through our gallery.
 
 | | |
 |:---:|:---:|
@@ -109,9 +109,8 @@ start index.html       # Windows
 ## 👥 Authors
 
 Developed with ❤️ by:
-*   **Donny Bimo Hendro Utomo** - Lead Developer
-*   **Drs. Purwanto, MM., M.Pd.** - Academic Advisor
-*   **Arwan Nur Ramadhan, M.Pd.** - Instructional Media Expert
+*   **Widi Firmansyah** - Lead Developer
+*   **Donny Bimo Hendro Utomo** - Academic Advisor
 
 ---
 
