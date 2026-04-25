@@ -1,334 +1,279 @@
-
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <title>EXCELPINTAR</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Additional CSS Files -->
-    <script src="https://kit.fontawesome.com/0ae245d821.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-onix-digital.css">
-    <link rel="stylesheet" href="assets/css/animated.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <style>
-      @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
-
-*,
-*:after,
-*:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.clearfix:before,
-.clearfix:after {
-	content: " ";
-	display: table;
-}
-
-.clearfix:after {
-	clear: both;
-}
-
-body {}
-
-h1 {
-	color: #ccc;
-	text-align: center;
-}
-
-a {
-  color: #ccc;
-  text-decoration: none;
-  outline: none;
-}
-
-/*Fun begins*/
-.tab_container {
-	width: 90%;
-	margin: 0 auto;
-	padding-top: 5px;
-	position: relative;
-}
-
-input, section {
-  clear: both;
-  padding-top: 10px;
-  display: none;
-}
-
-label {
-  font-weight: 100%;
-  font-size: 12px;
-  display: block;
-  float: left;
-  width: 14.285%;
-  padding: 0.75em;
-  color: #757575;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
-  background: #f0f0f0;
-}
-
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4,
-#tab5:checked ~ #content5,
-#tab6:checked ~ #content6,
-#tab7:checked ~ #content7 {
-  display: block;
-  padding: 20px;
-  background: #fff;
-  color: #999;
-  border-bottom: 2px solid #f0f0f0;
-}
-
-.tab_container .tab-content p,
-.tab_container .tab-content h3 {
-  -webkit-animation: fadeInScale 0.7s ease-in-out;
-  -moz-animation: fadeInScale 0.7s ease-in-out;
-  animation: fadeInScale 0.7s ease-in-out;
-}
-.tab_container .tab-content h3  {
-  text-align: center;
-}
-
-.tab_container [id^="tab"]:checked + label {
-  background: #fff;
-  box-shadow: inset 0 3px #01723A;
-}
-
-.tab_container [id^="tab"]:checked + label .fa {
-  color: #01723A;
-}
-
-label .fa {
-  font-size: 1.3em;
-  margin: 0 0.4em 0 0;
-}
-
-/*Media query*/
-@media only screen and (max-width: 600px) {
-  label {
-    width: 100%;
-  }
-}
-
-/*Content Animation*/
-@keyframes fadeInScale {
-  0% {
-  	transform: scale(0.9);
-  	opacity: 0;
-  }
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Membuat Format Workbook - EXCEL PINTAR</title>
   
-  100% {
-  	transform: scale(1);
-  	opacity: 1;
-  }
-}
-
-.no_wrap {
-  text-align:center;
-  color: #01723A;
-}
-.link {
-  text-align:center;
-}
-    </style>
-
-  </head>
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/oneui.css">
+</head>
 <body>
 
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
-  <!-- ***** Preloader End ***** -->
+  <!-- Floating Navigation -->
+  <nav class="oneui-navbar animate-fade-up">
+    <a href="index.html" title="Home"><i class="fas fa-home"></i></a>
+    <a href="kd.html" title="KD"><i class="fas fa-book"></i></a>
+    <a href="materi.html" class="active" title="Materi"><i class="fas fa-file-alt"></i></a>
+    <a href="latsoal.html" title="Latihan Soal"><i class="fas fa-pen"></i></a>
+    <a href="quiz.html" title="Quiz"><i class="fas fa-question-circle"></i></a>
+    <a href="profilpengembang.html" title="Profil"><i class="fas fa-user"></i></a>
+  </nav>
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
-            <a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/" class="logo hover">
-              <img src="assets/images/logoweb.png">
-            </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav">
-              <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/kd.html" class="active">KD</a></li>
-              <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/materi.html" class="active">Materi</a></li>
-              <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/latsoal.html" class="active">Latihan Soal</a></li>
-              <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/quiz.html" class="active">Quiz</a></li>
-               <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/profilpengembang.html" class="active">Profil</a></li>
-              <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/daftarpustaka.html" class="active">Daftar Pustaka</a></li>
-              <li class="scroll-to-section"><a href="https://wa.link/vb7e1m"></a></li> 
-            </ul>           
-            <a class='menu-trigger'>
-                <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
-  <div id="pricing" class="pricing-tables">
-    <!--<div class="tables-left-dec">
-      <img src="assets/images/tables-left-dec.png" alt="">
-    </div>
-    <div class="tables-right-dec">
-      <img src="assets/images/tables-right-dec.png" alt="">
-    </div>-->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading">
-            <h2>Membuat Format<em> Workbook</em></h2>
+  <div class="oneui-page-header animate-fade-up">
+    <h2>Membuat Format Workbook</h2>
+    <p>Tata cara mengelola dokumen kerja Excel</p>
+  </div>
+
+  <div class="oneui-content">
+    
+    <div class="oneui-card animate-fade-up delay-1 p-4">
+      <ul class="nav nav-pills flex-column flex-sm-row nav-fill mb-4" id="pills-tab" role="tablist" style="gap: 10px;">
+        <li class="nav-item" role="presentation"><button class="nav-link active w-100" style="border-radius: 50px;" id="tab1" data-bs-toggle="pill" data-bs-target="#content1" type="button" role="tab">Format</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link w-100" style="border-radius: 50px;" id="tab2" data-bs-toggle="pill" data-bs-target="#content2" type="button" role="tab">Workbook</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link w-100" style="border-radius: 50px;" id="tab3" data-bs-toggle="pill" data-bs-target="#content3" type="button" role="tab">Worksheet</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link w-100" style="border-radius: 50px;" id="tab4" data-bs-toggle="pill" data-bs-target="#content4" type="button" role="tab">Sel & Range</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link w-100" style="border-radius: 50px;" id="tab5" data-bs-toggle="pill" data-bs-target="#content5" type="button" role="tab">Entry Data</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link w-100" style="border-radius: 50px;" id="tab6" data-bs-toggle="pill" data-bs-target="#content6" type="button" role="tab">Baris & Kolom</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link w-100" style="border-radius: 50px;" id="tab7" data-bs-toggle="pill" data-bs-target="#content7" type="button" role="tab">Format Sel</button></li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+
+        <!-- Tab 1: Format Workbook -->
+        <div class="tab-pane fade show active" id="content1" role="tabpanel">
+          <h5 class="text-primary-oneui mb-3"><i class="fas fa-file-excel me-2"></i>Membuat Format Workbook</h5>
+          <div class="text-start">
+            <p>Sebelum melakukan entri data, Anda perlu memahami cara mengelola lembar kerja (worksheet). Setiap lembar kerja terbagi menjadi <strong>256 kolom</strong> (A – IV) dan <strong>65.536 baris</strong>.</p>
+            <p>Perpotongan kolom dan baris disebut <strong>sel (cell)</strong>. Nama sel ditentukan dari kolom dan barisnya, misal sel B5 adalah pertemuan kolom B di baris ke-5.</p>
+            <img src="m/a (14).png" alt="Format Workbook" class="img-fluid rounded shadow-sm my-3">
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="tab_container">
-          <input id="tab1" type="radio" name="tabs" checked>
-          <label for="tab1"><span>Membuat Format Workbook</span></label>
-    
-          <input id="tab2" type="radio" name="tabs">
-          <label for="tab2"><span>Workbook</span></label>
-    
-          <input id="tab3" type="radio" name="tabs">
-          <label for="tab3"><span>Worksheet</span></label>
-    
-          <input id="tab4" type="radio" name="tabs">
-          <label for="tab4"><span>Sel dan Range</span></label>
-    
-          <input id="tab5" type="radio" name="tabs">
-          <label for="tab5"><span>Entry dan Edit Data</span></label>
 
-          <input id="tab6" type="radio" name="tabs">
-          <label for="tab6"><span>Baris dan Kolom</span></label>
-
-          <input id="tab7" type="radio" name="tabs">
-          <label for="tab7"><span>Format Sel</span></label>
-    
-          <section id="content1" class="tab-content">
-            <div class="col-lg-12"><div class="item third-item"><h4 class="text-primary"><b><i class="fas fa-paperclip me-2"></i>Membuat Format Workbook</b></h4><div class="dropdown-divider"></div><ul><li style="list-style: block;font-weight:600; font-size:20px;margin-left:26px"><img src="m/a (14).png"/></li></ul></div></div><br/>&nbsp<br/>
-          </section>
-    
-          <section id="content2" class="tab-content">
-            <div class="col-lg-12"><div class="item third-item"><h4 class="text-primary"><b><i class="fas fa-paperclip me-2"></i>Workbook</b></h4><div class="dropdown-divider"></div><ul><li style="list-style: block;font-weight:600; font-size:20px;margin-left:26px"><img src="m/a (15).png"/></li></ul></div></div><br/>&nbsp<br/>
-        
-                
-          </section>
-    
-          <section id="content3" class="tab-content">
-            <div class="col-lg-12"><div class="item third-item"><h4 class="text-primary"><b><i class="fas fa-paperclip me-2"></i>Worksheet</b></h4><div class="dropdown-divider"></div><ul><li style="list-style: block;font-weight:600; font-size:20px;margin-left:26px"><img src="m/a (16).png"/><br/><img src="m/a (17).png"/></li></ul></div></div><br/>&nbsp<br/>
-       
-                
-          </section>
-    
-          <section id="content4" class="tab-content">
-            <div class="col-lg-12"><div class="item third-item"><h4 class="text-primary"><b><i class="fas fa-paperclip me-2"></i>Sel dan Range</b></h4><div class="dropdown-divider"></div><ul><li style="list-style: block;font-weight:600; font-size:20px;margin-left:26px"><img src="m/a (18).png"/><br/><img src="m/a (19).png"/></li></ul></div></div><br/>&nbsp<br/>
-        
-                
-          </section>
-    
-          <section id="content5" class="tab-content">
-            <div class="col-lg-12"><div class="item third-item"><h4 class="text-primary"><b><i class="fas fa-paperclip me-2"></i>Entry Dan Edit Data</b></h4><div class="dropdown-divider"></div><ul><li style="list-style: block;font-weight:600; font-size:20px;margin-left:26px"><img src="m/a (20).png"/><br/><img src="m/a (21).png"/><br/><img src="m/a (22).png"/><br/><img src="m/a (23).png"/></li></ul></div></div><br/>&nbsp<br/>      
-        
-              
-          </section>
-          <section id="content6" class="tab-content">
-            <div class="col-lg-12"><div class="item third-item"><h4 class="text-primary"><b><i class="fas fa-paperclip me-2"></i>Mengatur Baris dan Kolom</b></h4><div class="dropdown-divider"></div><ul><li style="list-style: block;font-weight:600; font-size:20px;margin-left:26px"><img src="m/a (24).png"/><br/><img src="m/a (25).png"/></li></ul></div></div><br/>&nbsp<br/>    
-        
-              
-          </section>
-          <section id="content7" class="tab-content">
-            <div class="col-lg-12"><div class="item third-item"><h4 class="text-primary"><b><i class="fas fa-paperclip me-2"></i>Mengatur Format Sel</b></h4><div class="dropdown-divider"></div><ul><li style="list-style: block;font-weight:600; font-size:20px;margin-left:26px"><img src="m/a (26).png"/><br/><img src="m/a (27).png"/></li></ul></div></div><br/>&nbsp<br/>        
-        
-              
-          </section>
+        <!-- Tab 2: Workbook -->
+        <div class="tab-pane fade" id="content2" role="tabpanel">
+          <h5 class="text-primary-oneui mb-3"><i class="fas fa-book me-2"></i>Workbook</h5>
+          <div class="text-start">
+            <p><strong>Workbook</strong> adalah sebuah file yang terdiri atas beberapa lembar kerja (worksheet). Setiap worksheet diberi nama seperti Sheet1, Sheet2, dan seterusnya.</p>
+            <h6 class="text-primary-oneui mt-3">A. Menyimpan Workbook Kosong</h6>
+            <ol>
+              <li>Klik ikon menu kontrol, kemudian klik <strong>New</strong>.</li>
+              <li>Klik pilihan <strong>Blank Workbook</strong>, kemudian klik <strong>Create</strong>.</li>
+              <li>Workbook baru akan terbuka. Anda juga bisa menekan <strong>Ctrl + N</strong>.</li>
+            </ol>
+            <h6 class="text-primary-oneui mt-3">B. Berpindah & Menutup Workbook</h6>
+            <ul class="oneui-list">
+              <li>Gunakan <strong>Ctrl + F6</strong> untuk berpindah antar workbook.</li>
+              <li>Gunakan <strong>Ctrl + F4</strong> atau tombol <strong>Close (×)</strong> untuk menutup workbook.</li>
+            </ul>
+            <img src="m/a (15).png" alt="Workbook" class="img-fluid rounded shadow-sm my-3">
+          </div>
         </div>
-        <br/>&nbsp<br/>
-        <a href="javascript:history.back()">
-          <div>
-            <div class="thumbj">
-              <div class="inner-content" style="padding:15px;  border-radius: 23px;">
-                <h4 style="color:#01723A"><i class="fa fa-arrow-left" aria-hidden="true"></i> Kembali</h4>
+
+        <!-- Tab 3: Worksheet -->
+        <div class="tab-pane fade" id="content3" role="tabpanel">
+          <h5 class="text-primary-oneui mb-3"><i class="fas fa-table me-2"></i>Worksheet</h5>
+          <div class="text-start">
+            <p>Saat pertama kali membuka Excel, akan terlihat 3 worksheet (Sheet1, Sheet2, Sheet3). Anda dapat menambah, mengurangi, atau mengganti namanya.</p>
+            <h6 class="text-primary-oneui mt-3">A. Tampilan Worksheet</h6>
+            <ul class="oneui-list">
+              <li><strong>Normal</strong>: Tampilan standar (default).</li>
+              <li><strong>Page Break Preview</strong>: Menentukan area pencetakan data.</li>
+              <li><strong>Custom View</strong>: Mengatur skala tampilan (default 100%). Ubah melalui <em>View &gt; Zoom &gt; Custom</em>.</li>
+            </ul>
+            <h6 class="text-primary-oneui mt-3">B. Pengelolaan Sheet</h6>
+            <p>Klik kanan pada nama sheet untuk melihat menu:</p>
+            <div class="table-responsive">
+              <table class="table table-bordered table-sm">
+                <tbody>
+                  <tr><td><strong>Insert</strong></td><td>Menyisipkan sheet baru</td></tr>
+                  <tr><td><strong>Delete</strong></td><td>Menghapus sheet</td></tr>
+                  <tr><td><strong>Move or Copy</strong></td><td>Memindahkan atau mengcopy sheet</td></tr>
+                  <tr><td><strong>Protect Sheet</strong></td><td>Membuat password / memproteksi sheet</td></tr>
+                  <tr><td><strong>Hide / Unhide</strong></td><td>Menyembunyikan / menampilkan sheet</td></tr>
+                  <tr><td><strong>Select All Sheets</strong></td><td>Memilih & mengaktifkan semua sheet</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row g-2 mt-2">
+              <div class="col-12 col-md-6"><img src="m/a (16).png" alt="Worksheet" class="img-fluid rounded shadow-sm"></div>
+              <div class="col-12 col-md-6"><img src="m/a (17).png" alt="Worksheet" class="img-fluid rounded shadow-sm"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Sel & Range -->
+        <div class="tab-pane fade" id="content4" role="tabpanel">
+          <h5 class="text-primary-oneui mb-3"><i class="fas fa-th me-2"></i>Sel dan Range</h5>
+          <div class="text-start">
+            <p><strong>Sel (Cell)</strong> adalah perpotongan antara baris dan kolom. Bentuk sel dapat diubah dengan mengetik langsung atau menekan tombol <strong>F4</strong>.</p>
+            <h6 class="text-primary-oneui mt-3">Macam-macam Bentuk Sel</h6>
+            <div class="row g-2 mb-3">
+              <div class="col-12 col-sm-6">
+                <div class="p-3 border" style="border-radius: 10px;">
+                  <strong class="text-primary-oneui">Sel Normal</strong>
+                  <p class="mb-0 small text-muted">Tidak terkunci (baris & kolom bebas). Contoh: <code>F4</code></p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="p-3 border" style="border-radius: 10px;">
+                  <strong class="text-primary-oneui">Sel Absolut Kolom</strong>
+                  <p class="mb-0 small text-muted">Terkunci pada kolomnya saja. Contoh: <code>$F4</code></p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="p-3 border" style="border-radius: 10px;">
+                  <strong class="text-primary-oneui">Sel Absolut Baris</strong>
+                  <p class="mb-0 small text-muted">Terkunci pada barisnya saja. Contoh: <code>F$4</code></p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="p-3 border" style="border-radius: 10px;">
+                  <strong class="text-primary-oneui">Sel Absolut Penuh</strong>
+                  <p class="mb-0 small text-muted">Terkunci kolom & baris. Contoh: <code>$F$4</code></p>
+                </div>
               </div>
             </div>
-          </div></a><br/>&nbsp<br/>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="copyright">
-            <p>Copyright © 2022 W Ltd. All Rights Reserved. 
-            <br>
-            Designed by <a rel="nofollow" href="https://widifirmaan.web.id" title="W">W</a></p>
+            <h6 class="text-primary-oneui">Range</h6>
+            <p>Range adalah kumpulan dari beberapa sel yang terblok. Cara membuat range:</p>
+            <ul class="oneui-list">
+              <li><strong>Keyboard</strong>: Tempatkan pointer di sel awal, sambil tekan <kbd>Shift</kbd> arahkan ke sel tujuan.</li>
+              <li><strong>Mouse</strong>: Klik sel awal, tahan klik kiri, drag ke sel tujuan.</li>
+              <li><strong>Sorot Kolom/Baris</strong>: Klik huruf kolom atau nomor baris untuk memilih seluruhnya.</li>
+            </ul>
+            <div class="row g-2 mt-2">
+              <div class="col-12 col-md-6"><img src="m/a (18).png" alt="Sel" class="img-fluid rounded shadow-sm"></div>
+              <div class="col-12 col-md-6"><img src="m/a (19).png" alt="Sel" class="img-fluid rounded shadow-sm"></div>
+            </div>
           </div>
         </div>
+
+        <!-- Tab 5: Entry Data -->
+        <div class="tab-pane fade" id="content5" role="tabpanel">
+          <h5 class="text-primary-oneui mb-3"><i class="fas fa-keyboard me-2"></i>Entry dan Edit Data</h5>
+          <div class="text-start">
+            <h6 class="text-primary-oneui">Jenis Data di Microsoft Excel</h6>
+            <div class="row g-2 mb-3">
+              <div class="col-12 col-sm-6">
+                <div class="p-3 border" style="border-radius: 10px;">
+                  <strong class="text-primary-oneui">Data Label (Teks)</strong>
+                  <p class="mb-0 small text-muted">Berupa teks/karakter, tidak bisa dihitung matematika. Rata kiri secara default. Contoh: nama, nomor kendaraan.</p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="p-3 border" style="border-radius: 10px;">
+                  <strong class="text-primary-oneui">Data Value (Angka)</strong>
+                  <p class="mb-0 small text-muted">Berupa angka atau rumus yang dapat diolah matematika. Rata kanan secara default.</p>
+                </div>
+              </div>
+            </div>
+            <h6 class="text-primary-oneui">Format Penulisan Angka</h6>
+            <p>Excel tidak menggunakan titik sebagai pemisah ribuan. Contoh: <strong>1.000.000</strong> harus ditulis <strong>1000000</strong>. Angka pecahan menggunakan koma, contoh: <strong>0,7</strong>.</p>
+            <h6 class="text-primary-oneui mt-3">Memformat Mata Uang</h6>
+            <p>Blok kolom harga &rarr; klik <strong>Home &gt; Format Cell &gt; Number &gt; Accounting</strong> &rarr; pilih simbol <strong>Rp (Indonesia)</strong>.</p>
+            <h6 class="text-primary-oneui mt-3">Memperbaiki Kesalahan Pengetikan</h6>
+            <ul class="oneui-list">
+              <li>Pilih sel &rarr; ketik kata baru &rarr; tekan <kbd>Enter</kbd>.</li>
+              <li>Atau pilih sel &rarr; tekan <kbd>F2</kbd> untuk mengedit.</li>
+              <li>Gunakan <kbd>Ctrl + Z</kbd> untuk undo dan <kbd>Ctrl + Y</kbd> untuk redo.</li>
+            </ul>
+            <div class="row g-2 mt-2">
+              <div class="col-12 col-md-6"><img src="m/a (20).png" alt="Entry" class="img-fluid rounded shadow-sm"></div>
+              <div class="col-12 col-md-6"><img src="m/a (21).png" alt="Entry" class="img-fluid rounded shadow-sm"></div>
+              <div class="col-12 col-md-6"><img src="m/a (22).png" alt="Entry" class="img-fluid rounded shadow-sm"></div>
+              <div class="col-12 col-md-6"><img src="m/a (23).png" alt="Entry" class="img-fluid rounded shadow-sm"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 6: Baris & Kolom -->
+        <div class="tab-pane fade" id="content6" role="tabpanel">
+          <h5 class="text-primary-oneui mb-3"><i class="fas fa-arrows-alt me-2"></i>Mengatur Baris dan Kolom</h5>
+          <div class="text-start">
+            <p>Lebar default kolom pada Excel adalah <strong>8,43</strong> dan tinggi baris default adalah <strong>12,75</strong>.</p>
+            <h6 class="text-primary-oneui mt-3">A. Mengatur Lebar Kolom / Baris</h6>
+            <p>Klik <strong>Home &gt; Format</strong>, kemudian pilih:</p>
+            <ul class="oneui-list">
+              <li><strong>Row Height</strong>: Mengatur tinggi baris secara manual.</li>
+              <li><strong>AutoFit Row Height</strong>: Sesuaikan tinggi baris otomatis.</li>
+              <li><strong>Column Width</strong>: Mengatur lebar kolom secara manual.</li>
+              <li><strong>AutoFit Column Width</strong>: Sesuaikan lebar kolom otomatis.</li>
+            </ul>
+            <h6 class="text-primary-oneui mt-3">B. Menyisipkan Kolom / Baris</h6>
+            <ol>
+              <li>Sorot sel/range di mana baris atau kolom baru akan disisipkan.</li>
+              <li>Klik <strong>Home &gt; Cells &gt; Insert</strong>, lalu pilih:</li>
+            </ol>
+            <ul class="oneui-list">
+              <li><strong>Insert Sheet Rows</strong>: Menyisipkan baris baru.</li>
+              <li><strong>Insert Sheet Columns</strong>: Menyisipkan kolom baru.</li>
+            </ul>
+            <h6 class="text-primary-oneui mt-3">C. Menghapus Kolom / Baris</h6>
+            <p>Pilih baris/kolom yang ingin dihapus &rarr; klik <strong>Home &gt; Delete &gt; Delete Sheet Rows/Columns</strong>.</p>
+            <div class="row g-2 mt-2">
+              <div class="col-12 col-md-6"><img src="m/a (24).png" alt="Baris" class="img-fluid rounded shadow-sm"></div>
+              <div class="col-12 col-md-6"><img src="m/a (25).png" alt="Baris" class="img-fluid rounded shadow-sm"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 7: Format Sel -->
+        <div class="tab-pane fade" id="content7" role="tabpanel">
+          <h5 class="text-primary-oneui mb-3"><i class="fas fa-paint-brush me-2"></i>Mengatur Format Sel</h5>
+          <div class="text-start">
+            <h6 class="text-primary-oneui">A. Merge and Center</h6>
+            <p>Digunakan untuk menggabungkan beberapa sel dan memusatkan isinya (biasa untuk judul tabel). Klik <strong>Home &gt; Merge &amp; Center</strong>. Pilihan lainnya:</p>
+            <ul class="oneui-list">
+              <li><strong>Merge Across</strong>: Menggabungkan sel-sel dalam satu baris.</li>
+              <li><strong>Merge Cells</strong>: Menggabungkan sel tanpa memusatkan.</li>
+              <li><strong>Unmerge Cells</strong>: Memisahkan kembali sel yang sudah digabungkan.</li>
+            </ul>
+            <h6 class="text-primary-oneui mt-3">B. Alignment (Perataan Teks)</h6>
+            <p>Klik <strong>Home &gt; Alignment (launcher)</strong> untuk membuka kotak dialog. Anda dapat mengatur perataan horizontal (kiri, tengah, kanan, justify) dan vertikal (atas, tengah, bawah).</p>
+            <h6 class="text-primary-oneui mt-3">C. Border (Garis Bingkai)</h6>
+            <ol>
+              <li>Sorot sel atau range yang akan diberi bingkai.</li>
+              <li>Klik <strong>Home &gt; Alignment &gt; Border</strong>, pilih salah satu:</li>
+            </ol>
+            <ul class="oneui-list">
+              <li><strong>None</strong>: Menghapus garis pembatas.</li>
+              <li><strong>Outline</strong>: Membuat bingkai di sekeliling sel/range.</li>
+              <li><strong>Inside</strong>: Membuat garis pembatas di dalam range.</li>
+            </ul>
+            <div class="row g-2 mt-2">
+              <div class="col-12 col-md-6"><img src="m/a (26).png" alt="Format Sel" class="img-fluid rounded shadow-sm"></div>
+              <div class="col-12 col-md-6"><img src="m/a (27).png" alt="Format Sel" class="img-fluid rounded shadow-sm"></div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-  </footer>
 
+    <div class="text-center mt-4 animate-fade-up delay-2">
+      <a href="javascript:history.back()" class="oneui-btn oneui-btn-secondary"><i class="fas fa-arrow-left me-2"></i> Kembali</a>
+    </div>
 
-  <!-- Scripts -->
+  </div>
+
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/animation.js"></script>
-  <script src="assets/js/imagesloaded.js"></script>
-  <script src="assets/js/custom.js"></script>
-
   <script>
-  // Acc
-    $(document).on("click", ".naccs .menu div", function() {
-      var numberIndex = $(this).index();
-
-      if (!$(this).is("active")) {
-          $(".naccs .menu div").removeClass("active");
-          $(".naccs ul li").removeClass("active");
-
-          $(this).addClass("active");
-          $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
- 
-          var listItemHeight = $(".naccs ul")
-            .find("li:eq(" + numberIndex + ")")
-            .innerHeight();
-          $(".naccs ul").height(listItemHeight + "px");
-        }
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabs = document.querySelectorAll('.nav-pills .nav-link');
+      tabs.forEach(tab => {
+        tab.addEventListener('shown.bs.tab', function (e) {
+          const parent = this.closest('.nav-pills');
+          if (parent) {
+            parent.scrollTo({
+              left: this.offsetLeft - 15,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
     });
   </script>
 </body>

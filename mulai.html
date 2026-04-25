@@ -1,318 +1,186 @@
-
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <title>EXCELPINTAR</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Additional CSS Files -->
-    <script src="https://kit.fontawesome.com/0ae245d821.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-onix-digital.css">
-    <link rel="stylesheet" href="assets/css/animated.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <style>
-      @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
-
-*,
-*:after,
-*:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.clearfix:before,
-.clearfix:after {
-	content: " ";
-	display: table;
-}
-
-.clearfix:after {
-	clear: both;
-}
-
-body {}
-
-h1 {
-	color: #ccc;
-	text-align: center;
-}
-
-a {
-  color: #ccc;
-  text-decoration: none;
-  outline: none;
-}
-
-/*Fun begins*/
-.tab_container {
-	width: 90%;
-	margin: 0 auto;
-	padding-top: 70px;
-	position: relative;
-}
-
-input, section {
-  clear: both;
-  padding-top: 10px;
-  display: none;
-}
-
-label {
-  font-weight: 700;
-  font-size: 12px;
-  display: block;
-  float:left;
-  width: 20%;
-  padding: 0.75em;
-  color: #757575;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
-  background: #f0f0f0;
-}
-
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4,
-#tab5:checked ~ #content5 {
-  display: block;
-  padding: 20px;
-  background: #fff;
-  color: #999;
-  border-bottom: 2px solid #f0f0f0;
-}
-
-.tab_container .tab-content p,
-.tab_container .tab-content h3 {
-  -webkit-animation: fadeInScale 0.7s ease-in-out;
-  -moz-animation: fadeInScale 0.7s ease-in-out;
-  animation: fadeInScale 0.7s ease-in-out;
-}
-.tab_container .tab-content h3  {
-  text-align: center;
-}
-
-.tab_container [id^="tab"]:checked + label {
-  background: #fff;
-  box-shadow: inset 0 3px #01723A;
-}
-
-.tab_container [id^="tab"]:checked + label .fa {
-  color: #01723A;
-}
-
-label .fa {
-  font-size: 1.3em;
-  margin: 0 0.4em 0 0;
-}
-
-/*Media query*/
-@media only screen and (max-width: 600px) {
-  label {
-    width: 100%;
-  }
-}
-
-/*Content Animation*/
-@keyframes fadeInScale {
-  0% {
-  	transform: scale(0.9);
-  	opacity: 0;
-  }
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Memulai Microsoft Excel - EXCEL PINTAR</title>
   
-  100% {
-  	transform: scale(1);
-  	opacity: 1;
-  }
-}
-
-.no_wrap {
-  text-align:center;
-  color: #01723A;
-}
-.link {
-  text-align:center;
-}
-    </style>
-
-  </head>
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/oneui.css">
+</head>
 <body>
 
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
-  <!-- ***** Preloader End ***** -->
+  <!-- Floating Navigation -->
+  <nav class="oneui-navbar animate-fade-up">
+    <a href="index.html" title="Home"><i class="fas fa-home"></i></a>
+    <a href="kd.html" title="KD"><i class="fas fa-book"></i></a>
+    <a href="materi.html" class="active" title="Materi"><i class="fas fa-file-alt"></i></a>
+    <a href="latsoal.html" title="Latihan Soal"><i class="fas fa-pen"></i></a>
+    <a href="quiz.html" title="Quiz"><i class="fas fa-question-circle"></i></a>
+    <a href="profilpengembang.html" title="Profil"><i class="fas fa-user"></i></a>
+  </nav>
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
-            <a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/" class="logo hover">
-              <img src="assets/images/logoweb.png">
-            </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav">
-              <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/kd.html" class="active">KD</a></li>
-              <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/materi.html" class="active">Materi</a></li>
-              <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/latsoal.html" class="active">Latihan Soal</a></li>
-              <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/quiz.html" class="active">Quiz</a></li>
-              <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/profilpengembang.html" class="active">Profil</a></li>
-              <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/daftarpustaka.html" class="active">Daftar Pustaka</a></li>
-              <li class="scroll-to-section"><a href="https://wa.link/vb7e1m"></a></li> 
-            </ul>        
-            <a class='menu-trigger'>
-                <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
-  <div id="pricing" class="pricing-tables">
-    <!--<div class="tables-left-dec">
-      <img src="assets/images/tables-left-dec.png" alt="">
-    </div>
-    <div class="tables-right-dec">
-      <img src="assets/images/tables-right-dec.png" alt="">
-    </div>-->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading">
-            <h2>Memulai<em> Microsoft Excel</em></h2>
+  <div class="oneui-page-header animate-fade-up">
+    <h2>Memulai Microsoft Excel</h2>
+    <p>Pelajari antarmuka dan dasar-dasar penggunaan</p>
+  </div>
+
+  <div class="oneui-content">
+    
+    <div class="oneui-card animate-fade-up delay-1 p-4">
+      <ul class="nav nav-pills flex-column flex-sm-row nav-fill mb-4" id="pills-tab" role="tablist" style="gap: 10px;">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active w-100" style="border-radius: 50px;" id="pills-buka-tab" data-bs-toggle="pill" data-bs-target="#pills-buka" type="button" role="tab">Membuka</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link w-100" style="border-radius: 50px;" id="pills-menu-tab" data-bs-toggle="pill" data-bs-target="#pills-menu" type="button" role="tab">Menu</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link w-100" style="border-radius: 50px;" id="pills-tab-tab" data-bs-toggle="pill" data-bs-target="#pills-tab-content" type="button" role="tab">Tab</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link w-100" style="border-radius: 50px;" id="pills-elemen-tab" data-bs-toggle="pill" data-bs-target="#pills-elemen" type="button" role="tab">Elemen</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link w-100" style="border-radius: 50px;" id="pills-ikon-tab" data-bs-toggle="pill" data-bs-target="#pills-ikon" type="button" role="tab">Menu & Ikon</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active text-center" id="pills-buka" role="tabpanel">
+          <h5 class="text-primary-oneui mb-3"><i class="fas fa-desktop me-2"></i>Membuka Microsoft Excel</h5>
+          <div class="text-start mb-3">
+            <p>Ada beberapa cara yang dapat dilakukan untuk mengaktifkan program aplikasi Microsoft Excel, yaitu sebagai berikut:</p>
+            <ul class="oneui-list">
+              <li>Melakukan <strong>double klik</strong> shortcut Microsoft Excel di desktop.</li>
+              <li>Melalui menu Start, yaitu dengan mengklik <strong>Start > All Programs > Microsoft Office > Excel</strong>.</li>
+              <li>Melalui file yang terdapat di Microsoft Excel, dengan cara buka File Explorer, kemudian <strong>dobel klik</strong> file Excel.</li>
+              <li>Dengan mengetikan kata "excel" di <strong>Run Command</strong>. Run Command bisa dipanggil dengan menekan tombol <strong>Windows + R</strong>, atau langsung diketik pada halaman Start di Windows.</li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="tab_container">
-          <input id="tab1" type="radio" name="tabs" checked>
-          <label for="tab1"><span>Membuka</span></label>
-    
-          <input id="tab2" type="radio" name="tabs">
-          <label for="tab2"><span>Menu</span></label>
-    
-          <input id="tab3" type="radio" name="tabs">
-          <label for="tab3"><span>Tab</span></label>
-    
-          <input id="tab4" type="radio" name="tabs">
-          <label for="tab4"><span>Elemen</span></label>
-    
-          <input id="tab5" type="radio" name="tabs">
-          <label for="tab5"><span>Menu dan Ikon</span></label>
-    
-          <section id="content1" class="tab-content">
-            <div class="col-lg-12"><div class="item third-item"><h4 class="text-primary"><b><i class="fas fa-paperclip me-2"></i>Membuka Microsoft Excel</b></h4><div class="dropdown-divider"></div><ul><li style="list-style: block;font-weight:600; font-size:20px;margin-left:26px"><img src="m/abcd.png"/><br/><img src="m/a (4).png"/></li></ul></div></div><br/>&nbsp<br/>
-        
-                
-          </section>
-    
-          <section id="content2" class="tab-content">
-            <div class="col-lg-12"><div class="item third-item"><h4 class="text-primary"><b><i class="fas fa-paperclip me-2"></i>Menu pada Microsoft Excel</b></h4><div class="dropdown-divider"></div><ul><li style="list-style: block;font-weight:600; font-size:20px;margin-left:26px"><img src="m/a (3).png"/><br/><img src="m/a (4).png"/></li></ul></div></div><br/>&nbsp<br/>
-       
-                
-          </section>
-    
-          <section id="content3" class="tab-content">
-            <div class="col-lg-12"><div class="item third-item"><h4 class="text-primary"><b><i class="fas fa-paperclip me-2"></i>Tab pada Ribbon Microsoft Excel</b></h4><div class="dropdown-divider"></div><ul><li style="list-style: block;font-weight:600; font-size:20px;margin-left:26px"><img src="m/a (5).png"/><br/><img src="m/a (6).png"/></li></ul></div></div><br/>&nbsp<br/>
-        
-                
-          </section>
-    
-          <section id="content4" class="tab-content">
-            <div class="col-lg-12"><div class="item third-item"><h4 class="text-primary"><b><i class="fas fa-paperclip me-2"></i>Elemen pada Microsoft Excel</b></h4><div class="dropdown-divider"></div><ul><li style="list-style: block;font-weight:600; font-size:20px;margin-left:26px"><img src="m/a (7).png"/><br/><img src="m/a (8).png"/><img src="m/a (9).png"/><br/><img src="m/a (10).png"/></li></ul></div></div><br/>&nbsp<br/>
-        
-                
-          </section>
-    
-          <section id="content5" class="tab-content">
-            <div class="col-lg-12"><div class="item third-item"><h4 class="text-primary"><b><i class="fas fa-paperclip me-2"></i>Menggunakan Menu dan Ikon dalam Microsoft Excel</b></h4><div class="dropdown-divider"></div><ul><li style="list-style: block;font-weight:600; font-size:20px;margin-left:26px"><img src="m/a (11).png"/><br/><img src="m/a (12).png"/><br/><img src="m/a (13).png"/></li></ul></div></div><br/>&nbsp<br/>      
-        
-              
-          </section>
-        </div>
-       <br/>&nbsp<br/>
-        <a href="javascript:history.back()">
-          <div>
-            <div class="thumbj">
-              <div class="inner-content" style="padding:15px;  border-radius: 23px;">
-                <h4 style="color:#01723A"><i class="fa fa-arrow-left" aria-hidden="true"></i> Kembali</h4>
-              </div>
+        <div class="tab-pane fade text-center" id="pills-menu" role="tabpanel">
+          <h5 class="text-primary-oneui mb-3"><i class="fas fa-bars me-2"></i>Menu pada Microsoft Excel</h5>
+          <div class="text-start mb-3">
+            <ol>
+              <li><strong>Menu Bar</strong>: Pada Microsoft Excel terdapat beberapa menu bar utama (Home, Insert, Page Layout, Formulas, Data, Review, View).</li>
+              <li><strong>Status Bar</strong>: Mempunyai dua area utama, yaitu Message pada bagian kiri dan kotak indikator pada bagian kanan. Tanda <em>Ready</em> menunjukkan Excel siap menerima perintah.</li>
+              <li><strong>Title Bar</strong>: Berada paling atas lembar Excel. Di dalamnya terdapat <em>Minimize, Maximize, Close, Restore</em>.</li>
+              <li><strong>Formula Bar</strong>: Berfungsi untuk memasukkan, memperbaiki, dan menampilkan data atau rumus pada sel yang sedang aktif.</li>
+              <li><strong>Petunjuk Sel (Cell Pointer)</strong>: Untuk memindahkan penunjuk sel ke posisi yang baru dapat digunakan mouse maupun keyboard.</li>
+            </ol>
+          </div>
+          <img src="m/a (3).png" alt="Menu Excel" class="img-fluid rounded mb-4 shadow-sm" style="max-height: 250px; object-fit: contain;">
+          <div class="text-start mb-3">
+            <h6 class="font-weight-bold text-primary-oneui">Navigasi Menggunakan Keyboard</h6>
+            <div class="table-responsive">
+              <table class="table table-bordered table-sm mt-2">
+                <tbody>
+                  <tr><td><strong>Arah Panah</strong></td><td>Pindah satu sel ke kiri, kanan, atas atau bawah</td></tr>
+                  <tr><td><strong>Enter</strong></td><td>Pindah satu sel ke bawah</td></tr>
+                  <tr><td><strong>Home</strong></td><td>Pindah ke kolom A pada posisi baris yang aktif</td></tr>
+                  <tr><td><strong>Ctrl + Home</strong></td><td>Pindah ke sel A1 pada lembar kerja yang aktif</td></tr>
+                  <tr><td><strong>Ctrl + End</strong></td><td>Pindah ke posisi sel terakhir yang sedang digunakan</td></tr>
+                  <tr><td><strong>PgUp / PgDn</strong></td><td>Pindah satu layer ke atas / ke bawah</td></tr>
+                  <tr><td><strong>Alt + PgUp / PgDn</strong></td><td>Pindah satu layer ke kiri / ke kanan</td></tr>
+                  <tr><td><strong>Ctrl + PgUp / PgDn</strong></td><td>Pindah tab lembar kerja berikutnya / sebelumnya</td></tr>
+                </tbody>
+              </table>
             </div>
-          </div></a><br/>&nbsp<br/>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="copyright">
-            <p>Copyright © 2022 W Ltd. All Rights Reserved. 
-            <br>
-            Designed by <a rel="nofollow" href="https://widifirmaan.web.id" title="W">W</a></p>
+            <p class="small text-muted mt-2">Jika posisi sel berada di luar tampilan jendela, Anda dapat menggunakan scroll bar (vertikal/horizontal) untuk menjangkau sel yang dimaksud.</p>
+          </div>
+        </div>
+        <div class="tab-pane fade text-center" id="pills-tab-content" role="tabpanel">
+          <h5 class="text-primary-oneui mb-3"><i class="fas fa-folder me-2"></i>Tab pada Ribbon Microsoft Excel</h5>
+          <div class="text-start mb-3">
+            <p>Memahami <em>Ribbon</em> adalah hal yang sangat perlu dilakukan untuk memahami fungsionalitas Microsoft Excel. Pada Ribbon tercantum semua informasi, perintah, serta fungsi yang dapat kita gunakan.</p>
+            <ul class="oneui-list">
+              <li><strong>Home</strong>: Tab utama untuk format teks, cells, jenis huruf, memasukkan/menghapus kolom, cell styles, format tabel, serta mengurutkan data.</li>
+              <li><strong>Insert</strong>: Menyisipkan objek seperti Foto, Shape, Grafik, Text Box, PivotTable, dll.</li>
+              <li><strong>Page Layout</strong>: Menyesuaikan halaman seperti margin, orientasi (portrait/landscape), dan tema cetak.</li>
+              <li><strong>Formulas</strong>: Digunakan saat membuat rumus. Memiliki kumpulan fungsi (Function Library) yang besar.</li>
+              <li><strong>Data</strong>: Memodifikasi lembar kerja dengan jumlah data besar (menyortir, filter, dan analisis).</li>
+              <li><strong>Review</strong>: Memeriksa ejaan, tata bahasa, komentar, dan mengatur proteksi (keamanan) dokumen.</li>
+              <li><strong>View</strong>: Mengubah tampilan dokumen, perbesaran (zoom), dan membekukan panel (Freeze Panes).</li>
+            </ul>
+          </div>
+          <div class="row g-2">
+             <div class="col-12"><img src="m/a (5).png" alt="Tab Excel" class="img-fluid rounded shadow-sm"></div>
+             <div class="col-12"><img src="m/a (6).png" alt="Tab Excel" class="img-fluid rounded shadow-sm"></div>
+          </div>
+        </div>
+        <div class="tab-pane fade text-center" id="pills-elemen" role="tabpanel">
+          <h5 class="text-primary-oneui mb-3"><i class="fas fa-th-large me-2"></i>Elemen pada Microsoft Excel</h5>
+          <div class="text-start mb-3">
+            <p>Saat memulai Excel akan muncul sebuah dokumen kosong (Workbook). Di sinilah kita menambahkan data dan informasi.</p>
+          </div>
+          <img src="m/a (7).png" alt="Elemen Excel" class="img-fluid rounded mb-3 shadow-sm">
+          <div class="text-start mb-3">
+            <ul class="oneui-list">
+              <li><strong>Ikon Menu (File / Office Button)</strong>: Berisi perintah dasar seperti New, Open, Save, Save As, dan Print.</li>
+              <li><strong>Quick Access Toolbar</strong>: Tombol jalan pintas untuk perintah yang sering digunakan (Save, Undo, Redo).</li>
+              <li><strong>Name Box</strong>: Kotak yang menunjukkan referensi atau alamat sel yang sedang aktif (misalnya A1).</li>
+              <li><strong>Formula Bar</strong>: Tempat untuk menuliskan dan melihat isi formula/rumus dari sel.</li>
+              <li><strong>Kolom (Column)</strong>: Lajur tegak berisi abjad A sampai XFD.</li>
+              <li><strong>Baris (Row)</strong>: Lajur mendatar berisi angka 1 dan seterusnya.</li>
+              <li><strong>Tombol Navigasi Sheet</strong>: Untuk berpindah antar lembar kerja (Sheet1, Sheet2, dll).</li>
+              <li><strong>Zoom</strong>: Memperbesar atau memperkecil tampilan layar kerja.</li>
+            </ul>
+          </div>
+          <div class="row g-2">
+             <div class="col-12 col-md-6"><img src="m/a (8).png" alt="Elemen Excel" class="img-fluid rounded shadow-sm"></div>
+             <div class="col-12 col-md-6"><img src="m/a (9).png" alt="Elemen Excel" class="img-fluid rounded shadow-sm"></div>
+             <div class="col-12"><img src="m/a (10).png" alt="Elemen Excel" class="img-fluid rounded shadow-sm"></div>
+          </div>
+        </div>
+        <div class="tab-pane fade text-center" id="pills-ikon" role="tabpanel">
+          <h5 class="text-primary-oneui mb-3"><i class="fas fa-mouse-pointer me-2"></i>Menggunakan Menu dan Ikon</h5>
+          <div class="text-start mb-4">
+            <p><strong>A. Menyimpan Lembar Kerja</strong></p>
+            <ol>
+              <li>Klik ikon <strong>Save</strong> pada Quick Access Toolbar atau tekan <strong>Ctrl + S</strong>.</li>
+              <li>Tentukan lokasi folder penyimpanan pada kotak dialog <em>Save As</em>.</li>
+              <li>Isikan nama file pada kotak <em>File Name</em>.</li>
+              <li>Klik tombol <strong>Save</strong>.</li>
+            </ol>
+            <p><strong>B. Menyimpan dengan Nama Baru</strong></p>
+            <p>Gunakan perintah <strong>Save As</strong> (tekan F12) untuk menyimpan dokumen yang sama dengan nama file atau format yang berbeda tanpa menimpa file aslinya.</p>
+            <p><strong>C. Membuka Lembar Kerja</strong></p>
+            <p>Gunakan perintah <strong>Open</strong> (tekan Ctrl + O) atau klik ikon folder terbuka, lalu cari file Excel yang sudah pernah Anda simpan sebelumnya.</p>
+          </div>
+          <div class="row g-2">
+             <div class="col-12 col-md-4"><img src="m/a (11).png" alt="Menu dan Ikon" class="img-fluid rounded shadow-sm"></div>
+             <div class="col-12 col-md-4"><img src="m/a (12).png" alt="Menu dan Ikon" class="img-fluid rounded shadow-sm"></div>
+             <div class="col-12 col-md-4"><img src="m/a (13).png" alt="Menu dan Ikon" class="img-fluid rounded shadow-sm"></div>
           </div>
         </div>
       </div>
     </div>
-  </footer>
 
+    <div class="text-center mt-4 animate-fade-up delay-2">
+      <a href="javascript:history.back()" class="oneui-btn oneui-btn-secondary"><i class="fas fa-arrow-left me-2"></i> Kembali</a>
+    </div>
 
-  <!-- Scripts -->
+  </div>
+
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/animation.js"></script>
-  <script src="assets/js/imagesloaded.js"></script>
-  <script src="assets/js/custom.js"></script>
-
   <script>
-  // Acc
-    $(document).on("click", ".naccs .menu div", function() {
-      var numberIndex = $(this).index();
-
-      if (!$(this).is("active")) {
-          $(".naccs .menu div").removeClass("active");
-          $(".naccs ul li").removeClass("active");
-
-          $(this).addClass("active");
-          $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
- 
-          var listItemHeight = $(".naccs ul")
-            .find("li:eq(" + numberIndex + ")")
-            .innerHeight();
-          $(".naccs ul").height(listItemHeight + "px");
-        }
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabs = document.querySelectorAll('.nav-pills .nav-link');
+      tabs.forEach(tab => {
+        tab.addEventListener('shown.bs.tab', function (e) {
+          const parent = this.closest('.nav-pills');
+          if (parent) {
+            parent.scrollTo({
+              left: this.offsetLeft - 15,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
     });
   </script>
 </body>

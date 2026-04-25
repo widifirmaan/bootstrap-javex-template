@@ -1,324 +1,254 @@
-
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <title>EXCELPINTAR</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Additional CSS Files -->
-    <script src="https://kit.fontawesome.com/0ae245d821.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-onix-digital.css">
-    <link rel="stylesheet" href="assets/css/animated.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <style>
-      @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
-
-*,
-*:after,
-*:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.clearfix:before,
-.clearfix:after {
-	content: " ";
-	display: table;
-}
-
-.clearfix:after {
-	clear: both;
-}
-
-body {}
-
-h1 {
-	color: #ccc;
-	text-align: center;
-}
-
-a {
-  color: #ccc;
-  text-decoration: none;
-  outline: none;
-}
-
-/*Fun begins*/
-.tab_container {
-	width: 90%;
-	margin: 0 auto;
-	padding-top: 5px;
-	position: relative;
-}
-
-input, section {
-  clear: both;
-  padding-top: 10px;
-  display: none;
-}
-
-label {
-  font-weight: 700;
-  font-size: 12px;
-  display: block;
-  float: left;
-  width: 20%;
-  padding: 0.75em;
-  color: #757575;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
-  background: #f0f0f0;
-}
-
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4,
-#tab5:checked ~ #content5 {
-  display: block;
-  padding: 20px;
-  background: #fff;
-  color: #999;
-  border-bottom: 2px solid #f0f0f0;
-}
-
-.tab_container .tab-content p,
-.tab_container .tab-content h3 {
-  -webkit-animation: fadeInScale 0.7s ease-in-out;
-  -moz-animation: fadeInScale 0.7s ease-in-out;
-  animation: fadeInScale 0.7s ease-in-out;
-}
-.tab_container .tab-content h3  {
-  text-align: center;
-}
-
-.tab_container [id^="tab"]:checked + label {
-  background: #fff;
-  box-shadow: inset 0 3px #01723A;
-}
-
-.tab_container [id^="tab"]:checked + label .fa {
-  color: #01723A;
-}
-
-label .fa {
-  font-size: 1.3em;
-  margin: 0 0.4em 0 0;
-}
-
-/*Media query*/
-
-
-/*Content Animation*/
-@keyframes fadeInScale {
-  0% {
-  	transform: scale(0.9);
-  	opacity: 0;
-  }
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Rumus & Fungsi - EXCEL PINTAR</title>
   
-  100% {
-  	transform: scale(1);
-  	opacity: 1;
-  }
-}
-
-.no_wrap {
-  text-align:center;
-  color: #01723A;
-}
-.link {
-  text-align:center;
-}
-    </style>
-
-  </head>
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/oneui.css">
+</head>
 <body>
 
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
+  <!-- Floating Navigation -->
+  <nav class="oneui-navbar animate-fade-up">
+    <a href="index.html" title="Home"><i class="fas fa-home"></i></a>
+    <a href="kd.html" title="KD"><i class="fas fa-book"></i></a>
+    <a href="materi.html" class="active" title="Materi"><i class="fas fa-file-alt"></i></a>
+    <a href="latsoal.html" title="Latihan Soal"><i class="fas fa-pen"></i></a>
+    <a href="quiz.html" title="Quiz"><i class="fas fa-question-circle"></i></a>
+    <a href="profilpengembang.html" title="Profil"><i class="fas fa-user"></i></a>
+  </nav>
+
+  <div class="oneui-page-header animate-fade-up">
+    <h2>Rumus & Fungsi</h2>
+    <p>Memanipulasi data menggunakan formula Excel</p>
   </div>
-  <!-- ***** Preloader End ***** -->
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
-            <a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/" class="logo hover">
-              <img src="assets/images/logoweb.png">
-            </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav">
-              <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/kd.html" class="active">KD</a></li>
-              <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/materi.html" class="active">Materi</a></li>
-              <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/latsoal.html" class="active">Latihan Soal</a></li>
-              <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/quiz.html" class="active">Quiz</a></li>
-              <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/profilpengembang.html" class="active">Profil</a></li>
-              <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/daftarpustaka.html" class="active">Daftar Pustaka</a></li>
-              <li class="scroll-to-section"><a href="https://wa.link/vb7e1m"></a></li> 
-            </ul>   
-            <a class='menu-trigger'>
-                <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
-  <div id="pricing" class="pricing-tables">
-   <!-- <div class="tables-left-dec">
-      <img src="assets/images/tables-left-dec.png" alt="">
-    </div>
-    <div class="tables-right-dec">
-      <img src="assets/images/tables-right-dec.png" alt="">
-    </div>-->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading">
-            <h2>Rumus dan Fungsi untuk<em> Manipulasi Data</em></h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="tab_container">
-          <input id="tab1" type="radio" name="tabs" checked>
-          <label for="tab1"><span>1</span></label>
-          <input id="tab2" type="radio" name="tabs" checked>
-          <label for="tab2"><span>2</span></label>
-          <input id="tab3" type="radio" name="tabs" checked>
-          <label for="tab3"><span>3</span></label>
-          <input id="tab4" type="radio" name="tabs" checked>
-          <label for="tab4"><span>4</span></label>
-          <input id="tab5" type="radio" name="tabs" checked>
-          <label for="tab5"><span>5</span></label>
+  <div class="oneui-content">
     
-          <section id="content1" class="tab-content">
-<img src="m/a (27b).png"/><br/><img src="m/a (28).png"/>
-                     
-                
-          </section>
-          <section id="content1" class="tab-content">
+    <div class="oneui-card animate-fade-up delay-1 p-4">
+      <ul class="nav nav-pills flex-column flex-sm-row nav-fill mb-4" id="pills-tab" role="tablist" style="gap: 10px;">
+        <li class="nav-item" role="presentation"><button class="nav-link active w-100" style="border-radius: 50px;" id="tab1" data-bs-toggle="pill" data-bs-target="#content1" type="button" role="tab">Formula & Operator</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link w-100" style="border-radius: 50px;" id="tab2" data-bs-toggle="pill" data-bs-target="#content2" type="button" role="tab">Error & Aritmatika</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link w-100" style="border-radius: 50px;" id="tab3" data-bs-toggle="pill" data-bs-target="#content3" type="button" role="tab">Statistik & Logika</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link w-100" style="border-radius: 50px;" id="tab4" data-bs-toggle="pill" data-bs-target="#content4" type="button" role="tab">VLOOKUP & HLOOKUP</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link w-100" style="border-radius: 50px;" id="tab5" data-bs-toggle="pill" data-bs-target="#content5" type="button" role="tab">Teks & Tanggal</button></li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
 
-                      <br/><img src="m/a (29).png"/>
-                      <br/><img src="m/a (30).png"/>
-                     
-                
-          </section>
-          <section id="content2" class="tab-content">
+        <!-- Tab 1: Formula & Operator -->
+        <div class="tab-pane fade show active" id="content1" role="tabpanel">
+          <h5 class="text-primary-oneui mb-3"><i class="fas fa-equals me-2"></i>Formula & Operator Dasar</h5>
+          <div class="text-start">
+            <p><strong>Formula</strong> adalah kalkulasi atau prosedur operasi yang dilakukan Microsoft Excel untuk menentukan nilai dalam sebuah sel. Penulisan formula harus diawali dengan tanda <strong>=</strong> (sama dengan).</p>
+            <p>Jika tidak dimulai dengan tanda <code>=</code>, Excel hanya akan menganggapnya sebagai data teks biasa.</p>
 
-                      <br/><img src="m/a (31).png"/>
-                      <br/><img src="m/a (32).png"/>
-                     
-                
-          </section>
-          <section id="content3" class="tab-content">
-
-                      <br/><img src="m/a (33).png"/>
-                      <br/><img src="m/a (34).png"/>
-                     
-                
-          </section>
-          <section id="content4" class="tab-content">
-
-                      <br/><img src="m/a (35).png"/>
-                      <br/><img src="m/a (36).png"/>
-                      
-                     
-                
-          </section>
-          <section id="content5" class="tab-content">
-
-                      <br/><img src="m/a (37).png"/>
-                      <br/><img src="m/a (38).png"/>
-                     
-                
-          </section>
-    
-        
-        </div>
-        
-        <a href="javascript:history.back()">
-          <div>
-            <div class="thumbj">
-              <div class="inner-content" style="padding:15px;  border-radius: 23px;">
-                <h4 style="color:#01723A"><i class="fa fa-arrow-left" aria-hidden="true"></i> Kembali</h4>
-              </div>
+            <h6 class="text-primary-oneui mt-3">Operator Aritmatika</h6>
+            <div class="table-responsive">
+              <table class="table table-bordered table-sm">
+                <thead class="table-success"><tr><th>Simbol</th><th>Operasi</th><th>Contoh</th></tr></thead>
+                <tbody>
+                  <tr><td><code>+</code></td><td>Penjumlahan</td><td>=A1+B1</td></tr>
+                  <tr><td><code>-</code></td><td>Pengurangan</td><td>=A1-B1</td></tr>
+                  <tr><td><code>*</code></td><td>Perkalian</td><td>=A1*B1</td></tr>
+                  <tr><td><code>/</code></td><td>Pembagian</td><td>=A1/B1</td></tr>
+                  <tr><td><code>^</code></td><td>Pemangkatan</td><td>=A1^2</td></tr>
+                  <tr><td><code>%</code></td><td>Persentase</td><td>=50%</td></tr>
+                </tbody>
+              </table>
             </div>
-          </div></a><br/>&nbsp<br/>
- </div>
-    </div>
-  </div>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="copyright">
-            <p>Copyright © 2022 W Ltd. All Rights Reserved. 
-            <br>
-            Designed by <a rel="nofollow" href="https://widifirmaan.web.id" title="W">W</a></p>
+            <h6 class="text-primary-oneui mt-3">Operator Acuan (Referensi Sel)</h6>
+            <div class="table-responsive">
+              <table class="table table-bordered table-sm">
+                <thead class="table-success"><tr><th>Operator</th><th>Fungsi</th><th>Contoh</th></tr></thead>
+                <tbody>
+                  <tr><td><code>:</code> (titik dua)</td><td>Rentang sel (dari – sampai)</td><td>A2:A12</td></tr>
+                  <tr><td><code>,</code> (koma)</td><td>Menggabungkan beberapa acuan</td><td>SUM(B5:B15,D5:D5)</td></tr>
+                  <tr><td>(spasi)</td><td>Perpotongan dua acuan</td><td>B7:D7 C6:C9</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h6 class="text-primary-oneui mt-3">Urutan Prioritas Operasi</h6>
+            <ol>
+              <li>Operator Acuan (<code>:</code>, <code>,</code>, spasi)</li>
+              <li>Tanda Negatif (<code>-</code>)</li>
+              <li>Persentase (<code>%</code>)</li>
+              <li>Pemangkatan (<code>^</code>)</li>
+              <li>Perkalian & Pembagian (<code>*</code>, <code>/</code>)</li>
+              <li>Penambahan & Pengurangan (<code>+</code>, <code>-</code>)</li>
+              <li>Penggabungan teks (<code>&amp;</code>)</li>
+              <li>Perbandingan (<code>=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code>, <code>&lt;&gt;</code>)</li>
+            </ol>
+            <p class="small text-muted">Gunakan <strong>tanda kurung ()</strong> untuk mendahulukan perhitungan tertentu.</p>
+
+            <h6 class="text-primary-oneui mt-3">Mengcopy Rumus</h6>
+            <p>Agar menghemat waktu, Excel menyediakan fasilitas copy rumus. Caranya: klik sel berisi rumus &rarr; letakkan pointer di pojok kanan bawah sel (berbentuk <strong>+</strong>) &rarr; drag ke sel tujuan.</p>
+            <div class="row g-2 mt-2">
+              <div class="col-12 col-md-6"><img src="m/a (27b).png" alt="Formula" class="img-fluid rounded shadow-sm"></div>
+              <div class="col-12 col-md-6"><img src="m/a (28).png" alt="Operator" class="img-fluid rounded shadow-sm"></div>
+              <div class="col-12 col-md-6"><img src="m/a (29).png" alt="Operator Acuan" class="img-fluid rounded shadow-sm"></div>
+              <div class="col-12 col-md-6"><img src="m/a (30).png" alt="Copy Rumus" class="img-fluid rounded shadow-sm"></div>
+            </div>
           </div>
         </div>
+
+        <!-- Tab 2: Error & Fungsi Aritmatika -->
+        <div class="tab-pane fade" id="content2" role="tabpanel">
+          <h5 class="text-primary-oneui mb-3"><i class="fas fa-exclamation-triangle me-2"></i>Error & Fungsi Aritmatika</h5>
+          <div class="text-start">
+            <h6 class="text-primary-oneui">Mendeteksi Kesalahan (Error) dalam Rumus</h6>
+            <div class="table-responsive mb-3">
+              <table class="table table-bordered table-sm">
+                <thead class="table-success"><tr><th>Kode Error</th><th>Penyebab</th><th>Solusi</th></tr></thead>
+                <tbody>
+                  <tr><td><code>####</code></td><td>Rumus benar tapi kolom terlalu sempit</td><td>Perlebar kolom</td></tr>
+                  <tr><td><code>#NAME?</code></td><td>Salah penulisan nama rumus</td><td>Betulkan nama rumusnya</td></tr>
+                  <tr><td><code>#N/A</code></td><td>Nilai yang dibutuhkan tidak tersedia</td><td>Ganti dengan nilai yang benar</td></tr>
+                  <tr><td><code>#DIV/0!</code></td><td>Membagi dengan nol</td><td>Ubah nilai pembagi</td></tr>
+                  <tr><td><code>#VALUE!</code></td><td>Tipe data argument salah</td><td>Betulkan tipe datanya</td></tr>
+                  <tr><td><code>#NULL!</code></td><td>Dua nilai tidak memiliki kesesuaian</td><td>Betulkan salah satu nilai</td></tr>
+                  <tr><td><code>#NUM!</code></td><td>Nomor tidak sah untuk rumus</td><td>Betulkan nomor tersebut</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h6 class="text-primary-oneui mt-3">Fungsi Aritmatika</h6>
+            <p>Fungsi aritmatika mengolah data numerik (angka). Beberapa fungsi penting:</p>
+            <ul class="oneui-list">
+              <li><strong>SUM</strong>: Menjumlahkan nilai. Contoh: <code>=SUM(D3:G3)</code></li>
+              <li><strong>MOD</strong>: Menampilkan sisa bagi. Contoh: <code>=MOD(15,4)</code> → hasil: 3</li>
+              <li><strong>ROUND</strong>: Membulatkan angka desimal. Contoh: <code>=ROUND(A5,0)</code> → tanpa desimal</li>
+            </ul>
+            <div class="row g-2 mt-2">
+              <div class="col-12 col-md-6"><img src="m/a (31).png" alt="Error" class="img-fluid rounded shadow-sm"></div>
+              <div class="col-12 col-md-6"><img src="m/a (32).png" alt="SUM" class="img-fluid rounded shadow-sm"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Fungsi Statistik & Logika -->
+        <div class="tab-pane fade" id="content3" role="tabpanel">
+          <h5 class="text-primary-oneui mb-3"><i class="fas fa-chart-bar me-2"></i>Fungsi Statistik & Logika</h5>
+          <div class="text-start">
+            <h6 class="text-primary-oneui">Fungsi Statistik</h6>
+            <div class="table-responsive mb-3">
+              <table class="table table-bordered table-sm">
+                <thead class="table-success"><tr><th>Fungsi</th><th>Kegunaan</th><th>Sintaks</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>MIN</strong></td><td>Menampilkan nilai terkecil</td><td>=MIN(range)</td></tr>
+                  <tr><td><strong>MAX</strong></td><td>Menampilkan nilai terbesar</td><td>=MAX(range)</td></tr>
+                  <tr><td><strong>AVERAGE</strong></td><td>Menghitung rata-rata</td><td>=AVERAGE(range)</td></tr>
+                  <tr><td><strong>COUNT</strong></td><td>Menghitung jumlah sel berisi angka</td><td>=COUNT(range)</td></tr>
+                  <tr><td><strong>COUNTA</strong></td><td>Menghitung semua sel yang terisi</td><td>=COUNTA(range)</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h6 class="text-primary-oneui mt-3">Fungsi Logika IF</h6>
+            <p>Fungsi IF mengembalikan nilai berdasarkan kondisi benar/salah. Sintaks:</p>
+            <div class="p-3 mb-3" style="background:#f8f9fa; border-radius:10px; font-family:monospace;">
+              =IF(<em>logical_test</em>; <em>value_if_true</em>; <em>value_if_false</em>)
+            </div>
+            <p><strong>Contoh</strong>: <code>=IF(G4&lt;75;"TIDAK LULUS";"LULUS")</code></p>
+            <p>Artinya: Jika nilai rata-rata di G4 kurang dari 75, tampilkan "TIDAK LULUS", jika tidak tampilkan "LULUS".</p>
+            <div class="row g-2 mt-2">
+              <div class="col-12 col-md-6"><img src="m/a (33).png" alt="Statistik" class="img-fluid rounded shadow-sm"></div>
+              <div class="col-12 col-md-6"><img src="m/a (34).png" alt="IF" class="img-fluid rounded shadow-sm"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: VLOOKUP & HLOOKUP -->
+        <div class="tab-pane fade" id="content4" role="tabpanel">
+          <h5 class="text-primary-oneui mb-3"><i class="fas fa-search me-2"></i>VLOOKUP & HLOOKUP</h5>
+          <div class="text-start">
+            <h6 class="text-primary-oneui">VLOOKUP (Vertikal)</h6>
+            <p>Menampilkan data dari tabel yang disusun <strong>vertikal</strong>. Syarat: kolom pertama harus urut dari kecil ke besar.</p>
+            <div class="p-3 mb-3" style="background:#f8f9fa; border-radius:10px; font-family:monospace;">
+              =VLOOKUP(<em>lookup_value</em>; <em>table_array</em>; <em>col_index_num</em>; <em>range_lookup</em>)
+            </div>
+            <p><strong>Contoh</strong>: <code>=VLOOKUP(E5;I6:K10;2;FALSE)</code><br>Artinya: Cari nilai E5 di tabel I6:K10, ambil kolom ke-2.</p>
+
+            <h6 class="text-primary-oneui mt-3">HLOOKUP (Horizontal)</h6>
+            <p>Menampilkan data dari tabel yang disusun <strong>horizontal/mendatar</strong>. Syarat: baris pertama harus urut dari kecil ke besar.</p>
+            <div class="p-3 mb-3" style="background:#f8f9fa; border-radius:10px; font-family:monospace;">
+              =HLOOKUP(<em>lookup_value</em>; <em>table_array</em>; <em>row_index_num</em>; <em>range_lookup</em>)
+            </div>
+            <p><strong>Contoh</strong>: <code>=HLOOKUP(E5;J5:N7;2;FALSE)</code><br>Artinya: Cari nilai E5 di tabel J5:N7, ambil baris ke-2.</p>
+
+            <div class="row g-2 mt-2">
+              <div class="col-12 col-md-6"><img src="m/a (35).png" alt="VLOOKUP" class="img-fluid rounded shadow-sm"></div>
+              <div class="col-12 col-md-6"><img src="m/a (36).png" alt="HLOOKUP" class="img-fluid rounded shadow-sm"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 5: Fungsi Teks & Tanggal -->
+        <div class="tab-pane fade" id="content5" role="tabpanel">
+          <h5 class="text-primary-oneui mb-3"><i class="fas fa-font me-2"></i>Fungsi Teks & Tanggal</h5>
+          <div class="text-start">
+            <h6 class="text-primary-oneui">Fungsi Teks</h6>
+            <div class="table-responsive mb-3">
+              <table class="table table-bordered table-sm">
+                <thead class="table-success"><tr><th>Fungsi</th><th>Kegunaan</th><th>Contoh</th><th>Hasil</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>LEFT</strong></td><td>Ambil karakter dari kiri</td><td>=LEFT("Naufal",3)</td><td>Nau</td></tr>
+                  <tr><td><strong>RIGHT</strong></td><td>Ambil karakter dari kanan</td><td>=RIGHT("Naufal",3)</td><td>fal</td></tr>
+                  <tr><td><strong>MID</strong></td><td>Ambil karakter dari tengah</td><td>=MID("Naufal",3,2)</td><td>uf</td></tr>
+                  <tr><td><strong>LEN</strong></td><td>Hitung jumlah karakter</td><td>=LEN("Naufal")</td><td>6</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h6 class="text-primary-oneui mt-3">Fungsi Tanggal & Waktu</h6>
+            <div class="table-responsive mb-3">
+              <table class="table table-bordered table-sm">
+                <thead class="table-success"><tr><th>Fungsi</th><th>Kegunaan</th><th>Contoh</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>NOW()</strong></td><td>Menampilkan tanggal dan waktu saat ini</td><td>=NOW()</td></tr>
+                  <tr><td><strong>DAY()</strong></td><td>Menampilkan tanggal</td><td>=DAY("08/07/2008") → 8</td></tr>
+                  <tr><td><strong>MONTH()</strong></td><td>Menampilkan bulan</td><td>=MONTH("08/07/2008") → 7</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row g-2 mt-2">
+              <div class="col-12 col-md-6"><img src="m/a (37).png" alt="Fungsi Teks" class="img-fluid rounded shadow-sm"></div>
+              <div class="col-12 col-md-6"><img src="m/a (38).png" alt="Fungsi Tanggal" class="img-fluid rounded shadow-sm"></div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-  </footer>
 
+    <div class="text-center mt-4 animate-fade-up delay-2">
+      <a href="javascript:history.back()" class="oneui-btn oneui-btn-secondary"><i class="fas fa-arrow-left me-2"></i> Kembali</a>
+    </div>
 
-  <!-- Scripts -->
+  </div>
+
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/animation.js"></script>
-  <script src="assets/js/imagesloaded.js"></script>
-  <script src="assets/js/custom.js"></script>
-
   <script>
-  // Acc
-    $(document).on("click", ".naccs .menu div", function() {
-      var numberIndex = $(this).index();
-
-      if (!$(this).is("active")) {
-          $(".naccs .menu div").removeClass("active");
-          $(".naccs ul li").removeClass("active");
-
-          $(this).addClass("active");
-          $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
- 
-          var listItemHeight = $(".naccs ul")
-            .find("li:eq(" + numberIndex + ")")
-            .innerHeight();
-          $(".naccs ul").height(listItemHeight + "px");
-        }
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabs = document.querySelectorAll('.nav-pills .nav-link');
+      tabs.forEach(tab => {
+        tab.addEventListener('shown.bs.tab', function (e) {
+          const parent = this.closest('.nav-pills');
+          if (parent) {
+            parent.scrollTo({
+              left: this.offsetLeft - 15,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
     });
   </script>
 </body>

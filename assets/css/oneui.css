@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --oneui-bg: #f2f2f6;
+  --oneui-card-bg: #ffffff;
+  --oneui-text-primary: #000000;
+  --oneui-text-secondary: #8e8e93;
+  --oneui-accent: #01723A;
+  --oneui-radius: 28px;
+  --oneui-radius-sm: 16px;
+  --oneui-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  --oneui-shadow-hover: 0 12px 32px rgba(0, 0, 0, 0.08);
+  --oneui-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--oneui-bg);
+  color: var(--oneui-text-primary);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* OneUI Header - Big bold title */
+.oneui-page-header {
+  padding: 80px 20px 40px;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.oneui-page-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.oneui-page-header p {
+  color: var(--oneui-text-secondary);
+  font-size: 1.1rem;
+  margin-top: 8px;
+}
+
+/* Container for content */
+.oneui-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px 80px;
+}
+
+/* Cards */
+.oneui-card {
+  background-color: var(--oneui-card-bg);
+  border-radius: var(--oneui-radius);
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: var(--oneui-shadow);
+  transition: var(--oneui-transition);
+  border: none;
+}
+
+.oneui-card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: var(--oneui-shadow-hover);
+}
+
+/* Interactive elements */
+.oneui-btn {
+  display: inline-block;
+  background-color: var(--oneui-accent);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--oneui-transition);
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.oneui-btn:hover {
+  background-color: #015c2f;
+  color: #fff;
+  transform: scale(1.02);
+}
+
+.oneui-btn-secondary {
+  background-color: #e5e5ea;
+  color: var(--oneui-text-primary);
+}
+
+.oneui-btn-secondary:hover {
+  background-color: #d1d1d6;
+  color: var(--oneui-text-primary);
+}
+
+/* Grids */
+.oneui-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.oneui-grid .oneui-card {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--oneui-text-primary);
+}
+
+.oneui-grid .oneui-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 16px;
+  transition: var(--oneui-transition);
+}
+
+.oneui-grid .oneui-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Custom lists inside cards */
+.oneui-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.oneui-list li {
+  padding: 16px 0;
+  border-bottom: 1px solid #f2f2f6;
+  font-size: 1.1rem;
+}
+
+.oneui-list li:last-child {
+  border-bottom: none;
+}
+
+/* Floating Navigation (Bottom full-width on mobile, top pill on desktop) */
+.oneui-navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 10px 0;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-around;
+  z-index: 1000;
+  border-top: 1px solid #e5e5ea;
+}
+
+.oneui-navbar a {
+  color: var(--oneui-text-secondary);
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 50%;
+  transition: var(--oneui-transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+
+.oneui-navbar a:hover, .oneui-navbar a.active {
+  background-color: var(--oneui-accent);
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .oneui-navbar {
+    top: 20px;
+    bottom: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    border-radius: 50px;
+    padding: 10px 20px;
+    gap: 15px;
+    border-top: none;
+    box-shadow: var(--oneui-shadow-hover);
+  }
+}
+
+/* Animations */
+.animate-fade-up {
+  animation: fadeUp 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Typography Helpers */
+.text-primary-oneui { color: var(--oneui-accent) !important; }
+.text-bold { font-weight: 700; }
+.mb-2 { margin-bottom: 8px; }
+.mb-4 { margin-bottom: 16px; }
+.mt-4 { margin-top: 16px; }
+
+/* Horizontal Scrollable Tabs */
+.nav-pills {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  gap: 10px;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+.nav-pills::-webkit-scrollbar {
+  display: none;
+}
+.nav-pills .nav-item {
+  flex: 1 0 auto;
+}
+.nav-pills .nav-link {
+  white-space: nowrap;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: var(--oneui-accent) !important;
+  color: #fff !important;
+}

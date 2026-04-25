@@ -1,12 +1,12 @@
-# 📊 ExcelPintar - Interactive Learning Media with Quizzes
+# 📊 Bootstrap - Interactive Learning Media with Quizzes
 
-**ExcelPintar** is a state-of-the-art, web-based interactive learning media designed to help students master Microsoft Excel fundementals. It seamlessly integrates structured learning modules, video tutorials, practice exercises, and evaluation quizzes into a unified, user-friendly platform.
+**ExcelPintar** is a state-of-the-art, web-based interactive learning media designed to help students master Microsoft Excel fundamentals. It seamlessly integrates structured learning modules, practice exercises, and evaluation quizzes into a unified, mobile-first platform with a modern **Samsung OneUI-inspired design**.
 
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 ---
 
@@ -16,10 +16,9 @@ Explore the comprehensive features of **ExcelPintar** through our gallery.
 
 | | |
 |:---:|:---:|
-| ![Landing Page](screenshots/landing_page.png)<br>**Landing Page** | ![Kompetensi Dasar](screenshots/kompetensi_dasar.png)<br>**Kompetensi Dasar** |
-| ![Materi Main](screenshots/materi_main.png)<br>**Materi Utama** | ![Video Tutorial](screenshots/materi_video.png)<br>**Video Tutorial** |
-| ![Latihan Soal](screenshots/latihan_soal.png)<br>**Latihan Soal** | ![Quiz Interaktif](screenshots/quiz.png)<br>**Quiz Interaktif** |
-| ![Profil Pengembang](screenshots/profil_pengembang.png)<br>**Profil Pengembang** | ![Daftar Pustaka](screenshots/daftar_pustaka.png)<br>**Daftar Pustaka** |
+| ![Dashboard](screenshots/Dashboard%20Page.png)<br>**Dashboard / Landing Page** | ![Kompetensi](screenshots/Kompetensi%20Page.png)<br>**Kompetensi Dasar** |
+| ![Materi](screenshots/Materi%20Page.png)<br>**Halaman Materi** | ![Submateri](screenshots/Submateri%20Page.png)<br>**Submateri (HTML Text)** |
+| ![Quiz Intro](screenshots/Quiz%20Intro%20Page.png)<br>**Halaman Quiz** | ![Quiz Result](screenshots/Quiz%20Result%20Popup.png)<br>**Hasil Quiz (Modal)** |
 
 ---
 
@@ -27,18 +26,23 @@ Explore the comprehensive features of **ExcelPintar** through our gallery.
 
 ### 📖 Structured Learning
 *   **Modular Content**: Covers everything from basic Excel history to advanced formula functions.
-*   **Visual Learning**: Integrated video tutorials for every major topic.
+*   **HTML-first Content**: All learning materials converted from images to native HTML text — perfectly readable on any screen size.
 *   **Competency Based**: Aligned with official educational standards (KD 3.4 & 4.4).
 
 ### ✍️ Interactive Practice
 *   **Real-time Feedback**: Get instant results on practice questions.
-*   **Adaptive Learning**: Progressive difficulty levels from basic to advanced.
+*   **Scrollable Tabs**: Mobile-friendly horizontal tab navigation across all sub-pages.
 *   **Excel Simulation**: Guidance on workbook formatting and function implementation.
 
 ### 🧪 Assessment & Evaluation
-*   **Smart Quiz**: Automated scoring for multiple-choice and essay questions.
-*   **Results Tracking**: Downloadable evaluation summaries for performance review.
+*   **Smart Quiz**: Automated scoring for multiple-choice questions.
+*   **Score Modal**: Instant score popup with pass/fail feedback after quiz completion.
 *   **Interactive UI**: Smooth animations and intuitive navigation for better engagement.
+
+### 📱 Mobile-First Design
+*   **Samsung OneUI Inspired**: Clean card-based layout with green accent color (`#01723A`).
+*   **Bottom Navigation Bar**: Fixed bottom navbar on mobile devices for easy thumb access.
+*   **Responsive Grid**: All content adapts seamlessly from mobile to desktop.
 
 ---
 
@@ -46,16 +50,10 @@ Explore the comprehensive features of **ExcelPintar** through our gallery.
 
 ### Core Technologies
 *   **Structure**: HTML5 (Semantic Elements)
-*   **Styling**: CSS3, Bootstrap 4.5, Animate.css
+*   **Styling**: CSS3, Bootstrap 5, Custom OneUI CSS (`assets/css/oneui.css`)
 *   **Logic**: JavaScript (Vanilla), jQuery
-*   **Backend**: PHP (Form Handling)
-*   **Database**: MySQL
-
-### Libraries & Assets
 *   **Typography**: Google Fonts (Poppins)
-*   **Icons**: Font Awesome
-*   **Components**: Owl Carousel (Sliders), Isotope (Filtering)
-*   **Build Tool**: Prepros
+*   **Icons**: Font Awesome 5
 
 ---
 
@@ -63,15 +61,25 @@ Explore the comprehensive features of **ExcelPintar** through our gallery.
 
 ```bash
 /
-├── assets/                 # Global styles, scripts, and fonts
-├── form/                   # PHP Backend and Database logic
-├── screenshots/            # Documentation images
-├── vendor/                 # Third-party dependencies (Bootstrap, jQuery)
-├── index.html              # Landing Page
-├── kd.html                 # Competency Standards
-├── materi.html             # Learning Modules
-├── latsoal.html            # Practice Exercises
-└── quiz.html               # Assessment Module
+├── assets/
+│   └── css/
+│       └── oneui.css         # Custom OneUI design system
+├── m/                        # Learning material images
+├── screenshots/              # Documentation images
+├── vendor/                   # Third-party dependencies (Bootstrap 5, jQuery)
+├── index.html                # Landing / Dashboard Page
+├── kd.html                   # Competency Standards (KD)
+├── materi.html               # Learning Modules Hub
+├── pendahuluan.html          # Sub-materi: Pengenalan Excel
+├── mulai.html                # Sub-materi: Memulai Excel
+├── format.html               # Sub-materi: Format Workbook
+├── rumus.html                # Sub-materi: Rumus & Fungsi
+├── latsoal.html              # Practice Exercise Menu
+├── mulailatsoal.html         # Practice Exercise Content
+├── quiz.html                 # Quiz Entry Page
+├── mulaiquiz.html            # Interactive Quiz
+├── profilpengembang.html     # Developer Profile
+└── daftarpustaka.html        # References
 ```
 
 ---
@@ -80,10 +88,9 @@ Explore the comprehensive features of **ExcelPintar** through our gallery.
 
 ### Prerequisites
 *   **Web Browser**: Chrome, Firefox, or Edge (Latest recommended)
-*   **Internet Connection**: Required for video playback
-*   **Local Server**: Required if you want to use PHP/MySQL features (XAMPP/WAMP)
+*   **No server required**: The app is fully static HTML — just open `index.html`.
 
-### 1. Simple Run (Static Only)
+### Quick Start
 ```bash
 # Clone the repository
 git clone https://github.com/widifirmaan/javascript-excel-pintar-media-pembelajaran.git
@@ -91,15 +98,10 @@ git clone https://github.com/widifirmaan/javascript-excel-pintar-media-pembelaja
 # Navigate to directory
 cd javascript-excel-pintar-media-pembelajaran
 
-# Open index.html in your browser
-```
-
-### 2. Full Setup (Including Backend)
-```bash
-# Move to your local server (htdocs/www)
-# Import the provided SQL dump to your MySQL database
-# Update database config in form/global/config.php
-# Access via http://localhost/javascript-excel-pintar-media-pembelajaran
+# Open in browser
+xdg-open index.html   # Linux
+open index.html        # macOS
+start index.html       # Windows
 ```
 
 ---
@@ -127,4 +129,4 @@ This project is developed for educational purposes. Any distribution or commerci
 
 ---
 
-**Developed for a better Excel learning experience**
+**Developed for a better Excel learning experience** 🚀

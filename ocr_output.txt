@@ -1,0 +1,2034 @@
+--- a (1).png ---
+Microsoft Excel adalah General Purpose Electronic Spreadsheet yang dapat digunakan untuk mengorganisasi,
+menghitung menyediakan, maupun menganalisis data-data dan mempresentasikannya ke grafik
+atau diagram. Kemudahan lain yang diperoleh dari program ini adalah terintegrasinya program
+
+H Excel Microsoft Excel dengan program aplikasi windows yang lain,Saat anda membuka Microsoft
+
+Excel, maka sebuah buku kerja (Workbook) siap digunakan yang di dalamnya terdapat bebeapa
+
+lembar kerja (worksheet).
+
+Lembar keja dalam Microsoft Excel dalam satu sheet terdiri dari 256 kolom (columns) dan 65536 baris
+(rows).Kolom ditampilkan dalam tanda huruf A, B, C dan berakhir pada kolom IV. Sedangkan baris dilambangkan dalam
+bentuk angka 1, 2, 3 dan berakhir pada 65536. Perpotongan antara baris dan kolom disebut sel (cell), misal, pada
+perpotongan kolom B dengan baris ke 5 disebut sel B5. Dan sel yang bergaris tebal menandakan bahwa sel tersebut dalam
+keadaan aktif.
+-------------------
+--- a (10).png ---
+Cancel | {- Enter
+
+Name Box ——fie 2 - x ov fe -sumi| ~aj— Formula Bar
+
+A B La D E
+
+Active Cell {2 |=sum/( ]
+
+5
+
+1) Tombol cancel digunakan untuk membatalkan pengisian sel melalui formula bar.
+2) Tombol enter digunakan untuk memasukkan teks atau formula pada sel yang ditentukan sebelumnya.
+3) Tombol insert function digunakan untuk menyisipkan fungsi tertentu ke dalam sel.
+
+g. Kolom
+
+Kolom merupakan baris lajur yang berisi abjad a sampai IV (256 kolom, kolom maksimal).
+
+h. Baris
+
+Baris berisi angka 1 sampai 65. 536 (jumlah baris maksimal), berisi angka 1 sampai 65.536(jumlah baris maksimal).
+
+i. Scroll bar
+Scroll bar merupakan bar penggulung yang dibedakan menjadi dua, iya itu vertical scroll bar dan horizontal scroll
+bar. 1) vertical scroll bar berfungsi untuk menggulung dokumen ke atas atau ke bawah. 2) horizontal scroll bar digunakan
+untuk menggulung layar ke kiri dan ke kanan.
+j. Tombol navigasi sheet
+
+Tombol navigasi sheet adalah tombol yang digunakan untuk berpindah dari satu set ke set yang lain.
+
+k. Baris status
+
+Baris status adalah baris yang berisi keterangan yang menunjukkan lembar kerja yang saat itu digunakan/
+dikerjakan.
+1. Zoom
+
+Zoom merupakan tombol untuk mengatur penampilan layar, mengecilkan dan membesarkan lembar kerja dalam
+
+layar.
+-------------------
+--- a (11).png ---
+a. Menyimpan lembar kerja
+Lembar kerja Excel yang sudah jadi perlu diamankan agar tidak hilang, yaitu dengan cara disimpan ke hardisk
+atau CD terlebih dahulu. Lembar kerja yang terdapat dalam sebuah workbook akan disimpan dalam file Excel. Cara
+menyimpan workbook dengan menggunakan ikon adalah sebagai berikut
+1) Klik ikon pada guick access toolbar.
+2) Setelah masuk ke kotak dialog save as, masukkan pilihan folder untuk menyimpan lembar kerja di dalam kotak
+pilihan save in.
+3) Isikan nama file sesuai dengan keinginan di kotak isian file name dengan cara menghapus dulu nama file default
+Excel. Sebagai contoh, apabila anda akan mengganti nama file menjadi daftar nilai, maka yang harus dilakukan
+
+adalah menghapus "book1", kemudian ketikan" daftar nilai".
+
+Aa My Palettes
+S Nl Flefole
+-ndBlaster (E tugasku Updater
+
+)
+QB ov RW Dive |
+= Removable Die
+
+i Network ‘WebCam Media “BD Wondershare fp Wondershare Filmore 9
+© Recycle in a
+= aed AOSNETWoRK AN cnet (AN ALAMATINEGARA
+Filename: EEE) 5
+
+saves ype [cl Wothook
+
+Authors: USER Tags: Add a tag Title: Add a title Subject: Specify the subject
+
+(FI Save Thumbnail
+
+2 se oles ts 3 =|
+
+4) Apabila menginginkan file simpanan Anda dapat dibuka kembali pada aplikasi Excel, selain 2007, 2010, atau 2013
+(misalnya di Excel 2003), maka gantilah tipe penyimpanan pada kotak pilihan save as type menjadi Excel 97-2003
+workbook.
+
+5) Setelah selesai klik save.
+
+Dari proses penyimpanan tersebut, hasil lembar kerja Excel yang anda simpan memiliki ekstensi xls, berdasarkan
+
+contoh diatas, nama file yang tersimpan menjadi daftar nilai xls.
+-------------------
+--- a (12).png ---
+b. Menyimpan lembar kerja Excel dengan nama baru
+
+Langkah untuk menyimpan lembar kerja Excel dengan nama baru adalah sebagai berikut.
+
+berilah folder
+sebagai tempat
+
+O
+isian file name,
+isikan nama
+file yang baru,
+
+sehingga akan
+tampil kotak
+dialog Save
+
+Klik tombol
+
+—/ untuk —/
+menyimpan
+
+Office button. Na
+
+c. Menyimpan lembar kerja Excel yang pernah disimpan
+
+Lembar kerja lama yang pernah disimpan dapat pula disimpan kembali setelah anda melakukan perubahan-
+perubahan. Proses penyimpanan file dilakukan dengan beberapa cara, diantaranya:
+e Dengan cara mengklik tombol office button, kemudian klik save.
+e Dengan mengklik ikon pada quick access toolbar.
+
+e Dengan menekan tombol ctrl + S di keyboard.
+
+d. Menyimpan lembar kerja Excel ke dalam flashdisk
+Selain penyimpanan lembar kerja didalam harddisk, Anda juga dapat menyimpan lembar kerja Excel ke dalam
+flashdisk. Cara penyimpanan lembar kerja Excel dengan menggunakan flash disk adalah sebagai berikut.
+e Klik tombol office button, kemudian klik save as.
+e Pada kotak pilihan save in, pilih removable disk (D: atau E: atau F: dst).
+e Ketikkan nama file lembar kerja Excel yang anda inginkan pada kotak isian file name.
+
+e Apabila sudah selesai, klik tombol save.
+-------------------
+--- a (13).png ---
+e. Membuka kembali lembar kerja Excel
+
+Jika anda ingin membuka kembali lembar kerja Excel yang pernah disimpan di hardisk dengan menggunakan
+ikon, caranya adalah sebagai berikut.
+-------------------
+--- a (14).png ---
+Setelah masuk ke dalam workbook Microsoft Excel, akan tampil lembar kerja (worksheet) yaitu sheet 1, Sheet 2,
+
+Sheet 3.
+Bagian paling dasar dari sebuah dokumen Excel adalah kotak yang menyimpan data dalam excel, kotak ini disebut
+- dengan sel. Setiap sel adalah pertemuan baris (sekuen sel sepanjang baris horizontal) dan kolom (sekuen
+panjang baris vertikal). Baris ditandai dengan nomor dan kolom ditandai dengan huruf. Nomor baris dan
+| huruf kolom yang menandai sel spesifik disebut referensi sel. Sekumpulan kolom dan baris akan
+
+membentuk worksheet yang muncul sebagai sebuah halaman dalam dokumen Excel. Workbook
+
+merupakan kebalikan dari worksheet, yaitu kumpulan dari sebuah atau beberapa worksheet.
+-------------------
+--- a (15).png ---
+Workbook adalah sebuah file yang terdiri atas beberapa lembar kerja yang disebut dengan worksheet dan dan setiap
+worksheet diberi nama dengan sheet. Lembar kerja pertama disebut dengan sheet 1, lembar kerja kedua disebut dengan
+
+sheet 2, dan seterusnya.
+a. Menyimpan workbook kosong
+
+Anda dapat menyimpan workbook kosong dengan cara berikut.
+1) Klik ikon menu kontrol, kemudian klik new.
+2) Klik pilihan blank workbook, kemudian pilih dan klik create.
+3) Workbook baru akan terbuka dengan nama book 2. Anda akan mendapatkan 2 buah workbook, iya itu book dan
+book 2 dan anda dapat bekerja dengan workbook tersebut.
+Di samping cara di atas, anda dapat menggunakan cara klik ikon new pada toolbar standar atau dengan menekan
+
+tombol ctrl+N.
+b. Berpindah workbook dan menutup workbook
+
+Untuk berpindah antara workbook satu dengan workbook yang lain adalah dengan menggunakan tombol
+ctrl+F6 atau dengan mengklik workbook yang diinginkan. Sedangkan untuk menutup workbook yang tidak diperlukan
+gunakan tombol ctrl+F4 atau dengan menekan tombol close (x) yang terdapat di pojok kanan atas dari jendela
+
+workbook. Sebaiknya sebelum menutup workbook Anda menyimpan terlebih dahulu hasil pekerjaan Anda tersebut.
+-------------------
+--- a (16).png ---
+Saat pertama kali mengaktifkan Excel 2007, dilayar akan terlihat 3 buah worksheet (buku kerja). Anda dapat
+
+menambah atau mengurangi jumlah worksheet tersebut. Di samping itu, Anda dapat mengubah nama worksheet default.
+
+a. Tampilan worksheet
+
+Dalam bekerja dengan Excel 2007 ini, anda dapat mengubah bentuk tampilan sesuai dengan kebutuhan. Bentuk
+
+tampilan tersebut antara lain sebagai berikut.
+
+1) Tampilan normal. Tampilan normal ini merupakan bentuk tampilan standar (default) dari Excel 2007. Perintah
+untuk mengubah tampilan normal adalah dengan mengklik menu bar view, kemudian klik pilihan normal.
+
+2) Tampilan page break preview. Tampilan ini berfungsi untuk menentukan area pencetakan data pada worksheet
+yang aktif. Perintah yang digunakan adalah klik menu bar view, kemudian klik pilihan page break preview.
+
+3) Menentukan tampilan custom. Dalam keadaan default tampilan worksheet memiliki skala 100%. Anda dapat
+mengubah sesuai kebutuhan. Perintah yang digunakan untuk mengubah tampilan tersebut adalah klik menu view,
+
+kemudian klik pilihan zoom, klik bagian custom, kemudian ketik nilai yang diinginkan dan akhiri dengan klik ok.
+
+Ea ana ae NT Sc aac
+
+|
+vine | Inet” Feseloout Formas Data Ratan. MY 2@c88
+5 Temen 27
+Ph A mn Ha at Bi cenerat | ££ Bmp 2a wz
+aa) N 2 aoeete> ge Z
+
+mate 2) oe | He | > Ae Bl BD % > Data! Conditional Format cel Sort & Find &
+
+7 . pS aa a9 Formatting as Table” Styles~ | [E-IFormat~ | 2 Fier Select »
+
+ipboard Font ligamen al Mumber sunes cals eating
+
+>
+8
+
+- i
+
+Tampilan worksheet memiliki skala 100%.
+
+BERR E Bo oNo Te
+-
+0
+9
+a
+x
+x
+z
+2
+°
+
+MY MI Sheeti “Sheet? “Sheets “#2 Hat im ] >t
+aul Aas or
+Co Fa Fe
+Home Insert Page Layout Formulas Data Reriew | View a05
+Dy Page Break Preview e 3 Bnew window EAspiit 9 XI
+=| Ruler Formula Bar al
+ae A ld Sect la | Ga
+rage ridlines BJ Headings | Zoom 00% Zoom:o save Sutan macros
+Layout BO Ful Screen We SU Selection | El Freeze Panes ~ (MUnhide Bid Workspace Windows~| >
+
+Workbook Views show Zoom Window
+
++ k
+
+2
+
+E F G H 1
+
+ZOOM CUSTOM VIEW
+
+BRB lg el @ TT
+o
+°
+°
+
+rey
+15
+
+Wo? bi] Sheeti | Sheet2 « Sheet: #2
+Ready |
+-------------------
+--- a (17).png ---
+b. Pengelolaan sheet
+
+Pekerjaan pengolahan data dalam sebuah sheet seringkali menambahkan, mengurangi, memilih, mengaktifkan
+sheet maupun mengganti nama. Semua proses tersebut dapat dilakukan dengan cara klik kanan mouse pada salah satu
+nama sheet, kemudian pada layar akan terlihat menu layar akan terlihat menu shortcut yang berisikan perintah-perintah
+
+berkaitan dengan sheet.
+
+x]
+
+Home | Insert” Pagelayout Formulas Data Review — View ie x
+
+B ha Jain Ta Tara =e» General | BB ee a ay A
+ree g |B BEN Bie] Hv ana Sot See S| aroma | 2 A8 na
+Cipbosra rent a Me enno In sores cats eating
+AL bd &
+— Telolet fF | 6 |") 1) 7 | « ] oo
+3
+a
+5
+6 Insert.
+7 BR one
+; bango PENGELOLAAN SHEET
+2 ae
+10 @ View Code
+Ha la Protect Sheet.
+7 Tao color
+FE wise
+“
+5 ‘Select All Sheets Na
+ica i] Sheek] Shoe Senos mal . [>
+Ready | | 0 OS |}
+Keterangan:
+Insert : untuk menyisipkan sheet baru
+Delete : untuk menghapus sheet
+Move or copy : untuk memindahkan atau mengcopy sheet
+View kode : untuk melihat kode-kode sheet
+Protect sheet : untuk membuat password/ memprotect sheet
+Hide / unhide : untuk menyembunyikan/ menampakan sheet
+
+Select alla sheet untuk memilih dan mengaktifkan sheet secara keseluruhan
+-------------------
+--- a (18).png ---
+Setiap lembar kerja / sheet terbagi menjadi beberapa kolom dan baris, dimana kolom dimulai dari A sampai
+kolom IV dengan jumlah kolom nya ada 256 kolom dan baris dimulai dari 1 sampai 65536. Dari tampilan tersebut
+muncul istilah sel dan range.
+
+Cells atau sel merupakan perpotongan antara baris dan kolom. Sel memiliki bentuk yang dapat diubah-ubah
+dengan cara pengetikan langsung atau dengan menggunakan tombol F4 pada F key. Macam bentukan sel tersebut
+
+sebagai berikut.
+
+a. Sel normal
+
+yaitu sel yang tidak terkunci, baik baris maupun kolom nya, misalnya F4.
+
+b. Sel absolut kolom
+
+yaitu sel yang terkunci pada bagian kolomnya saja, misalnya $F4.
+
+c. Sel absolut baris
+
+yaitu sel yang terkunci pada bagian barisnya saja, misalnya F$4.
+
+d. Sel absolut
+
+yaitu sel yang terkunci pada kedua bagian, kolom dan baris, misalnya $F$4.
+
+e. Range
+Merupakan kumpulan dari beberapa sel yang terblok. Reng dapat dibentuk oleh sel-sel yang berada dalam satu
+kolom atau sel-sel yang berada dalam satu baris, bahkan gabungan dari sel-sel dalam kolom dan sel-sel dalam baris.
+Alamat dari Riung ini dapat diambil dari awal alamat sel dan akhir alamat sel. Misalnya range B3: B10 merupakan
+
+kumpulan dari sel B3 hingga sel B10.
+
+Glaser — Book! Microsoft Excel = (ot)
+one MN aan TT ee @-05
+(PYF tawa Hn Ta |General eine 2 Ar ay
+Ba- ai eter ge Z
+past
+
+Ia
+
+ate Br | Bie |
+gy Ea
+cipooara rant
+B3
+A
+
+Del
+FP Sort & Find &
+Format Tabi [EiFormat + | 2s Filter Seled -
+Number Styles Cells Editing
+
+&
+°
+°
+a
+x=
+~
+P
+=
+z
+°
+
+MEMBUAT RANGE DALAM KUMPULAN SEL
+
+11
+12
+13
+14
+
+15
+HA N| Sheeti | Sheet2 « Sheet3 “#2 inka m Lon
+SEA (FOD 100% (>) O ra
+
+Berikut adalah langkah untuk membuat range dalam kumpulan sel adalah sebagai berikut.
+-------------------
+--- a (19).png ---
+. Membuat range dengan menggunakan tombol shift
+
+Caranya tempatkan penunjuk sel awal range/bagian awal sel yang ingin di blok, yaitu B3. Sambil menekan
+shift, tekan tombol anak panah sampai sel tujuan, yaitu B10.
+. Membuat range dengan menggunakan mouse
+
+Caranya klik sel yang merupakan sel awal range, yaitu B3. Klik sel yang merupakan sel awal range, yaitu B3.
+Pointer/ penunjuk mouse harus berada dalam keadaan tanda plus warna putih dalam keadaan tanda plus warna putih (
+tunjuk ke dalam sel, bukan tepi sel). Sambil tetap menekan klik kiri mouse, sambil tetap menekan klik kiri mouse,
+gerakan mouse ( drag ) ke sel tujuan yaitu sel B 10.
+Membuat kolom atau baris
+
+Suatu kolom atau baris dapat disorot dengan mengklik huruf kolom atau nomor baris yang anda inginkan.
+
+Misalnya, cukup klik huruf kolom B jika ingin menyorot seluruh kolom B.
+
+. Menyorot sederetan kolom atau baris
+
+Untuk menyorot sederetan kolom (misalnya A,B,C) atau sederetan baris ( misalnya 3,4,5) dapat dilakukan
+dengan mengikuti langkah klik pada huruf kolom atau pada nomor baris awal (dicontoh ini adalah A. Sambil tetap
+menekan tombol mouse kiri, geser lah (drag) pointer (penunjuk) mau singgah menyorot seluruh baris itu (dicontoh ini
+
+adalah c ).
+-------------------
+--- a (2).png ---
+Bidang Akuntansi ——
+
+« Contoh dari penggunaan program Microsoft Excel dalam bidang
+akuntansi adalah menghitung jumlah rugi/laba suatu perusahaan,
+mencari besarnya keuntungan selama satu tahun, menghitung gaji
+karyawan, dan sebagainya.
+
+Kalkulasi Matematis
+
+¢ Kalkulasi matematis digunakan untuk mencari data dari hasil
+penjumlahan, pengurangan, perkalian, dan pembagian, serta
+berbagai variasinya.
+
+Pengelolaan Data
+
+“ Penggunaan pengelolaan data yaitu untuk pengelolaan data base
+statistik, mencari nilai tengah, rata-rata, dan pencarian nilai
+maksimum serta nilai minimum sebuah data.
+
+Operasi Tabel
+
+“ Dengan jumlah baris pada Microsoft Excel yang mencapai
+1.084.576 dan jumlah kolom16.384, maka tidak akan merasa
+kesulitan apabila melakukan input data yang membutuhkan jumlah
+kolom dan baris yang sangat banyak.
+-------------------
+--- a (20).png ---
+Sebelum melakukan entri data pada suatu sel, terlebih dahulu menempatkan pointer pada alamat sel yang akan diisi
+
+data. Setelah itu, Anda dapat mengatur format pada data tersebut.
+
+a. Memindahkan pointer
+Pointer atau disebut juga dengan kursor berfungsi untuk menentukan tempat di mana anda sedang berada. Anda
+dapat menggunakan mouse atau keyboard untuk memindahkan pointer ini. Menggunakan mouse dengan cara klik
+alamat yang diinginkan. Apabila alamat sel tidak terlihat di layar, anda dapat menggunakan penggulung layar
+
+vertikal maupun horizontal.
+
+b. Bentuk kursor
+Untuk mengetikkan data yang akan diolah, anda dapat menggunakan fasilitas mouse maupun keyboard. Hanya saja
+pada saat Anda akan mengolah data, harus benar-benar memahami sel mana yang akan diolah. Anda harus tepat
+dalam menempatkan kursor pada sel, baru kemudian memberikan perintah-perintah untuk pengolahan. Microsoft
+
+Excel memiliki beberapa bentuk kursor yang dapat digunakan untuk menjalankan perintah-perintah.
+
+a eee Bentuk
+
+Di tengah-tengah cell Memblok, memilih daerah
+yang sedang dipilih yang akan dialah
+
+Sebelah kanan-bawah Menyalin blak cell
+cell yang sedang dipilih ke cell yang dilaluinya
+
+Di tepi garis batas cell Memindahkan blok celi ke celi
+yang sedang dipilih yang dituju mouse
+
+c. Mengidentifikasi dan memasukkan jenis data
+Kelebihan dari Microsoft Excel selain untuk pengolah angka ( misalnya pengurangan, penjumlahan, pembagian)
+dapat pula digunakan untuk presentasi angka yang disisipi teks, grafik, gambar-gambar ar-rum dan diagram.
+Sebelum pembahasan lebih jauh, terlebih dahulu Anda harus mengetahui jenis data yang hendak diolah dalam
+Microsoft Excel. Dalam Microsoft Excel terdapat dua jenis data sebagai berikut.
+1. Data label
+Data label adalah data-data berupa teks atau karakter yang tidak akan dilakukan operasi matematika. Data label
+disebut juga data string atau text yang secara default format data ini adalah rata kiri, misalnya huruf-huruf, gabungan
+angka dengan karakter (alfa numerik), seperti nomor polisi kendaraan, dan nomor induk mahasiswa.
+2. Data value
+Data value adalah data data yang berupa angka atau rumus-rumus yang dapat dilakukan operasi matematika.
+
+Data value dibedakan menjadi dua, yaitu sebagai berikut.
+-------------------
+--- a (21).png ---
+a) Numerik
+
+Numerik adalah angka-angka atau bilangan yang akan dilakukan operasi matematika yang secara default format
+
+data ini adalah rata kanan, misalnya: 0,1,2,3,4...
+
+b) Formula
+
+Formula merupakan rumus-rumus yang dibuat, baik menggunakan operasi sel maupun dengan memanfaatkan
+
+fasilitas fungsi. Cara penulisan data dalam bentuk rumus harus diawali dengan tanda= (sama dengan). Dalam
+
+membuat rumus yang dituliskan bukan isi datanya melainkan alamat selnya.
+
+da
+
+SUM ~ X w fx =SUM(B2,C2)
+
+A B Cc
+
+1 Source of Leads .November Leads December Leads , Total Leads
+asi -SUMI/ 82, C2)
+
+2 |BlogPost1 | 101
+3 Blog Post 2 4
+4 Blog Post 3 11
+5 Blog Post 4 2
+6 Blog Post S 12
+7 Blog Post 6 6
+8 Blog Post 7 8
+9 Blog Post 8 17
+10 Blog Post 9 3
+11 Blog Post 10 8
+41
+Tvpe Text Type Numeric
+
+12)
+7
+8
+
+19
+
+11
+8
+
+19
+6
+
+14
+
+Twpe Formula
+
+Pada dasarnya untuk memasukkan data dilakukan dengan mengisikan pada setiap sel untuk suatu data yang akan
+
+diolah, kecuali jika data tersebut berupa data label dapat saja mengetikkan langsung dengan melewati batas dari setiap sel.
+
+Namun, jika suatu data yang akan kita buat berupa data yang akan diolah ah (data value) maka pengetikannya harus
+
+dilakukan dengan mengisikan setiap data pada setiap sel yang berbeda.
+
+Untuk memudahkan dan mempercepat pengetikan data veluwe, sebaiknya lakukan pengetikan bilangan melalui
+
+tombol kalkulator yang terdapat pada bagian kanan keyboard dengan mengaktifkan terlebih dahulu tombol numlock.
+
+d. Memasukkan data berupa angka ( number )
+
+Perintah ini digunakan untuk mengatur format tampilan data numerik ataupun data tanggal, misalnya memberi
+
+angka desimal, memformat mata uang, dan lain-lain. Data angka dapat dimasukkan dengan mengetikkan angka pada
+
+2025
+
+U5 94 One: sel yang sedang aktif. Penulisan tersebut harus memperhatikan format penulisannya. Angka
+1G
+
+yang diperbolehkan adalah angka numerik, yaitu angka 0 sampai 9. Penulisan angka
+
+FA pecahan harus menggunakan 0,(nol koma), misalnya angka dituliskan kan 0,7.
+if 1 AGS
+-------------------
+--- a (22).png ---
+Penulisan data angka dalam kehidupan sehari-hari umumnya dipisahkan dengan tanda titik Untuk membedakan
+ribuan, jutaan, miliaran, dan seterusnya. Hal tersebut berbeda dengan format penulisan Excel yang secara default tidak
+menggunakan titik untuk membedakan ribuan, jutaan, miliaran, dan seterusnya.
+
+Misalnya jika ingin menuliskan 1.000.000.000 maka penulisan data di Excel adalah 1000000000, jika penulisan
+salah, misalnya digunakan titik sebagai pemisah maka program excel akan membacanya sebagai karakter biasa dan
+
+bukan sebagai pemisah sehingga angka yang kita masukkan menjadi salah. Untuk lebih jelasnya perhatikan tabel
+berikut.
+
+A B c po Pe Fr
+1 DAFTAR PESANAN
+
+2 GROSIR BERAS & SEMBAKO
+
+3
+
+4 NO NAMA BARANG BANYAKNYA| HARGA | JUMLAH HARGA
+
+5 1 |BERAS PANDAN WANGI 50 20000
+
+6 2 |MINYAK KELAPA CURAH 40 15000
+
+7 3 ITERIGU CAKRA KEMBAR 60 25000
+
+8 TOTAL
+
+3
+
+Pada tabel diatas, kolom jumlah harga dan baris total diisi menggunakan rumus. Untuk menuliskan kolom yang
+lain cukup ketikan langsung (tanpa Rp. Titik, atau koma). Untuk menuliskan data angka secara otomatis dapat
+dilakukan format.
+
+a) Memformat mata uang
+Caranya adalah block kolom harga satuan, kemudian klik tab menu home pilih format Cell, pilih tab number,
+kemudian accounting dan atur format desimal pada listbox decimal places. Pilih Rp Indonesia pada combo symbol,
+
+perhatikan tampilan gambar.
+
+j MR Ani -
+Home | Insert Page Layout Formulas Data” Review View “d5
+
+B bo cation Bulnsert =~
+ae
+
+,
+ae Br He Da gl Se
+
+“Currency formats are used for general monetary values. Use Accounting formats to align decimal
+points in a column.
+
+Clipboard Font 5 Alignment 5 (Number eatogonenta lasiontas InBocdera migas iGgotecton,
+Ds - fe | 20000 ‘Category: ,
+Al | [ceneral a] sample -
+1 DAFTAR PESANAN accountng » : =
+2 mRRASIR.BERAS.2.SYP/IBAKO UI (me |
+3 Percentage
+Fraction |
+4 NO NAMA BARANG — (BANYAKNYAJ HARGA [JUMIaH HARGA | /Scentic
+: |
+1 |peRAS PANDAN WANGI 50 20000) ‘special |
+2 (MINYAK KELAPA CURAH 40 15009| ase |
+3 Jrericucarra kemBaR | 60 25000| |
+8 TOTAL |
+9
+|
+10 i
+|
+|
+|
+|
+|
+
+i Cy Sheeti “sheet? “Sheat3 | Sheeta «F3 ee ne,
+Ready |
+-------------------
+--- a (23).png ---
+b) Memasukkan data berupa teks
+Untuk memasukkan data yang berupa label (alfa numerik), Anda tinggal mengetikkan teks ke dalam sel. Namun
+perlu diketahui bahwa penulisan data label ini penulisannya akan melewati batas sel. Untuk mengatur data tersebut
+perlu dilakukan format sel. Perintah ini hampir sama pada program MS word, yaitu berfungsi untuk mengatur
+format font/huruf. Jenis font standar pada Excel adalah arial dengan ukuran 10. Namun demikian, Anda dapat
+
+mengganti sesuai dengan kebutuhan. Untuk lebih jelasnya perhatikan gambar berikut.
+
+Kid 9: Gal oF Balls Bookl - Microsoft Excel
+Home | Inset’ FogeLaout —Fomuas Data” Rerew View
+5 = Insert» x
+BA cate Ta TAK Se lemagi Al 5 kabinet 2 A
+oy —___ ii
+
+Paste Blu. - ~Ae
+att 7 ua SA
+Gipboard 5 Font d Alignment
+
+Number | alignment |/ Font” | order [Fil | Protection
+
+En "|
+
+os - Tel 20000 |
+A 8 c E
+
+1 DAFTAR PESANAN
+
+2 GROSIR BAKO
+
+3
+
+a4 NO NAMA BARANG BANYAKNYA| HARGA | JUMLAH HARGA
+
+Pi suersarpt AaBbCcYyZz
+
+1 (BERAS PANDAN WANGI 20000}
+2 (MINYAK KELAPA CURAH 20 JP 5000|
+3 Irericucakna xempan |g |L_2s000)
+8 TOTAL
+3
+
+This is a TrueType font. The same font wil be used on both your printer and your screen,
+
+14
+
+15
+M4 NI Sheeti , Sheet2  Sheet3 | Sheet4 TJ
+Ready |
+
+Cox Joe)
+
+e. Memperbaiki kesalahan pengetikan
+Kesalahan dalam pengetikan data mungkin saja dapat terjadi. Anda dapat merevisi atau memperbaiki data
+tersebut dengan cara mengganti isi sel yang tekniknya adalah syarat sel tersebut, Kemudian ketik kata yang baru, lalu
+tekan enter. Namun, jika anda menginginkan untuk memperbaiki isi sel, caranya adalah pilih sel yang datanya ingin
+diperbaiki, kemudian tekan F2, atau klik tombol kiri mouse dua kali pada sel yang datanya ingin diperbaiki, gunakan
+tombol-tombol berikut untuk membantu dalam memposisikan kursor (panah pada keyboard, home, end,
+
+delete,backspace ) setelah selesai tekan enter.
+
+Apabila membuat kesalahan dalam memberikan suatu perintah, Anda dapat melakukan pembatalan terhadap
+perintah tersebut dengan klik quick access toolbar, kemudian klik undo atau tekan ctrl + z.
+
+Demikian sebaliknya, jika anda akan membatalkan perintah undo gunakan tombol redo atau ctrl + y.
+-------------------
+--- a (24).png ---
+Pengaturan tabel sangat mutlak dilakukan agar tampak rapi dan sesuai dengan data yang ada. Mengubah lebar baris
+atau kolom dimaksudkan untuk menentukan lebar baris/kolom sesuai dengan data yang dimasukkan. Secara default lebar
+
+kolom pada excel adalah 8. 43, sedangkan tinggi barisnya adalah 12. 75.
+
+a. Mengatur lebar kolom atau baris
+Perintah pengaturan lebar kolom maupun baris dalam Excel 2007 dapat dilakukan dalam tab home yaitu dengan
+cara klik tab menu home, kemudian pilih sub menu format, lalu pilih menu yang diinginkan. Lebih jelasnya,
+
+perhatikan gambar berikut.
+
+An ee El — Booki = Microsoft Excel - (| eta
+Home | Insert Page Layout Formulas Data Review View o@o@8
+Cer lA a = fim biner Ee
+bri +R AR General 1 i
+BR. “5 AA ea TA
+Paste BI U-| p- | D- A- a- B- on | GB 528 Conditional Format cell Sort & Find &
+~ ov cB ok a Bo 108 #38 Formatting ~ as Table ~ Styles ~ 2: Fitter setet~
+Clipboard Font Alignment a Styles GES
+Ds - | 20000 40. Row Height, ¥
+TEA
+A 8 c Lo E F G 4 1 AutoFit Row Height M
+1 DAFTAR PESANAN (| column width
+2 GROSIR BERAS & SEMBAKO AutoFit Column Width
+3 Default with
+4 NO NAMA BARANG (BANYAKNYA| HARGA | JUMLAH HARGA kesan)
+Hide & Unhide
+1_|BERAS PANDAN WANGI 50 20000| ses
+2 MINYAK KELAPA CURAH 40 15000| pa ian .
+3_[TERIGU CAKRA KEMBAR 60 25000] Rename snes
+5 TOTAL Move or Copy Sheet.
+5 Tab Color ,
+DH Protection
+1 (Bg Protect Sheet.
+2 @ paca
+23 (SP Format celts
+1
+15 ~
+Mr n| Sheeti  Sheet2 . Sheet3 | Sheet4 F3 aki! Im J >i)
+Ready | Average: 20000 Count:3 Sum: 60000 |(&|(E H]_ 100% (5) ww: (+)
+
+b. Menyisipkan kolom atau baris
+Kadangkala kita perlu untuk menyisipkan baris atau kolom karena saat memasukkan atau mengetikkan data kata,
+ternyata ada data-data yang terlewatkan. Langkah-langkah yang dapat ditempuh dengan cara berikut.
+1) sholatlah sel atau buatlah range tempat sel untuk baris atau kolom baru akan disisipkan.
+
+2) pilih dan klik tab menu home >pilih sub menu cell>pilih insert.
+
+a. Insert cell, untuk menyisipkan sel baru.
+
+b. Insert sheet, row untuk menyisipkan baris baru.
+
+c. Insert sheet, column untuk menyisipkan kolom baru.
+d. Insert, sheet untuk menyisipkan sel baru.
+
+Untuk lebih jelasnya perhatikan contoh berikut ini.
+-------------------
+--- a (25).png ---
+Kid 9: sm Bookd = Microsoft Excel 7. |p eS
+Home | Insert  PageLayout Formulas Data” Review View aQ@-oak
+4 oa 2 | EB Ea 2 Ap gy
+Calibri 12 VA SB General 4
+gy [BU |B |S a | Eee re a Yo? DB | Saing astable~ stnes |e Insertsheet sows ea"
+Clipboard tm Font El Alignment Number ri Styles “ff Insert Sheet Columns.
+pS ha Lea 20000 BBB Insert Sneet ——3
+TE
+A 8 c E F G H 1 3 c M
+1 DAFTAR PESANAN
+2 GROSIR BERAS & SEMBAKO
+3
+4 NO NAMA BARANG BANYAKNYA| HARGA |JUMLAH HARGA
+1 (BERAS PANDAN WANGI 50 20000)
+2 |MINYAK KELAPA CURAH 40 | 15000)
+3 [TERIGU CAKRA KEMBAR 60 | 25000!
+8 TOTAL
+9
+10
+Eri
+12
+13
+14
+15 -
+HT Shesti “Sheet? “Sheet | Sheets « 3 al m KA
+i Average: 20000 Count:3 Sum: 60000 | EL 100% (C)—U—— |
+
+c. Menghapus kolom atau baris
+
+Menghapus baris atau kolom dalam excel dapat dilakukan dengan cara pilih baris atau kolom yang akan dihapus,
+
+misal baris 11 dan 12 titik klik tab menu home, kemudian pilih dan klik delete, kemudian pilih delete sheet rows
+
+(untuk menghapus baris), pilih delete sheet column (untuk menghapus kolom).
+
+Md ~~ Tera ox |
+Hore | Int Page layout Fomuas Data Review View o@oms
+BA am An kk Be ce 7 # Sime 2
+oS ee rare FS ua ott Tema YA
+" g u 4 eT | a S3 | eimatting” as Table~ Siles~ a
+Gippoara ru Font 21 Alignment a Number 21 Styles | pewccrea owe
+# baetesnertCotmns ———
+ae MC BAN BAM Delete Sheet we
+DAFTAR PESANAN
+2 GROSIR BERAS & SEMBAKO
+3
+a NO NAMA BARANG BANYAKNYA| HARGA (JUMLAH HARGA|
+\s[ 1__|BERAS PANDAN WANGI 50 20000| Jl
+6 2 |MINYAK KELAPA CURAH 40 15000!
+7 3__|TERIGU CAKRA KEMBAR 60 25000!
+8 TOTAL
+9
+10
+1
+2
+13
+1a
+15 +
+W 4 > >| Sheeti . Sheet2 . Sheet3 | Sheet4 . 3 Kn m 20 |
+Ready | Average: 6683,665667 Count4 Sum: 20051 | FAN DI Se
+-------------------
+--- a (26).png ---
+a. Merge and center
+
+Perintah ini biasanya digunakan untuk menengahkan judul. Perhatikan contoh berikut.
+
+ie
+
+a ADAT NETT o@c ak
+A ctw uA See BF cone - eo kan vy aA
+aa delete~ | Br
+paste B7 Ur B-| 9- Ar = Hop» | 88338 Conditional Format ce Sort & Find &
+ey Ua | oa Ee ER) SR ce aka Sonata Format cel | itromaty | Gx fat Ente
+Clipboard 6 Font 5 Aignment JG) Merge& Center 5 stytes cells Editing
+A2 - fe GROSIR BERAS & SEMBAKO Sd Merge Across
+{Merge ceils GC a 5 7 Td i a
+Unmerge Cets
+
+1 DAFTAR PESANAN | voer
+
+GROSIR BERAS & SEMBAKO 1
+3
+a| NO NAMA BARANG BANYAKNYA| HARGA | JUMLAH HARGA|
+5 1 (BERAS PANDAN WANGI 50 20000!
+6 2 |MINYAK KELAPA CURAH 40 15000)
+7 3 |TERIGU CAKRA KEMBAR 60 25000)
+8 TOTAL
+9
+10
+1
+2
+13
+14
+15 a
+WA» | Sheeti . Sheet2_. Sheet3 | Sheet4 “ &J mal m J ca
+Ready | fe) 100 S——0——@
+
+b. Alignment
+
+Klik tab menu home,kemudian pililh laucher Alignment hingga muncul kotak dialog sebagai berikut.
+
+do USB Boold - Microsoft Excel Is Io |
+Home | Insert Page layout Formulas Data Review View o@caR
+
+RE & cau sha HAK
+Bar
+
+Se SF cen Sense
+
+a ne Ce
+me la puma ES aa -
+Clipboard "4 Font El Alignment: El iNumber:|' Alignment | Font: Bose eS Protection
+A2 ba Fe | GROSIR BERAS & SEMBAKO ‘Text alignment ‘Orientation “
+Horizontal: =
+1 DAFTAR PESANAN can ee +
+GROSIR BERAS & SEMBAKO ‘Bottom E ba
+3 Justify distributed t
+4 NO NAMA BARANG — (BANYAKNYA| HARGA | JUMLAH HARGAJI | Text control
+5 | 4 (BERAS PANDAN WANGI 50 20000| (Wrap text o
+6| 2 |MINYAK KELAPA CURAH 40 15000)| isting te fit
+7 3 _[TERIGU CAKRA KEMBAR 60 25000) Hi verge cals
+8 TOTAL Right-toreft
+9 Textdirection:
+a Context. IK
+1
+1
+13
+14
+5 -
+M AVI Sheeti “Sheet? “Sheet3 | Sheets « F3 a aoe
+Ready |
+
+c. Border
+
+Border disebut juga bingkai yang berupa garis, biasanya border dapat menggantikan grid lines, gridlands pada saat
+
+dicetak dapat dimunculkan atau tidak tergantung selera pengguna komputer. Untuk membuat border caranya
+
+sebagai berikut.
+1) Sorotlah sel atau buatlah range, tempat yang akan diberi bingkai.
+
+2) klik tab menu home, kemudian pilih sub menu alignment lalu klik tab border, pilihlah salah satu border yang di
+inginkan dan klik ok.
+-------------------
+--- a (27).png ---
+Keterangan:
+
+Kd 9-0 DSB
+
+Bookl - Microsoft Excel Lelo asa)
+Home | Insert Page Layout Formulas Data Review View o@o@k
+Pe oie ie ve Selon cm in
+2 ee
+weg Bin B oa 5B ee a .
+Clipboard tu Font Alignment 2 Number | Alignment (Berger) Lor. | Protection
+A2 7 fk | GROSIR BERAS & SEMBAKO tine pe
+‘Style: =
+None 2
+1 DAFTAR PESANAN
+‘Outline Inside
+GROSIR BERAS & SEMBAKO a
+3 7
+4 NO NAMA BARANG BANYAKNYA| HARGA | JUMLAH HARGI/
+5| 1 (BERAS PANDAN WANGI 50 20000| coor: =| Text =|
+&| 2 (MINYAK KELAPA CURAH 40 15000| c
+‘Automatic Tr 7 .
+7! 3 [TeRIGUCAKRAKEMBAR| 60 25000]
+8 TOTAL fi) I
+2 The selected border style can be angled by cckng the presets, preview diagram or the buttons
+10 above.
+i |
+12
+Bb
+4
+5 -
+H4» »| Sheeti , Sheet2 , Sheet3 | Sheet4 « "J OK Cancel
+Ready |
+
+Pada bagian presets, pilih dan klik salah satu tombol berikut.
+
+a. None, digunakan untuk menghapus garis pembatas dan bingkai.
+
+b. Outline, digunakan untuk membuat bingkai disekeliling sel atau range.
+
+c. Inside, digunakan untuk membuat garis pembatas di dalam range.
+-------------------
+--- a (27b).png ---
+Formula adalah kalkulasi atau prosedur operasi yang dilakukan oleh Microsoft Excel untuk menentukan nilai dalam
+sebuah sel tertentu di worksheet. Formula merupakan hasil pengolahan data dan nilai sel lain yang dikaitkan dengan rumus
+tertentu (penjumlahan, pengurangan, perkalian, logaritma, eksponensial, dan lain-lain). Formula
+
+merupakan inti dari Excel. Pada program excel, formula harus didahului oleh tanda samadengan "-".
+
+Jika tidak dimulai dengan tanda sama dengan maka XL hanya akan menganggapnya sebagai data biasa
+(sebagai karakter biasa berupa numerik, alfabetik, atau kombinasi keduanya) untuk mengerti cara
+
+bekerja dengan formula, pelajari dengan baik uraian materi berikut.
+
+1. Memasukkan formula kalkulasi
+
+Untuk membuat formula, Excel mampu mengolah nilai sebuah sel sebagai variabel dengan menggunakan operator
+matematika, seperti penambahan (+), pengurangan (-), perkalian (*), dan pembagian (/). Formula selain dapat mengolah
+langsung data-data dengan menggunakan tanda-tanda operator matematika diatas juga dapat mengolah data dengan
+
+menggunakan sebuah fungsi (fx Function) fungsi adalah sebuah kata yang memiliki makna tertentu atau istilah Inggrisnya
+-------------------
+--- a (28).png ---
+reserved. Contoh sebuah fungsi adalah sum (penjumlahan seluruh angka dalam sel atau range), COUNT (menghitung
+
+jumlah sel yang mengandung), AVERAGE (menghitung rata-rata), LOG (menghitung nilai logaritma), LN (menghitung
+
+nilai logaritmix natural),EXP (lawannya LN), dan lain-lain.
+
+1)
+
+2)
+
+3)
+
+4)
+
+(+) - Penjumlahan
+(-) ~ Pengurangan COUNT
+(*) ~ Perkalian AVERAGE
+(/) ~ Pembagian LOG
+Melakukan perhitungan
+
+Berbagai jenis operator
+Program excel memiliki 4 jenis operasi yang berbeda yaitu aritmatika, perbandingan, penggabungan teks, dan
+acuan.
+Operasi aritmatika
+Operasi aritmatika ini digunakan untuk membentuk operasi-operasi dasar, seperti penambahan, pengurangan,
+pembagian, perkalian, eksponensial, persentase dan penggabungan bilangan.
+Operasi perbandingan
+Operasi perbandingan digunakan untuk membandingkan dua buah nilai. Hasil perbandingan tersebut berupa
+nilai logika yaitu true and false.
+Penggabungan teks
+Operasi penggabungan teks digunakan untuk menggabungkan dua kata yang bertipe teks (strings). Operasi
+penggabungan teks memungkinkan kita menggabungkan dua teks dari dua kolom yang berbeda ke dalam satu kolom.
+Operator penggabungan teks menggunakan text symbol amper and (&). Jika digunakan dalam rumus adalah-A1&B1
+Operator acuan
+Operator acuan berfungsi untuk menggabungkan selang sel yang terlibat dalam perhitungan titik Excel
+
+mempunyai 3 buah operator acuan, yaitu titik dua (:), koma(,),dan spasi
+
+Operator jangkauan
+
+menghasilkan satu acuan dari
+Titik Dua (:) A2:A12
+sel diantara dua acuan termasuk
+
+kedua acuan tersebut
+
+Operator penyatuan
+menggabungkan banyak
+
+Koma (,) an SUM(B5:B15,D5:D5)
+acuaun-acuan menjadi satu
+
+acuan
+-------------------
+--- a (29).png ---
+(Spasi)
+
+Operator perpotongan mengacu
+kepada sel yang menjadi
+
+perpotongan antara dua acuan
+
+b. Mengatur operasi di rumus Excel
+
+Excel memiliki tingkatan operasi yang lebih didahulukan operasinya, jika kita menggunakan beberapa operasi
+
+dalam satu rumus. Excel akan melakukan operasi terlebih dahulu pada operator yang tingkatannya lebih tinggi.
+
+Tingkatan operasi tersebut adalah sebagai berikut.
+
+Titik dua (:), spasi tunggal () | Operator Acuan
+
+koma (,)
+
+- Tanda Negatif
+
+Io Persentase
+
+A Pemangkatan
+
+* dan | Perkalian dan Pembagian
+
++ dan - Penambahan dan Pengurangan
+& Menggabungkan dua string
+=<><=>=<> Perbandingan
+
+c. Menggunakan tanda kurung
+
+Tanda kurung ini digunakan untuk memberitahukan kepada Excel bahwa urutan penghitungannya harus
+
+mendahulukan bilangan-bilangan atau operasi yang berada di dalam kurung terlebih dahulu baru kemudian operasi
+
+yang lain.
+
+d. Menggunakan acuan
+
+Acuan mengidentifikasi sebuah sel atau kumpulan sel dari sebuah lembaran kerja dan mengatakan kepada operator
+
+di mana mencari nilai-nilai atau data yang digunakan dalam rumus.
+
+(B7:D7 C6:C9)
+
+Sel dikolom C baris 9 C9
+Selang sel dikolom C Baris 5 sampai 20 C5:C20
+Selang sel dibaris 5 dan kolom A sampai D A5:D5
+Semua sel dibaris 5 5:5
+Semua sel dibaris 5 sampai 10 5:10
+Semua sel dikolom L L:L
+Semua sel dikolom L sampai dengan K L:K
+Selang Sel dikolom A sampai C dan Baris 5 AS:C10
+sampai 10
+-------------------
+--- a (2b).png ---
+2. Kelebihan Microsoft Excel
+
+1) Bentuk tampilannya yang mudah dikenali dan dijalankan
+2) Memiliki fitur untuk membuat grafik data
+3) Kemampuan penyimpanan datanya cukup besar
+
+4) Cukup mudah dioperasikan dengan menggunakan rumus dan logika dalam Excel
+3. Istilah penting di Microsoft Excel
+
+Berikut ini ada beberapa istilah yang harus diketahui lebih dulu :
+1) Cell : Potongan Kolom dan Baris
+
+2) Range : Gabungan beberapa cell
+
+3) Column : Kolom lembar kerja excel
+
+4) Row : Baris dari lembar kerja excel
+-------------------
+--- a (3).png ---
+1) Menu Bar
+
+Pada Microsoft Excel terdapat delapan menu bar yaitu :
+
+Layout
+
+Status Bar mempunyai dua area utama, yaitu Message pada bagian kiri dan kotak indikator pada bagian kanan. Reg
+
+2) Status Bar
+
+merupakan pertanda bahwa Excel siap menerima perintab sedangkan NUM mengindikasikan bahwa fungsi tombol-tombd
+angka pada bagian keypaddi papan keyboard dalam kondisi aktif.
+3) Tittle Bar
+Title bar merupakan bagian yang berada paling atas lembar Excel Dalam title bar terdapat beberapa komponen,
+
+antara lain:
+
+o Icon ControlMenu.
+
+o Restore, untuk mengatur ukuran layar dalam ukuran yang relatif.
+
+o Move, untuk memindahkan posisi layar jendela ke posisi
+
+o Size, mengatur ukuran layar jendela Excel.
+
+o Minimize, menampilkan jendela Excel ke ukuran mini dalam bentuk icon.
+
+o Maximize, menampilkan jendela Excelke ukuran maksimal' yaitu memnuhi layar.
+
+o Close, untuk keluar dari aplikasi Excel.
+4) Formula Bar
+
+Formula bar berfungsi untuk memasukkan, memperbaiki, dan menampilkan data atau rumus pada sel yang sedang
+
+aktif. Untuk memperbaiki data atau rumus adalah dengan cara mengklik atau menekan tombol F2.
+5) Petunjuk sel (cell Pointer)
+
+Untuk memindahkan penunjuk sel ke posisi yang baru dapat digunakan bantuan mouse maupun keyboard. Dengan
+mouse kita dapat leluasa memindahkan posisi penunjuk sel dengan mengarahkan pointer ke sel yang dituju. Sedangkan
+
+dengan menggunakan keyboard langkah yang ditempuh antara lain:
+-------------------
+--- a (30).png ---
+e. Mengcopy rumus
+
+Agar menghemat energi dan pikiran, Excel memberikan fasilitas copy rumus hal ini memudahkan Anda
+
+menghitung data dalam jumlah yang banyak.
+
+Perhatikan gambar berikut ini:
+
+IF ad KW & =SUM(C6*D6)
+
+1 (Computer hardware Price List
+
+2
+
+3
+
+4 Jumlah
+
+No Nama Barang Harga Satuan
+
+5 Barang Harga
+ef 1 (Monitor 50" Rp6.000.000] 10 ]=sum(ce*D6))
+7 | 2 (Printer deskjet 600 dpi Rp750.000 5
+
+8 3 (CD ROOM 52x Rp300.000 10
+
+9 | 4 |Modem Eksternal 56 kbps Rp700.000 20
+
+10, 5 |SDRAM4GB Rps00.000 15
+
+11
+
+Untuk menuliskan rumus hasil nomor 1 dan seterusnya, tuliskan rumus-rumus hasil nomor 1 dan seterusnya,
+tuliskan rumus-rumus hasil nomor 1 dan seterusnya nya, tuliskan kan rumus pada baris pertama saja (baris 5), kemudian
+copykan ke baris di bawahnya. Caranya adalah klik sel yang akan dikopi, kemudian letakkan pointer pada pojok kanan
+
+bawah sel tersebut dan drag, lalu tarik ke bawah sampai baris akhir (baris 9), perhatikan gambar berikut:
+
+E6 ad & | =SUM(C5*D6)
+A B c Ce oo
+1 (Computer hardware Price List
+2
+3
+4
+5 No Nama Barang Harga Satuan
+fe | 1 (Monitor 50" Rp6.000.000
+7 | 2 (Printer deskjet 600 dpi Rp750.000|
+8| 3 (CD ROOM 52x Rp300.000)
+9 | 4 |Modem Eksternal 56 kbps Rp700.000
+10/ 5 |SD RAM 4 GB Rp800.000)
+
+11
+
+f. Menemukan kesalahan dalam perhitungan
+
+Memasukkan perhitungan dalam sebuah worksheet akan memberikan jawaban berharga untuk pertanyaan tentang
+data anda titik walaupun terdapat kemungkinan selalu benar, namun bagaimanapun juga bisa saja terjadi kesalahan
+dalam formula. Cara untuk mencegah kesalahan adalah dengan an an menandai sel-sel yang digunakan dalam
+
+perhitungan. Proses pengujian perhitungan akan menunjukkan adanya kesalahan yang terjadi. Proses pengujian
+
+Drag dan tarik
+kebawah
+sampai baris
+ke 10
+
+kesalahan sebuah worksheet dalam formula disebut dengan auditing.
+-------------------
+--- a (31).png ---
+| FA Rumus benar tetapi ukuran | Atur lebar kolom atau
+kolom/ baris kurang lebar tingi barisnya
+P #NAME? Salah penulisan rumus atau | Betulkan nama rumusnya
+rumus tidak dikenal
+#N/A Rumus benar, namun tidak ada | Ganti dengan nilai yang
+3 nilai yang tersedia benar
+#DIV/0! Rumus sedang mencoba | Jika nilai pembagi benar
+4 membagi dengan nol —benar 0, maka perlu
+diubah nilainya
+#VALUE! | Rumus berisi type data | Betulkan type datanya
+° (argument) yang salah
+#NULL! 2 nilai yang ditetapkan tidak | Betulkan salah satu nilai
+6 memiliki kesesuaian agar terjadi kesesuaian
+antara keduanya
+#NUM! Angka/ nomor tidak sah untuk | Betulkan nomor tersebut
+7 rumus
+
+g. Jenis fungsi dan formula
+Workbook Microsoft Excel memberi anda tempat yang nyaman untuk menyimpan dan mengolah data, namun anda
+dapat berbuat lebih banyak dengan data dalam excel. Dengan menggunakan fungsi atau formula tertentu, Anda
+dapat mengolah data sehingga menghasilkan output sesuai dengan yang anda inginkan. Dalam excel, perintah-
+perintah yang digunakan untuk mengolah data disimpan dalam sebuah fungsi yang dikelompokkan dalam berbagai
+macam kategori. Adapun jenis kategori fungsi tersebut adalah fungsi aritmatika, fungsi statistik fungsi teks fungsi
+date and Time dan fungsi logika.
+1) fungsi aritmatika
+Fungsi aritmatika merupakan kumpulan fungsi yang berisi perintah-perintah ah untuk mengolah data yang
+berupa numerik (angka), dengan demikian, jika Anda menggunakan fungsi ini untuk mengolah data selain angka, maka
+hasilnya tidak akan seperti yang diharapkan. Beberapa jenis fungsi aritmatika adalah sebagai berikut.
+
+a) SUM, digunakan untuk menampilkan hasil penjumlahan nilai numerik. Nilai numerik dapat diisi langsung dengan
+angka atau dapat juga diisi dengan range data alamat sel yang berisi nilai numerik. Adapun struktur penulisannya
+adalah sebagai berikut = SUM (nilai numerik), perhatikan contoh berikut! Berdasarkan contoh diatas fungsi SUM
+dari D3:G3 adalah menghitung hasil penjumlahan dari sel D3 sampai G3 dengan hasil H3.
+-------------------
+--- a (32).png ---
+H3 " Jk | -SUMID3:G3)
+
+1 NILAI
+NO (NOMOR UJIAN (NAMA PESERTA Jumlah | rata-rata
+2 Pascal |Aligoritma| Jarkom Java
+Bla 13104001 (Naufal 80 R 69 58 279
+a| 2 15104002 (Kiki 50 30 ES 87 252
+5 3 15104003 (Neneng 30 68 30 20 148
+e 4 13104004 (Laila 25 22 67 36 320
+5
+
+b) MOD, digunakan untuk menampilkan sisa hasil bagi dari nilai untuk menampilkan sisa hasil bagi dari nilai untuk
+menampilkan sisa hasil bagi dari nilai numerik. Struktur penulisannya adalah sebagai berikut,- MOD (nilai
+numerik) perhatikan rumus yang terdapat dalam sel C4 (3 adalah hasil sisa bagi dari 15:4) dengan rumus -MOD
+(A4,B4). Untuk melakukan proses copy rumus, tempatkan mouse pointer Banda bonjok alamat sel C4 dan mouse
+
+berbentuk tanda plus, lalu lakukanlah drag ke bawah sampai alamat sel C8.
+
+ca + fe | =MOD(A4;B4)
+
+a | 8 [|e 0 E F
+
+1
+
+2
+
+3 | Bilangan |Pembagi|Hasil MOD
+aj 35 4 3
+
+5 8 3 2
+
+6 12 3 0
+
+7 11 5 1
+
+8 7 2 1
+
+9
+
+c) Round, digunakan untuk membulatkan angka desimal sesuai dengan jumlah digit desimal yang anda inginkan.
+Struktur penulisannya adalah sebagai berikut = Round (nilai desimal, jumlah digit desimal yang ingin dibulatkan
+). Perhatikan rumus penulisan round pada formula box (=Round (A5,0)) maka hasilnya tidak menunjukkan angka
+desimal di belakangnya. Namun jika pada rumus =Round (A5,1), maka angka dibelakang, terdapat satu angka
+
+desimal, dan seterusnya.
+
+2) fungsi statistik
+Fungsi statistik adalah fungsi yang digunakan untuk mengolah data yang berupa numerik (angka) hanya saja
+
+operasi ini dilakukan dengan statistik. Adapun jenis dari fungsi ini adalah sebagai berikut:
+-------------------
+--- a (33).png ---
+MIN
+
+¢ Digunakan untuk menampilkan nilai numerik yang terkecil. Nilai numerik
+dapat diisi langsung dengan angka numerik atau range data alamat sel yang
+berisi angka numerik. Strukturnya adalah sebagai berikut.-MIN (range nilai
+umerik
+
+¢ Digunakan untuk melakukan perintah yang digunakan untuk menampilkan
+numerik terbesar strukturnya adalah sebagai berikut, = MAX (range nilai
+numerik)
+
+AVERAGE
+
+¢ Digunakan untuk menampilkan rata-rata, struktur penulisannya adalah
+sebagai berikut = AVERAGE (range nilai numerik)
+
+COUNT
+
+¢ Digunakan untuk menghitung jumlah sel dalam suatu range atau grup data
+yang ada nilainya. Struktur penulisannya adalah sebagai berikut-COUNT ()
+
+COUNTA
+¢ Digunakan untuk menghitung keseluruhan sel yang ada
+
+D13 NG fe | =COUNT(A2:A11)
+1. NO NAMA JKEL | NILAI |KETUNTASAN
+2 1 (Naufal L 75 |LULUS
+3 2. [Kiki L 70 |TIDAK LULS
+4 3 Neneng Pp 30 LULUS
+5 4 Jtaila P 74 |TIDAK LULUS
+6 5 Ituthfi L 76 |LULUS
+7 6 |Andriani Pp 73 [TIDAK Lutus
+8 7. [Bilgis P 80 |LULUS
+9 8 |Alika Pp 60 |TIDAK LULUS
+10/9 [Marcel Pp 61 |TIDAK Lutus
+11| 10 Jakila L 99 [tutus
+12
+G3 |JUMLAH RANGE 10
+14 (JUMLAH SISWA LULUS
+15 (JUMLAH SISWA TIDAK LULUS
+16 (SISWA LAKI-LAKI LULUS
+17 |SISWA LAI-LAKI TIDAK LULUS
+18 (SISWA PEREMPUAN LULUS
+19 (SISWA PEREMPUAN TIDAK LULUS
+20
+
+Pada contoh di atas, fungsi count digunakan untuk menghitung jumlah sel di dalam sebuah range O12 hingga O22
+yang terisi data. Output yang dihasilkan oleh fungsi tersebut adalah 11 karena semua sel terisi. Jika ada cell yang kosong
+maka fungsi akan menunjukkan jumlah yang berbeda sesuai dengan cell yang terisi.
+
+3) Fungsi Logika
+Fungsi logika merupakan fungsi yang digunakan untuk menguji apakah data yang ada memenuhi kriteria atau bisa
+
+menentukan sendiri dalam pengujiannya. Adapun jenis fungsi ini adalah sebagai berikut.
+-------------------
+--- a (34).png ---
+a) Fungsi IF
+Fungsi IF pada excel akan mengembalikan sebuah nilai kondisi yang dicek benar/salah dan mengembalikan sebuah
+nilai lainnya jika kondisi yang dicek salah/false. Fungsi IF merupakan fungsi yang paling sering digunakan di Excel.
+Pada fungsi dibawah dituliskan bahwa jika nilai rata-rata kurang dari 75 maka tidak lulus dan ketika nilai di atas
+
+rata-rata maka tertulis Lulus. Berikut cara penulisan dan hasil dari fungsi yang digunakan.
+
+xX fe) =IF(G4<75;"TIDAK LULUS"," LULUS")
+
+Cc C |F(logical_test; [value_if_true]; [value_if_false]) H
+Nama Nilail | Nilai2 | Nilai UTs] Nilai Rata-rata | Hasil
+Sendy 80 80 80 | 80 [Lus";"LuLus"
+
+Janu 90 70 70 76,66666667
+Ardi 60 70 80 70
+
+Hasil dari rumus yang ditulis pada gambar di bawah.
+
+fe
+
+c ND E F G H |
+Nama | Nilail | Nilai2 (Nilai UTS |Nilai Rata-rata| — Hasil
+Sendy | 80 80 | 80 80 Po. ws
+Janu | 90 70 | 70 76,66666667 | LULUS
+Ardi | 60 70 | 80 70 | TIDAK LULUS
+
+4) Fungsi Pencarian dan referensi
+Fungsi pencarian dan referensi merupakan fungsi yang digunakan untuk menentukan atau membuat parameter
+dalam mencari suatu data yang ada. Terdapat beberapa fungsi pencarian dan referensi yaitu Vlookup dan Hlookup.
+a) VLOOKUP
+Fungsi rumus Vlookup ialah menampilkan data dari sebuah tabel yang disusun dalam format tegak atau vertikal.
+Syaratnya penyusunan tabel data pada baris pertama harus berdasarkan urutan dari kecil ke besar.
+
+Berikut merupakan contoh pada vlookup yang bisa diterapkan.
+
+x “ fe =VLOOKUP(E5;16:K10;2;FALSE)
+
+c D E F G La | 4 | os K
+
+No. Nama | Nilai Ujian | Huruf | Keterangan =
+
+1 Budi I-YLOOKUPE5:16K10 FALSE) NG ! Nilai Huruf Keterangan |
+
+VLOOKUP(lookup_value; table array: col_index_num; [range_lookup]) E GAGAL
+
+60 D MENGULANG
+73 c CUKUP
+85 B BAIK
+95 A MEMUASKAN
+
+Dan hasil yang didapatkan yaitu,
+-------------------
+--- a (35).png ---
+fe Fungsi VLOOKUP
+
+Nama | Nilai Ujian | Huruf Keterangan |
+
+Budi 60 D MENGULANG Nilai Huruf Keterangan
+0 E GAGAL
+60 D MENGULANG
+73 Cc CUKUP
+85 B BAIK
+95 A MEMUASKAN
+
+b) HLOOKUP
+
+Fungsi rumus Hlookup ialah menampilkan data dari sebuah tabel yang disusun dalam format mendatar. Syaratnya
+
+penyusunan tabel data pada baris pertama harus berdasarkan urutan dari kecil ke besar.
+
+x “ fe =HLOOKUP(E5;J5:N7;2;FALSE)
+Cc D E F G H 1 J K L M N
+No. | Nama | Nilai Ujian | Huruf | Keterangan | i
+1 Budi | =HLOOKUPE 2:FALSE) an Nilai 0 60 73 85 95
+HLOOKUP(lookup value: table array: row index num: (range lookup)) E D Cc B A
+Keterangan | Gagal | Mengulang | Cukup | Baik | Memuaskan |
+
+Dan hasil yang didapatkan yaitu,
+
+fe || Fungsi VLOOKUP
+
+ig D E F G H 1 J K L
+
+M N
+No. | Nama | Nilai Ujian| Huruf | Keterangan
+1 Budi 95 A Memuaskan Nilai 0 60 B 85 95
+Huruf E D Cc B A
+Keterangan | Gagal | Mengulang | Cukup | Baik | Memuaskan
+
+5) fungsi text
+Fungsi text adalah kumpulan fungsi yang berisi perintah-perintah yang digunakan untuk mengolah data yang
+berupa text atau string.Jenis fungsi teks adalah sebagai berikut.
+a) LEFT, digunakan untuk menampilkan sejumlah karakter dari posisi yang paling kiri. Strukturnya adalah - LEFT
+(nilai string, jumlah huruf dari kiri) hasil dari- LEFT (A5,3) adalah Moh, artinya tiga huruf dari kiri, yaitu Moh.
+
+Demikian seterusnya.
+-------------------
+--- a (36).png ---
+B5 " je | =LEFT(A5;3)
+
+1
+
+2
+
+3 PESERTA Fungsi | Fungsi | Fungsi | Fungsi
+4 Left Right MID LEN
+"5 |Naufal Nau fal uf 6
+6 (Kiki Kik iki ki 4
+7 Neneng Nen eng ne 6
+8 Laila Lai ila il 5
+9 (Luthfi Lut hfi th 6
+10 (Andriani And ani dr 8
+11 |Bilgis Bil gis Iq 6
+12 (Alika Ali ika ik 5
+13 Marcel Mar cel rc 6
+14 |Akila Aki ila il 5
+15
+
+b) RIGHT, digunakan untuk menampilkan sejumlah karakter dari posisi paling kanan titik strukturnya adalah sebagai
+
+berikut,=RIGHT (nilai string, jumlah huruf dari kanan), perhatikan contoh berikut!
+
+cs 7 je | =RIGHT(A5;3)
+
+A B fe | D E
+1
+2
+3 PESERTA Fungsi | Fungsi | Fungsi | Fungsi
+4 Left Right MID LEN
+"5 (Naufal Nau fal uf 6
+6 | Kiki Kik iki ki 4
+7 Neneng Nen eng ne 6
+8 Laila Lai ila il 5
+9 (Luthfi Lut hfi th 6
+10 |Andriani And ani dr 8
+11 |Bilgis Bil gis Iq 6
+12 (Alika Ali ika ik 5
+13 Marcel Mar cel rc 6
+14 |Akila Aki ila il 5
+15
+
+c) MID, digunakan untuk menampilkan sejumlah karakter dari posisi tengah. Struktur nya adalah sebagai berikut =
+MID (alamat cell,Posisi huruf dari kiri, jumlah huruf yang ingin ditampilkan dari posisi tersebut) perhatikan contoh
+
+berikut!
+-------------------
+--- a (37).png ---
+D5 7 je | =MID(A5;3;2)
+
+1
+
+2
+
+3 PESERTA Fungsi | Fungsi | Fungsi | Fungsi
+4 Left Right MID LEN
+"5 |Naufal Nau fal 6
+6 (Kiki Kik iki 4
+7 (Neneng Nen eng 6
+8 Laila Lai ila 5
+9 (Luthfi Lut hfi 6
+10 Andriani And ani 8
+11 Bilgis Bil gis 6
+12 (Alika Ali ika 5
+13 Marcel Mar cel 6
+14 (Akila Aki ila 5
+15
+
+1A
+
+d) LEN, digunakan untuk menampilkan jumlah huruf atau karakter dari suatu nilai string. Strukturnya adalah sebagai
+
+berikut= LEN(nilai string) perhatikan contoh berikut.
+
+ES " fe | =LEN(A5)
+
+A B c po fe
+1
+2
+3 TENERTD Fungsi | Fungsi | Fungsi | Fungsi
+4 Left Right MID LEN
+(5 |Naufal Nau fal uf 6
+6 Kiki Kik iki ki 4
+7 Neneng Nen eng ne 6
+8 Laila Lai ila il 3
+9 (Luthfi Lut hfi th 6
+10 Andriani And ani dr 8
+11 |Bilgis Bil gis Iq 6
+12 |Alika Ali ika ik 3
+13 Marcel Mar cel rc 6
+14 |Akila Aki ila il 3
+15
+
+6) Fungsi Date and Time
+Fungsi date and Time adalah sekumpulan fungsi yang berisi perintah-perintah untuk mengolah data yang
+
+mempunyai format tanggal (dd/mm/yy) atau waktu (hh;mm;ss). Beberapa jenis fungsi date and Time adalah sebagai
+berikut.
+a) NOW, digunakan untuk menampilkan tanggal dan waktu saat ini. Cara penulisannya formulanya adalah sebagai
+berikut,- NOW , MenampilkanTanggal dan waktu saat ini.
+b) DAY
+DAY digunakan untuk menampilkan tanggal,-DAY ("08/07/2008"),maka hasilnya 08.
+c) MONTH,
+-------------------
+--- a (38).png ---
+Month digunakan untuk mengetahui dan menampilkan bulan. Contohnya sebagai berikut,-
+
+MONTH( 08/07/2008"), maka hasilnya adalah 07,=MONT (A2) menunjukkan bulan dari sel A2.
+-------------------
+--- a (4).png ---
+Arah (kanan, kiri, atas dan bawah) Pindah satu sel ke kiri, kanan, atas atau
+
+bawah
+Enter Pindah satu sel ke bawah
+Home Pindah ke kolom A pada posisi baris
+yang aktif
+Ctrl Home Pindah ke sel Al pada lembar kerja
+yang aktif
+Ctrl + End Pindah ke posisi sel terakhir yang
+sedang digunakan
+PgUp Pindah satu layer ke atas
+PgDn Pindah satu layer ke bawah
+Alt + PgUp Pindah satu layer ke kiri
+Alt + PgDn Pindah satu layer ke kanan
+Ctrl + PgUp Pindah dari satu tab lembar kerja ke tab
+lembar kerja berikutnya
+Ctrl + PgDn Pindah dari satu tab lembar kerja ke tab
+
+lembar kerja sebelumnya
+
+Jika posisi sel berada di luar tampilan jendela, maka kita dapatmenggunakan fasilitas scroll bar, baik yang vertikal
+
+maupun yang horisontal untuk menjangkau sel yang dimaksud.
+-------------------
+--- a (5).png ---
+Memahami Ribbon adalah hal yang sangat perlu kita lakukan untuk memahami perubahan antara Microsoft 2010
+ke Microsoft 2013. Pada Ribbon tercantum semua informasi dan perintah serta fungsi- fungsi yang dapat kita gunakan
+
+dalam mengelola data dalam microsoft excel 2013.
+
+a
+GTS ome sek SAORLAYOU, MOMS DALM ew
+ot = Ez y & SS Mpatosam - As
+a Data ja | es BetapTet Gear 1 FE Pe ® . 7
+rag oe tm 2
+ele BU: B- = Nego Center» § © &% 9 SE SR Conlions Formals Cel vet Delete Format SM oa Fi
+SS Spowatparte Ben 4 Fomatingy Tahiee Bybee ee ECE Fite Sele
+dlnteare 5 fon: 5 Aliarnent mo Number ste cel ctra
+
+Tab ini yang sering digunakan dalam mengelola data dalam micrososft excel, dalam tab home ini terdapat semua
+informasi tentang teks, tentang format cells, jenis huruf, ukuran huruf, format tabs, memasukan dan menghaspus columns.
+Dalam Tab Home juga cara-cara untuk merubah cells styles memformat table, juga memasukan data secara otomatis,
+
+mengurutkan dan mencari data.
+
+b. Insert
+
+& a
+
+GEM) Home | nsert PAGELAYOUT — F01MULAS DATA REVIEW VIEW
+
+ER @ ABA tam
+
+a + i.
+3 B OT Go Lge wow Dow” Ih I i a
+PivotT: Ra fenced Tabl bone be ka Ra Me tel Li Col Wir/ Sli Tiveli Hyoerlink — Te Heade Of Qsymbo}
+My Apps > People Graph ys
+PivotTables Fictures d4” Swap 5 Pi pi Charts 7 Loss Box & Footer
+
+Tab ini berfungsi untuk segala sesuatu yang perlu kita masukan mulai dari Photo, shape, clipart, grafik, text box
+
+dan lain-lain.
+
+c. Page layout
+
+8 5
+GI Home INSERT | PAGELAYOUT | FORMULAS DATA” REVEW VIEW
++ v C Bian: ie»
+colors RA CG & WW a 3 Bat ‘Automatic fil Gridlines Headings 5 5 Oe Ga
+[Al Fonts~ “ Height Automatic ~ Mview | MI View .
+Themes Margins Orientation See Print Breaks Background Print | 5, =) Sheet Right- Bring Send Selection Align Group Rotate
++ (Defects: SF » + Aeat + Titles PalScale: 100% >| totett Print Print Forward + Backward» Pane +
+Themes Page Setup Ml Sealeto Fit 5 Sheet Options 5 Arrange
+
+Tab ini memiliki perintah untuk menyesuaikan halaman seperti margin, orientasi dan tema.
+
+d. Formula
+
+H & - Book - Excel H-0 x
+FILE HOME INSERT PAGE LAYOUT FORMULAS DATA REVIEW VIEW Sign in
+
+fx > AutoSum - Logical ~ I- 5) BetrecePrecedents FE] =m
+[Bh Recently Used {EV Text ~ IB - cE trace Dependents “pP- CO
+Insert Defined - Watch Calculation
+
+Function IE Financial ~ ID date & Times [I~ Wames~ Remove Arrows » @&) — window Options ~
+
+Tab ini memiliki perintah untuk digunakan saat membuat Rumus. Tab ini memiliki fungsi perpustakaan besar yang
+
+dapat membantu saat membuat rumus atau fungsi dalam spreadsheet Anda.
+-------------------
+--- a (6).png ---
+e. Data
+
+a 5
+IPM Home IseRT— PAGELAYCUT — FORMULAS | DATA REVIEW VIEW
+
+Kanan DB oe sm Yi, DBH SE
+
+3 CE IE EB Data Analysis
+eg “Ge EE
+
+Solver
+
+: From Ctra Exsting Refresh Z| Sort Fier Tatto Flesh Remove Data Consolidate What-F & ps Group Ungrcup Sustota
+(ip tem Tec Comedene ae Diditris Hl YAdvanced Columns Fil Duplicates Validation” Anayss~ voy
+Connedtens SotaFiker Data Tools Outline 5 Analyss
+
+Tab ini memungkinkan Anda untuk memodifikasi lembar kerja dengan sejumlah besar data dengan menyortir dan
+
+penyaringan serta menganalisis dan pengelompokan data.
+
+f. Review
+
+a :
+
+FILE HOME INSERT PAGE LAYOUT. FORMULAS DATA REVIEW VIEW
+
+ABC goa fe 2 F3 Show/Hide Comment | | © Protect and Share Workbook
+Vv Ia EH as UD ka Wa fg
+
+ID Show All Comments EB Allow Users to Edit Ranges
+Spelling Research Thesaurus Translate © New Delete Previous Next yo] Protect Protect Share
+
+Comment Sheet Workbook Workbook EP Track Changes ~
+Proofing Language Comments Changes
+
+Tab ini memungkinkan Anda untuk memperbaiki masalah ejaan dan tata bahasa serta mengatur keamanan. Hal ini
+juga memberikan perubahan trek dan catatan, fitur menyediakan kemampuan untuk membuat catatan untuk dokumen yang
+
+dirubah oleh user lain
+
+g. View
+
+a 5 Book! - Excel
+Gray HOME © INSERT —-PAGELAYOUT — FORMULAS — DATA REVIEW | VIEW
+
+af | | | Ruler [Formula Bar Q (3 ol a F = Sspit View Side by Side fe =
+
+Hide Synchronous Scrolling
+
+Page Break Page Custom (7 rigiines [Vi Headings | Zoom 100% Zoomto New Arrange Freeze . Switch Macros
+Preview Layout Views Selection Window All Panes [_|Unhide Reset Window Position ' Windows +
+Workbook Views Show Zoom Window Macros
+
+Tab ini memungkinkan Anda untuk mengubah tampilan dokumen.
+-------------------
+--- a (7).png ---
+Pada saat memulai Excel 2007 akan muncul sebuah dokumen kosong. Mulai dari sini kita dapat menambahkan
+data, mengubah tampilan data,Meminta Excel meringkas data, atau menemukan informasi dalam sie bantuan Excel.
+Gambar berikut menunjukkan komponen-komponen terpenting Excel 2007 ia itu jendela workbook, ikon menu kontrol,
+guick access toolbar koma-koma formula bar, size button, name box, area spreadsheet, scrollbar, tombol navigasi, nama
+
+sheet, baris status, dan zoom.
+
+Ikon menu Ouick Access
+
+kontrol Toolbar Baris Tab — Formula Bar Size button
+
+dy ao st 5 | Bookt - Merodoft Excel os i
+
+Home | Insert Pagelayout Formulas «Data View @-.3x
+
+Lh cdi Ao | senera Ig Conditionat Formatting - jvinet- £- sy aA
+
+bon RL OAL BEB SB % | Brormtastate- PP dete Be ain
+
+"SF (Blo-A-| eee) aa Bcs Biromat” | 25 per Select
+
+Name Gide. | Fert 5. Alignment Y7|| Number Stytes Cas Editing
+
+Box 2 meal iy
+A a c 2 £ . c " 3 K Lg
+
+Kolom A hingga IV
+
+Area Spreadsheet
+
+—— Baris 1 hingga 65336 Scroll Bar «4
+
+Zoom
+Nama Sheet Baris Status
+
+Tombol
+Navigasi Sheet
+
+a. Ikon menu kontrol
+
+Ikon menu kontrol Excel 2007 sangat berbeda dengan Excel 2003 yang hanya berisi intruksi intruksi untuk
+mengubah posisi jendela titik dalam Excel 2007, isi Perintah-perintah ikon menu kontrol ini akan muncul saat ikon menu
+
+kontrol tersebut diklik, sebagaimana ditampilkan dalam gambar berikut.
+
+Pada Microsoft Excel 2010 dan 2013, ikon menu kontrol ini berubah menjadi tab menu file, tetapi isi dan fungsinya
+
+hampir sama.
+
+1) New, merupakan perintah untuk menampilkan lembar kerja kosong untuk dilakukan pengetikan dokumen baru.
+
+N Untuk memulai pekerjaan pada Microsoft Excel 2007 dilakukan dengan klik pada ikon ini.
+New
+
+2) Open, merupakan perintah untuk membuka dokumen Microsoft Excel 2007 yang
+mz ene telah tersimpan dalam harddisk, CD/ DVD room. USB flash disk, disket, atau media simpan
+
+lain. Open memungkinkan untuk dapat membuka kembali file yang sudah dibuat sebelumnya.
+-------------------
+--- a (8).png ---
+3) Save, merupakan perintah untuk menyimpan file lembar kerja Excel 2007 yang baru dibuat atau diedit, yang
+sebelumnya pernah atau belum pernah tersimpan di dalam hardisk, CD/DVD room, USB flash
+
+[Al ove disk, atau media simpan lainnya.
+4) Save As, tombol ini memiliki fungsi yang sedikit berbeda dengan perintah save. Perintah save as sudah dilengkapi
+
+— dengan fasilitas yang apabila diklik terdiri atas perintah-perintah seperti ditampilkan pada
+Save As OP
+lst mee’ gambar berikut.
+
+Save a copy of the document
+
+New
+Ga Excel Workbook
+SM | Save the file as an Excel Workbook,
+Open
+<a Excel Macro-Enabled Workbook
+Save Save the workbook in the XML-based and
+
+macro-enabled file format,
+be Excel Binary Workbook
+oa Save the workbook ina binary file format
+optimized for fast loading and saving.
+Save As (F12
+Print , Excel 97-2003 Workbook
+7 SM | Save a copy of the workbook that is fully
+
+compatible with Excel 97-2003,
+
+TE NPELUEU
+
+Frepare fx OpenDocument Spreadsheet
+
+Save the workbook inthe Open Document
+
+Format.
+Send r
+
+PDF or XPS
+
+Publish a copy of the workbook as a PDF or
+Publish > XPS file,
+
+==] Other Formats
+
+Open the Save As dialog box to select from
+
+Close all possible file types.
+
+*% Excel workbook, adalah perintah menyimpan dokumen dalam format file default dan Microsoft Excel 2007.
+
+*% Excel macro enabled workbook, adalah perintah untuk menyimpan lembar kerja sebagai sebuah template yang
+dapat digunakan untuk menyimpan lembar kerja ke format lain.
+
+&k Excel binary workbook, yaitu perintah untuk menyimpan lembar kerja ke beberapa format dan diyakini dapat
+diakses dengan mudah.
+
+&k Excel 97-2003 workbook, digunakan untuk menyimpan lembar kerja dalam format yang sangat cocok untuk diedit
+oleh Microsoft Excel 1997 hingga 2003.
+
+&k Find addins for other file formats, perintah ini digunakan untuk mempelajari dari help tentang add-ins untuk
+menyimpan format dokumen ke bentuk lain, misalnya ke format PDF atau xps.
+
+&k Other formats, adalah perintah untuk membuka kotak dialog save as, sehingga kita leluasa memilih untuk
+
+menyimpan dokumen ke tipe file tertentu.
+-------------------
+--- a (9).png ---
+b. Ouick access toolbar
+
+Quick access toolbar letaknya di pojok kanan atas tepatnya di sebelah kiri icon menu kontrol. Setiap tombol dikenali
+
+menurut bentuk-bentuk icon gambar yang masing-masing mewakili perintah tertentu dan berbeda perintah antara tombol
+
+satu dengan tombol lainnya.
+
+c. Baris tab
+
+Lingkungan kerja Excel 2007 sangat berbeda tampilannya dengan Microsoft Excel versi sebelumnya. Perbedaan
+tersebut terletak pada tampilan baris judul pull down menu yang fungsinya berubah menjadi baris judul tab/ baris tab. Pada
+
+setiap tab terdiri atas kumpulan toolbar-toolbar.
+
+d. Size button
+
+Size button digunakan untuk mengatur tampilan lembar kerja. Dalam layar Excel 2007 terdiri dari empat tombol
+
+yaitu sebagai berikut.
+
+1 Minimize
+
+Untuk menutup sementara Ms.Excel
+jendela ditutup dan dikirim ke taskbar
+menjadi sebuah ikon. Untuk
+membuka kembali klik pada ikon di
+taskbar
+
+2 Restore
+
+Mengembalikan jendelal Ms.Excel
+
+ke ukuran smula
+
+3 Maximize
+
+Mengubah ukuran jendela Ms.Excel
+
+menjadi ukuran yang besar
+
+4 Close
+
+Untuk menutup jendela Ms.Excel
+
+e. Name Box
+
+Name box merupakan toolbar yang berisi alamat suatu cell. Toolbar yang berisi alamat suatu cell.
+
+f. Formula bar
+
+Formula bar adalah tempat untuk menuliskan rumus (fungsi)
+-------------------
+--- abcd.jpeg ---
+2. Kelebihan Microsoft
+
+Tampilan
+
++ Bentuk tampilannya yang mudah dikenali dan dijalankan
+
+Fitur
+
+» Memiliki fitur untuk membuat grafik data
+
+Penyimpaan Data
+
++ Kemampuan penyimpanan datanya cukup besar
+
+Operasi Tabel
+
+» Cukup mudah dioperasikan dengan menggunakan rumus dan logika
+dalam Exel
+
+3. Istilah penting di Microsoft Excel
+Berikut ini ada beberapa istilah yang harus diketahui lebih dulu :
+1) Cell : Potongan Kolom dan Baris
+2) Range : Gabungan beberapa cell
+3) Column : Kolom lembar kerja excel
+4) Row : Baris dari lembar kerja excel
+-------------------
+--- abcd.png ---
+Ada beberapa cara yang dapat dilakukan untuk mengaktifkan program aplikasi Microsoft Excel, yaitu
+sebagai berikut.
+a. Melakukan double klik shortcut Microsoft excel di desktop.
+b. Melalui menu Start, yaitu dengan mengklik Start.All Programs>Microsoft Office>Excel.
+c. Melalui file yang terdapat di Microsoft Excel, dengan cara buka File Explorer, kemudian dobel klik
+file Excel.
+d. Dengan mengetikan kata “excel” di Run Command. Run Comman bisa dipanggil dengan menekan
+
+tombol #R, atau langsung diketik pada halaman start di Windows 8.
+-------------------
+--- b (1).png ---
+Latihan soal praktek
+
+NO
+
+SOAL
+
+UNIT : MENG. APLIKASI PENGOLAH ANGKA (SPREADSHEET)
+
+DAFTAR GAJI PEGAWAI
+PT. SEJAHTERA (NAMA ANDA)
+PERIODE DESEMBER 2018
+
+GAJI POKOK TUNJANGAN | TRANSPORT
+
+1.
+z DATA TURIS DOMESTIK WILAYAH JAWA TAHUN 2010
+3
+4 TURIS TURIS |JMLTURIS ANAK BIAYA TOTAL
+5 JENIS OBJEK WISATA ANAK | DEWASA | DAN DEWASA MASUK TURIS BIAYA
+s (GEMBIRA LOKA Z00 8903 10000 25000 JAKARTA
+7 TAMAN LALU LINTAS 50343 53000 50000 MADIUN
+a MUSEUM KAA 73482 82364 30000 BANDUNG
+s MUSEUM POS INDONESIA 20388 23243 12000 CIMAHI
+io MUSEUM SRI BADUNG 13797 15034 10000 KEDIRI
+1 SAUNG ANGKLUNG UDJO 72994 74382 40000 BANDUNG
+12 (WISATA DAARUT TAUHID 61033 62239 55000 KEDIRI
+13 MUSEUM GEOLOGI 11039 12834 25000 SURABAYA
+ia | KARANG SETRA 43000 43431 40000 MADIUN
+is WATERPARK SULAIMAN 12230 17348 75000 MADIUN
+is \WATERBOOM SILIWANGI 92302 93478 100000 KEDIRI
+17 |(CIAWITALI 42091 43819 70000 KEDIRI
+is | RUMAH SOSIS 28908 20834 20000 JAKARTA
+19 JUMLAH
+20 JUMLAH TERBESAR
+21 JUMLAH TERKECIL
+22 MEDIAN
+23 RATA-RATA|
+24 BANYAKNYA OBYEK WISATA|
+25 JUMLAH TURIS ASAL KEDIRI
+Tugas:
+1. Cari Jumlah Turis dewasa dari jumlah semua turis
+2. Cari total biaya masuk turis dewasa dengan mengalikan biaya masuk dan jumlah turis
+dewasa
+3. Cari Jumlah, Jumlah Terbesar, Jumlah Terkecil, Median dan Rata-rata sesuai kolomnya
+4. Cari berapa banyak objek wisata yang ada di tab
+5. Cari berapa jumlah turis yang berasal dari kediri
+2.
+
+GAJI BERSIH
+
+toleel-a laju le ul
+
+ta
+
+GAJI POKOK
+
+TUNJANGAN
+
+TABEL PAJAK
+
+TRANSPORT IT
+
+2.500.000
+
+Rp
+
+500.000
+
+UT
+
+Rp 200.000 0%
+
+3.500.000
+6.000.000
+8.000.000
+
+700.000
+1.200.000
+1.600.000
+
+5%
+
+10%
+
+300.000
+-------------------
+--- b (2).png ---
+Tugas :
+
+Buat Tabel seperti di atas dan berikan warna.
+1. Isilah kolom Gaji Pokok, Tunjangan dan Transport dengan rumus VLOOKUP
+2. Isilah Kolom Pajak dengan rumus IF
+3. Isilah Total Gaji dari penjumlahan gaji pokok, tunjangan, dan transport.
+-------------------

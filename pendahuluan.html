@@ -1,329 +1,162 @@
-
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <title>EXCELPINTAR</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Additional CSS Files -->
-    <script src="https://kit.fontawesome.com/0ae245d821.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-onix-digital.css">
-    <link rel="stylesheet" href="assets/css/animated.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <style>
-      @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
-
-*,
-*:after,
-*:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.clearfix:before,
-.clearfix:after {
-	content: " ";
-	display: table;
-}
-
-.clearfix:after {
-	clear: both;
-}
-
-body {
-
-}
-
-h1 {
-	color: #ccc;
-	text-align: center;
-}
-
-a {
-  color: #ccc;
-  text-decoration: none;
-  outline: none;
-}
-
-/*Fun begins*/
-.tab_container {
-	width: 90%;
-	margin: 0 auto;
-	padding-top: 5px;
-	position: relative;
-}
-
-input, section {
-  clear: both;
-  padding-top: 10px;
-  display: none;
-}
-
-label {
-  font-weight: 700;
-  font-size: 12px;
-  display: block;
-  float: left;
-  width: 33.333%;
-  padding: 0.75em;
-  color: #757575;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
-  background: #f0f0f0;
-}
-
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3
-{
-  display: block;
-  padding: 20px;
-  background: #fff;
-  color: #999;
-  border-bottom: 2px solid #f0f0f0;
-}
-
-.tab_container .tab-content p,
-.tab_container .tab-content h3 {
-  -webkit-animation: fadeInScale 0.7s ease-in-out;
-  -moz-animation: fadeInScale 0.7s ease-in-out;
-  animation: fadeInScale 0.7s ease-in-out;
-}
-.tab_container .tab-content h3  {
-  text-align: center;
-}
-
-.tab_container [id^="tab"]:checked + label {
-  background: #fff;
-  box-shadow: inset 0 3px #01723A;
-}
-
-.tab_container [id^="tab"]:checked + label .fa {
-  color: #01723A;
-}
-
-label .fa {
-  font-size: 1.3em;
-  margin: 0 0.4em 0 0;
-}
-
-/*Media query*/
-@media only screen and (max-width: 600px) {
-  label {
-    width: 100%;
-  }
-}
-
-/*Content Animation*/
-@keyframes fadeInScale {
-  0% {
-  	transform: scale(0.9);
-  	opacity: 0;
-  }
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Pendahuluan - EXCEL PINTAR</title>
   
-  100% {
-  	transform: scale(1);
-  	opacity: 1;
-  }
-}
-
-.no_wrap {
-  text-align:center;
-  color: #01723A;
-}
-.link {
-  text-align:center;
-}
-    </style>
-
-  </head>
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/oneui.css">
+</head>
 <body>
 
-  <!-- ***** Preloader Start ***** -->
-  <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
-  <!-- ***** Preloader End ***** -->
+  <!-- Floating Navigation -->
+  <nav class="oneui-navbar animate-fade-up">
+    <a href="index.html" title="Home"><i class="fas fa-home"></i></a>
+    <a href="kd.html" title="KD"><i class="fas fa-book"></i></a>
+    <a href="materi.html" class="active" title="Materi"><i class="fas fa-file-alt"></i></a>
+    <a href="latsoal.html" title="Latihan Soal"><i class="fas fa-pen"></i></a>
+    <a href="quiz.html" title="Quiz"><i class="fas fa-question-circle"></i></a>
+    <a href="profilpengembang.html" title="Profil"><i class="fas fa-user"></i></a>
+  </nav>
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
-            <a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/" class="logo hover">
-              <img src="assets/images/logoweb.png">
-            </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav">
-              <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/kd.html" class="active">KD</a></li>
-              <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/materi.html" class="active">Materi</a></li>
-              <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/latsoal.html" class="active">Latihan Soal</a></li>
-              <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/quiz.html" class="active">Quiz</a></li>
-               <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/profilpengembang.html" class="active">Profil</a></li>
-              <li class="scroll-to-section card hover"><a href="http://widifirmaan.github.io/ExcelPintar-Media-Pembelajaran/daftarpustaka.html" class="active">Daftar Pustaka</a></li>
-              <li class="scroll-to-section"><a href="https://wa.link/vb7e1m"></a></li> 
-            </ul>   
-            <a class='menu-trigger'>
-                <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
-  <div id="pricing" class="pricing-tables">
-    <!--<div class="tables-left-dec">
-      <img src="assets/images/tables-left-dec.png" alt="">
-    </div>
-    <div class="tables-right-dec">
-      <img src="assets/images/tables-right-dec.png" alt="">
-    </div>-->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading">
-            <h2>Penda<em>huluan</em></h2>
+  <div class="oneui-page-header animate-fade-up">
+    <h2>Pendahuluan</h2>
+    <p>Pengenalan awal tentang Microsoft Excel</p>
+  </div>
+
+  <div class="oneui-content">
+    
+    <div class="oneui-card animate-fade-up delay-1 p-4">
+      <ul class="nav nav-pills nav-fill mb-4" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" style="border-radius: 50px;" id="pills-pengertian-tab" data-bs-toggle="pill" data-bs-target="#pills-pengertian" type="button" role="tab" aria-controls="pills-pengertian" aria-selected="true">Pengertian</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" style="border-radius: 50px;" id="pills-fungsi-tab" data-bs-toggle="pill" data-bs-target="#pills-fungsi" type="button" role="tab" aria-controls="pills-fungsi" aria-selected="false">Fungsi</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" style="border-radius: 50px;" id="pills-kelebihan-tab" data-bs-toggle="pill" data-bs-target="#pills-kelebihan" type="button" role="tab" aria-controls="pills-kelebihan" aria-selected="false">Kelebihan & Istilah</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active text-center" id="pills-pengertian" role="tabpanel" aria-labelledby="pills-pengertian-tab">
+          <div class="text-start">
+            <p><strong>Microsoft Excel</strong> adalah <em>General Purpose Electronic Spreadsheet</em> yang dapat digunakan untuk mengorganisasi, menghitung, menyediakan, maupun menganalisis data-data dan mempresentasikannya ke grafik atau diagram. Kemudahan lain yang diperoleh dari program ini adalah terintegrasinya program Microsoft Excel dengan program aplikasi Windows yang lain.</p>
+            <p>Saat Anda membuka Microsoft Excel, maka sebuah buku kerja (<em>Workbook</em>) siap digunakan yang di dalamnya terdapat beberapa lembar kerja (<em>worksheet</em>).</p>
+            <p>Lembar kerja dalam Microsoft Excel dalam satu sheet terdiri dari 256 kolom (<em>columns</em>) dan 65.536 baris (<em>rows</em>). Kolom ditampilkan dalam tanda huruf A, B, C dan berakhir pada kolom IV. Sedangkan baris dilambangkan dalam bentuk angka 1, 2, 3 dan berakhir pada 65536. Perpotongan antara baris dan kolom disebut sel (<em>cell</em>), misal, pada perpotongan kolom B dengan baris ke-5 disebut sel B5. Sel yang bergaris tebal menandakan bahwa sel tersebut dalam keadaan aktif.</p>
           </div>
         </div>
-      </div>
-
-
-  <div class="row">
-    <div class="tab_container">
-      <input id="tab1" type="radio" name="tabs" checked>
-      <label for="tab1"><span>Pengertian</span></label>
-
-      <input id="tab2" type="radio" name="tabs">
-      <label for="tab2"><span>Fungsi Microsoft Excel</span></label>
-
-      <input id="tab3" type="radio" name="tabs">
-      <label for="tab3"><span>Kelebihan dan Istilah Penting</span></label>
-
-
-      <section id="content1" class="tab-content">
-        <img src="m/a (1).png"/>
-    
-            
-      </section>
-
-      <section id="content2" class="tab-content">
-        <img src="m/a (2).png"/>
-   
-            
-      </section>
-
-      <section id="content3" class="tab-content">
-        <img src="m/abcd.jpeg"/>
-    
-            
-      </section>
-    </div>
-  <br/>&nbsp;<br/>
-</div>
-       <br/>&nbsp;<br/>
-     
-        <a href="javascript:history.back()">
-          <div>
-            <div class="thumbj">
-              <div class="inner-content" style="padding:15px;  border-radius: 23px;">
-                <h4 style="color:#01723A"><i class="fa fa-arrow-left" aria-hidden="true"></i> Kembali</h4>
+        <div class="tab-pane fade text-center" id="pills-fungsi" role="tabpanel" aria-labelledby="pills-fungsi-tab">
+          <div class="text-start">
+            <h4 class="h5 font-weight-bold text-primary-oneui mb-3">Fungsi Microsoft Excel</h4>
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <div class="p-3" style="background: rgba(1, 114, 58, 0.05); border-radius: var(--oneui-radius-sm);">
+                  <h5 class="h6 font-weight-bold"><i class="fas fa-calculator me-2 text-primary-oneui"></i>Bidang Akuntansi</h5>
+                  <p class="mb-0 text-muted small">Contoh dari penggunaan program Microsoft Excel dalam bidang akuntansi adalah menghitung jumlah rugi/laba suatu perusahaan, mencari besarnya keuntungan selama satu tahun, menghitung gaji karyawan, dan sebagainya.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="p-3" style="background: rgba(1, 114, 58, 0.05); border-radius: var(--oneui-radius-sm);">
+                  <h5 class="h6 font-weight-bold"><i class="fas fa-subscript me-2 text-primary-oneui"></i>Kalkulasi Matematis</h5>
+                  <p class="mb-0 text-muted small">Kalkulasi matematis digunakan untuk mencari data dari hasil penjumlahan, pengurangan, perkalian, dan pembagian, serta berbagai variasinya.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="p-3" style="background: rgba(1, 114, 58, 0.05); border-radius: var(--oneui-radius-sm);">
+                  <h5 class="h6 font-weight-bold"><i class="fas fa-database me-2 text-primary-oneui"></i>Pengelolaan Data</h5>
+                  <p class="mb-0 text-muted small">Penggunaan pengelolaan data yaitu untuk pengelolaan database statistik, mencari nilai tengah, rata-rata, dan pencarian nilai maksimum serta nilai minimum sebuah data.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="p-3" style="background: rgba(1, 114, 58, 0.05); border-radius: var(--oneui-radius-sm);">
+                  <h5 class="h6 font-weight-bold"><i class="fas fa-table me-2 text-primary-oneui"></i>Operasi Tabel</h5>
+                  <p class="mb-0 text-muted small">Dengan jumlah baris pada Microsoft Excel yang mencapai 1.048.576 dan jumlah kolom 16.384, maka tidak akan merasa kesulitan apabila melakukan input data yang membutuhkan jumlah kolom dan baris yang sangat banyak.</p>
+                </div>
               </div>
             </div>
-          </div></a><br/>&nbsp<br/>
-      </div>
-    </div>
-  </div>
+          </div>
+        </div>
+        <div class="tab-pane fade text-center" id="pills-kelebihan" role="tabpanel" aria-labelledby="pills-kelebihan-tab">
+          <div class="text-start">
+            <h4 class="h5 font-weight-bold text-primary-oneui mb-3">2. Kelebihan Microsoft Excel</h4>
+            <ul class="oneui-list">
+              <li><strong>Tampilan</strong>: Bentuk tampilannya yang mudah dikenali dan dijalankan.</li>
+              <li><strong>Fitur</strong>: Memiliki fitur untuk membuat grafik data.</li>
+              <li><strong>Penyimpanan Data</strong>: Kemampuan penyimpanan datanya cukup besar.</li>
+              <li><strong>Operasi Tabel</strong>: Cukup mudah dioperasikan dengan menggunakan rumus dan logika dalam Excel.</li>
+            </ul>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="copyright">
-            <p>Copyright © 2022 W Ltd. All Rights Reserved. 
-            <br>
-            Designed by <a rel="nofollow" href="https://widifirmaan.web.id" title="W">W</a></p>
+            <h4 class="h5 font-weight-bold text-primary-oneui mt-4 mb-3">3. Istilah Penting di Microsoft Excel</h4>
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <div class="p-3 border" style="border-radius: var(--oneui-radius-sm);">
+                  <strong class="text-primary-oneui">Cell (Sel)</strong>
+                  <p class="mb-0 small text-muted">Perpotongan antara baris dan kolom (misal: A1, B2).</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="p-3 border" style="border-radius: var(--oneui-radius-sm);">
+                  <strong class="text-primary-oneui">Row (Baris)</strong>
+                  <p class="mb-0 small text-muted">Lajur horizontal yang ditandai dengan angka (1, 2, 3, dst).</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="p-3 border" style="border-radius: var(--oneui-radius-sm);">
+                  <strong class="text-primary-oneui">Column (Kolom)</strong>
+                  <p class="mb-0 small text-muted">Lajur vertikal yang ditandai dengan huruf alfabet (A, B, C, dst).</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="p-3 border" style="border-radius: var(--oneui-radius-sm);">
+                  <strong class="text-primary-oneui">Range (Rentang)</strong>
+                  <p class="mb-0 small text-muted">Kumpulan dari beberapa sel yang dipilih secara bersamaan.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="p-3 border" style="border-radius: var(--oneui-radius-sm);">
+                  <strong class="text-primary-oneui">Worksheet (Lembar Kerja)</strong>
+                  <p class="mb-0 small text-muted">Area kerja tunggal yang berisi baris dan kolom untuk mengolah data.</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="p-3 border" style="border-radius: var(--oneui-radius-sm);">
+                  <strong class="text-primary-oneui">Workbook (Buku Kerja)</strong>
+                  <p class="mb-0 small text-muted">Satu file Excel yang dapat berisi beberapa worksheet di dalamnya.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </footer>
 
+    <div class="text-center mt-4 animate-fade-up delay-2">
+      <a href="javascript:history.back()" class="oneui-btn oneui-btn-secondary"><i class="fas fa-arrow-left me-2"></i> Kembali</a>
+    </div>
 
-  <!-- Scripts -->
+  </div>
+
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/animation.js"></script>
-  <script src="assets/js/imagesloaded.js"></script>
-  <script src="assets/js/custom.js"></script>
   <script>
-    
-const accordionBtns = document.querySelectorAll(".accordion");
-
-accordionBtns.forEach((accordion) => {
-  accordion.onclick = function () {
-    this.classList.toggle("is-open");
-
-    let content = this.nextElementSibling;
-    console.log(content);
-
-    if (content.style.maxHeight) {
-      //this is if the accordion is open
-      content.style.maxHeight = null;
-    } else {
-      //if the accordion is currently closed
-      content.style.maxHeight = content.scrollHeight + "px";
-      console.log(content.style.maxHeight);
-    }
-  };
-});
-
-  </script>
-  <script>
-  // Acc
-    $(document).on("click", ".naccs .menu div", function() {
-      var numberIndex = $(this).index();
-
-      if (!$(this).is("active")) {
-          $(".naccs .menu div").removeClass("active");
-          $(".naccs ul li").removeClass("active");
-
-          $(this).addClass("active");
-          $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
- 
-          var listItemHeight = $(".naccs ul")
-            .find("li:eq(" + numberIndex + ")")
-            .innerHeight();
-          $(".naccs ul").height(listItemHeight + "px");
-        }
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabs = document.querySelectorAll('.nav-pills .nav-link');
+      tabs.forEach(tab => {
+        tab.addEventListener('shown.bs.tab', function (e) {
+          const parent = this.closest('.nav-pills');
+          if (parent) {
+            parent.scrollTo({
+              left: this.offsetLeft - 15,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
     });
   </script>
 </body>
