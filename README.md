@@ -14,8 +14,7 @@ Javex is an interactive e-learning and quiz web application for learning Microso
 ## Live Production
 
 - **URL:** [http://widifirmaan.web.id/bootstrap-javex-template/](http://widifirmaan.web.id/bootstrap-javex-template/)
-- **Hosting:** Apache Web Server / Cloudflare Proxy
-- **Target Audience:** Vocational high school (SMK) and introductory computer science students learning spreadsheet literacy
+- **Deployment:** Apache Web Server / Cloudflare Proxy
 
 ---
 
