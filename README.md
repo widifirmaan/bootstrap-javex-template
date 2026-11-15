@@ -32,35 +32,36 @@ Javex is a responsive, web-based educational multimedia learning platform design
 
 ---
 
-## Core Features
+## Features
 
-- **Interactive Learning Modules (`materi.html`)**: Step-by-step Excel guides covering workbook creation, formatting, data types, and interface shortcuts.
-- **Formulas & Quick Reference (`rumus.html`)**: Interactive formula cheat-sheet with examples for mathematical operators, SUM, AVERAGE, MIN, MAX, COUNT, and logical IF statements.
-- **Timed Practice Drills (`latsoal.html`, `mulailatsoal.html`)**: Timed question evaluations with immediate correctness scoring, answer explanations, and recap tables.
-- **Final Evaluation Quiz (`quiz.html`, `mulaiquiz.html`)**: Comprehensive summative assessment to test student proficiency.
-- **OneUI-Inspired Design System**: Soft rounded card geometry, floating pill bottom navigation bars, and accessible green accent color schemes (`assets/css/oneui.css`).
-- **Media Video Integrations (`video.html`)**: Embedded video tutorials explaining spreadsheet workflows visually.
-- **Curriculum Standards Alignment (`kd.html`)**: Official Kompetensi Dasar (KD) and learning indicators reference aligned with Indonesian curriculum standards.
+- **Structured Spreadsheet Syllabus (`materi.html`)**: Step-by-step modular Excel guides detailing interface layouts, ribbon menus, workbook formatting, data types, and keyboard shortcuts.
+- **Formulas & Functions Quick Reference (`rumus.html`)**: Interactive formula cheat-sheet with live syntax examples for mathematical operators, SUM, AVERAGE, MIN, MAX, COUNT, and nested logical IF conditions.
+- **Timed Practice Drills (`latsoal.html`, `mulailatsoal.html`)**: Interactive timed question evaluations featuring real-time countdown clocks, immediate score tabulation, and incorrect answer analysis.
+- **Summative Evaluation Quiz (`quiz.html`, `mulaiquiz.html`)**: Comprehensive end-of-course knowledge assessment measuring overall student mastery.
+- **OneUI-Inspired Design Primitives**: Distinctive soft-rounded card geometry, floating pill bottom navigation, and tactile green color tokens (`assets/css/oneui.css`).
+- **Embedded Multimedia Video (`video.html`)**: Integrated HTML5 video playback demonstrating practical spreadsheet workflows directly inside the lesson container.
+- **Curriculum Standards Alignment (`kd.html`)**: Official Kompetensi Dasar (KD) and competency indicators directly aligned with the Indonesian vocational education curriculum.
 
 ---
 
 ## Tech Stack
 
-| Layer | Technology | Details |
+| Category | Technologies | Purpose |
 | :--- | :--- | :--- |
-| **CSS Framework** | Bootstrap `5.x` | Responsive layout grid, modals, and helper utilities |
-| **Custom Styling** | OneUI CSS | Custom-built rounded card components and floating navigation |
-| **Typography** | Poppins Font | Clean, highly legible sans-serif type via Google Fonts |
-| **Icons** | Font Awesome `5.15.3` | Comprehensive icon set for menus and action indicators |
-| **Interactive Scripting** | Vanilla JavaScript | Quiz timers, question randomized arrays, and score calculations |
+| **UI Framework** | Bootstrap `5.x` | Responsive layout grid, modals, and helper utilities |
+| **Custom Styling** | OneUI CSS | Custom-built rounded card components and floating bottom navigation |
+| **Typography** | Poppins Font | High-legibility modern sans-serif typography via Google Fonts |
+| **Iconography** | Font Awesome `5.15.3` | Comprehensive vector icon set for subject chapters and quiz navigation |
+| **Interactivity** | Vanilla JavaScript | Real-time quiz timers, question array randomization, and automated scoring |
+| **Hosting** | Apache Web Server | Zero-dependency static HTML/CSS/JS delivery |
 
 ---
 
 ## Project Structure
 
-```text
-bootstrap-javex-template/
-├── index.html            # Welcome splash and entrance portal
+```bash
+/
+├── index.html            # Welcome entrance portal
 ├── mulai.html            # Main navigation hub (KD, Materi, Latihan, Quiz)
 ├── kd.html               # Basic competencies & syllabus indicators
 ├── materi.html           # Excel material syllabus cards
@@ -76,8 +77,8 @@ bootstrap-javex-template/
 ├── profilpengembang.html # Developer author profile
 ├── assets/
 │   └── css/oneui.css     # Custom OneUI stylesheet
-├── raw_screenshots/      # High-resolution production screen captures
-└── screenshots/          # MacBook Pro M4 & iPhone 16 Pro showcase mockups
+├── screenshots/          # MacBook Pro M4 & iPhone 16 Pro showcase mockups
+└── README.md
 ```
 
 ---
@@ -86,27 +87,30 @@ bootstrap-javex-template/
 
 ### Prerequisites
 
-Static HTML/CSS/JS application. No compilers or package managers required.
+Static HTML/CSS/JS application. No compilers, Node modules, or package managers required.
 
-### Running Locally
+### Local Development
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/widifirmaan/bootstrap-javex-template.git
-   cd bootstrap-javex-template
-   ```
+> **Environment Variables:** No `.env` file or API keys are required. All interactive quizzes, scoring timers, and multimedia elements execute 100% locally in the browser.
 
-2. **Serve with a local static server**:
-   ```bash
-   # Python 3
-   python3 -m http.server 8000
+```bash
+# 1. Clone the repository
+git clone https://github.com/widifirmaan/bootstrap-javex-template.git
+cd bootstrap-javex-template
 
-   # Node.js
-   npx serve .
-   ```
+# 2. Start local static server
+python3 -m http.server 8000
+# or using Node.js:
+npx serve .
+```
 
-3. **Open in browser**:
-   Navigate to [http://localhost:8000](http://localhost:8000).
+Open [http://localhost:8000](http://localhost:8000) in your web browser.
+
+---
+
+## Author
+
+Developed by **[Widi Firmansyah](https://widifirmaan.web.id)**.
 
 ---
 
