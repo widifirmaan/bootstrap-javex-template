@@ -33,14 +33,15 @@ Javex is a responsive Bootstrap 5 template designed for interactive e-learning m
 
 ## Features
 
-- **Spreadsheet Curriculum Modules (`materi.html`, `format.html`)**: Modular lessons covering Excel interface fundamentals, ribbon navigation, cell formatting, data types, and keyboard shortcuts.
-- **Formulas & Functions Cheatsheet (`rumus.html`)**: Quick reference guide with syntax and usage examples for SUM, AVERAGE, MIN, MAX, COUNT, and nested IF logic.
-- **Interactive Practice Drills (`latsoal.html`, `mulailatsoal.html`)**: Formative exercise questions featuring real-time answer verification, instant feedback, and score calculations.
-- **Summative Evaluation Examination (`quiz.html`, `mulaiquiz.html`)**: Timed end-of-course assessment measuring overall student mastery with automated scoring.
-- **Embedded Video Lessons (`video.html`)**: HTML5 video player with guided spreadsheet tutorial demonstrations.
-- **Curriculum Standards Alignment (`kd.html`)**: Indonesian vocational curriculum Kompetensi Dasar (KD) and competency indicators.
-- **OneUI-Inspired Design Primitives**: Card-based interface with pill navigation, rounded corners, and green accent tokens (`assets/css/oneui.css`).
-- **Academic Bibliography & Author Profile (`daftarpustaka.html`, `profilpengembang.html`)**: Reference citations and developer profile information.
+- **Spreadsheet Learning Modules (`pendahuluan.html`, `mulai.html`, `format.html`)**: Step-by-step Excel guides covering introductory concepts, interface elements (Ribbon tabs, Name Box, Formula Bar), workbook formatting, and data types with smooth horizontal pill tab navigation.
+- **Formulas & Functions Cheatsheet (`rumus.html`)**: Reference catalog with syntax rules and practical examples for arithmetic formulas, SUM, AVERAGE, MAX, MIN, COUNT, and logical IF statements.
+- **Hands-On Practical Worksheets (`latsoal.html`, `mulailatsoal.html`)**: Case study exercises with spreadsheet sample tables and an external Google Forms submission workflow.
+- **Evaluation Examination (`quiz.html`, `mulaiquiz.html`)**: 20-question multiple-choice assessment with client-side JavaScript scoring, completion validation, pass/fail threshold evaluation (>= 70%), and a Bootstrap 5 modal result popup.
+- **Embedded Video Tutorial (`video.html`)**: Responsive 16:9 Bootstrap ratio container with an embedded YouTube spreadsheet tutorial video.
+- **Curriculum Standards Alignment (`kd.html`)**: Indonesian vocational curriculum Kompetensi Dasar (KD 3.4 & 4.4) and competency achievement indicators (IPK).
+- **OneUI-Inspired Design System (`assets/css/oneui.css`)**: Card-based interface styled with Samsung OneUI rounded corners (`border-radius: 24px`), pill tab navigation, mobile bottom navigation bar, and CSS custom properties.
+- **Audio Narration Player (`index.html`)**: Embedded HTML5 audio player (`audio.mp3`) providing introductory background audio on the welcome portal.
+- **Academic Bibliography & Developer Profile (`daftarpustaka.html`, `profilpengembang.html`)**: Textbook citation modals and academic development team profile.
 
 ---
 
@@ -48,12 +49,13 @@ Javex is a responsive Bootstrap 5 template designed for interactive e-learning m
 
 | Category | Technologies | Purpose |
 | :--- | :--- | :--- |
-| **UI Framework** | Bootstrap `5.x` | Responsive layout grid, modals, and helper utilities |
-| **Custom Styling** | OneUI CSS | Custom-built rounded card components and floating bottom navigation |
-| **Typography** | Poppins Font | High-legibility modern sans-serif typography via Google Fonts |
-| **Iconography** | Font Awesome `5.15.3` | Comprehensive vector icon set for subject chapters and quiz navigation |
-| **Interactivity** | Vanilla JavaScript | Real-time quiz timers, question array randomization, and automated scoring |
-| **Hosting** | Apache Web Server | Zero-dependency static HTML/CSS/JS delivery |
+| **UI Framework** | Bootstrap `5.0.0-beta2` | Responsive layout grid, tabbed pill navigation, responsive 16:9 ratio, and modals |
+| **JavaScript Library** | jQuery `3.3.1` | DOM manipulation and legacy script support (`vendor/jquery/jquery.min.js`) |
+| **Custom Styling** | OneUI CSS (`assets/css/oneui.css`) | Samsung OneUI-inspired design system, floating pill navbar, and CSS variables |
+| **Typography** | Poppins Font | Modern sans-serif typography (300, 400, 500, 600, 700) via Google Fonts |
+| **Iconography** | Font Awesome `5.15.3` | Vector icons for subject categories and navigation controls via CDNJS |
+| **Interactivity** | Vanilla JavaScript | Quiz answer validation, automatic score tallying, and pass/fail modal triggering |
+| **Multimedia** | HTML5 Audio & YouTube Iframe | Homepage audio player (`audio.mp3`) and embedded responsive tutorial video |
 
 ---
 
@@ -61,22 +63,29 @@ Javex is a responsive Bootstrap 5 template designed for interactive e-learning m
 
 ```bash
 /
-├── index.html            # Welcome entrance portal
-├── mulai.html            # Main navigation hub (KD, Materi, Latihan, Quiz)
-├── kd.html               # Basic competencies & syllabus indicators
-├── materi.html           # Excel material syllabus cards
-├── pendahuluan.html      # Introduction to Microsoft Excel
-├── format.html           # Workbook formatting guide
-├── rumus.html            # Formulas & functions cheat sheet
-├── latsoal.html          # Practice exercises entrance
-├── mulailatsoal.html     # Interactive practice quiz engine
-├── quiz.html             # Final examination entrance
-├── mulaiquiz.html        # Final quiz engine with timer & scoring
-├── video.html            # Video tutorial playback page
-├── daftarpustaka.html    # Academic references and citations
-├── profilpengembang.html # Developer author profile
+├── index.html            # Main entrance portal with category cards and audio player
+├── kd.html               # Basic competencies (KD 3.4 & 4.4) and indicators (IPK)
+├── materi.html           # Excel learning curriculum syllabus cards
+├── pendahuluan.html      # Introductory concepts and Excel advantages
+├── mulai.html            # Interface elements, ribbon tabs, and menu commands guide
+├── format.html           # Workbook formatting guide with pill tabs
+├── rumus.html            # Formulas & functions cheat sheet (SUM, IF, AVERAGE)
+├── latsoal.html          # Practice exercises instruction entrance
+├── mulailatsoal.html     # Hands-on practice worksheet with Google Form submit link
+├── quiz.html             # Final examination instruction entrance
+├── mulaiquiz.html        # 20-question quiz engine with automatic scoring and modal
+├── video.html            # Responsive 16:9 YouTube video tutorial player
+├── daftarpustaka.html    # Academic textbook references and modal descriptions
+├── profilpengembang.html # Developer author and academic advisor profiles
+├── audio.mp3             # Background audio narration for the welcome page
 ├── assets/
-│   └── css/oneui.css     # Custom OneUI stylesheet
+│   ├── css/oneui.css     # Custom OneUI design tokens and navigation styles
+│   └── dafpust.png       # Academic reference illustration
+├── daftarpustaka/        # Textbook cover thumbnail assets
+├── vendor/
+│   ├── bootstrap/        # Bootstrap 5.0.0-beta2 CSS and JS bundle
+│   └── jquery/           # jQuery 3.3.1 library
+├── raw_screenshots/      # Source captures with notch offset
 ├── screenshots/          # MacBook Pro M4 & iPhone 16 Pro showcase mockups
 └── README.md
 ```
