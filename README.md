@@ -8,7 +8,6 @@ Javex is a responsive, web-based educational multimedia learning platform design
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?style=flat-square&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 [![Design System](https://img.shields.io/badge/Design-OneUI_Pill_Cards-01723A?style=flat-square)](#features)
 [![Font Awesome](https://img.shields.io/badge/Icons-Font_Awesome_5-528DD7?style=flat-square&logo=fontawesome&logoColor=white)](https://fontawesome.com/)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 
 ---
 
@@ -36,11 +35,12 @@ Javex is a responsive, web-based educational multimedia learning platform design
 
 - **Structured Spreadsheet Syllabus (`materi.html`)**: Step-by-step modular Excel guides detailing interface layouts, ribbon menus, workbook formatting, data types, and keyboard shortcuts.
 - **Formulas & Functions Quick Reference (`rumus.html`)**: Interactive formula cheat-sheet with live syntax examples for mathematical operators, SUM, AVERAGE, MIN, MAX, COUNT, and nested logical IF conditions.
-- **Timed Practice Drills (`latsoal.html`, `mulailatsoal.html`)**: Interactive timed question evaluations featuring real-time countdown clocks, immediate score tabulation, and incorrect answer analysis.
-- **Summative Evaluation Quiz (`quiz.html`, `mulaiquiz.html`)**: Comprehensive end-of-course knowledge assessment measuring overall student mastery.
-- **OneUI-Inspired Design Primitives**: Distinctive soft-rounded card geometry, floating pill bottom navigation, and tactile green color tokens (`assets/css/oneui.css`).
-- **Embedded Multimedia Video (`video.html`)**: Integrated HTML5 video playback demonstrating practical spreadsheet workflows directly inside the lesson container.
+- **Interactive Practice Drills (`latsoal.html`, `mulailatsoal.html`)**: Formative exercise questions featuring real-time answer verification, instant feedback, and score calculations.
+- **Summative Evaluation Examination (`quiz.html`, `mulaiquiz.html`)**: Timed end-of-course assessment measuring overall student mastery with automatic score tabulation and ranking.
+- **Embedded Multimedia Video Tutorial (`video.html`)**: Integrated HTML5 video player demonstrating practical spreadsheet workflows directly inside the lesson container.
 - **Curriculum Standards Alignment (`kd.html`)**: Official Kompetensi Dasar (KD) and competency indicators directly aligned with the Indonesian vocational education curriculum.
+- **OneUI-Inspired Design Primitives**: Distinctive soft-rounded card geometry, floating pill bottom navigation, and tactile green color tokens (`assets/css/oneui.css`).
+- **Academic Bibliography & Author Profile (`daftarpustaka.html`, `profilpengembang.html`)**: Complete curriculum bibliography, reference citations, and developer educational biography.
 
 ---
 
@@ -111,9 +111,3 @@ Open [http://localhost:8000](http://localhost:8000) in your web browser.
 ## Author
 
 Developed by **[Widi Firmansyah](https://widifirmaan.web.id)**.
-
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
