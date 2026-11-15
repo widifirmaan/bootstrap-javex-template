@@ -1,8 +1,8 @@
 # Javex
 
-> Interactive e-learning media and practice quiz application for Microsoft Excel built with Bootstrap 5 and OneUI design language.
+> Modern Bootstrap 5 e-learning template and practice quiz application inspired by Samsung OneUI design language.
 
-Javex is an interactive e-learning and quiz web application for learning Microsoft Excel, built with Bootstrap 5 and styled with custom OneUI rounded card elements (`assets/css/oneui.css`). It features structured curriculum modules, an Excel formulas cheatsheet, video lessons, practice exercises with instant feedback, and a timed summative evaluation quiz.
+Javex is a responsive Bootstrap 5 template designed for interactive e-learning media and spreadsheet education, styled with custom OneUI-inspired rounded card elements and navigation primitives (`assets/css/oneui.css`). It features structured curriculum modules, competency standards alignment (Kompetensi Dasar), interactive practice drills, automated evaluation quizzes, formulas cheatsheet, video lessons, and academic bibliography pages.
 
 [![Live Demo](https://img.shields.io/badge/Demo-widifirmaan.web.id%2Fjavex-10B981?style=flat-square&logo=googlechrome&logoColor=white)](http://widifirmaan.web.id/bootstrap-javex-template/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?style=flat-square&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
@@ -22,11 +22,12 @@ Javex is an interactive e-learning and quiz web application for learning Microso
 
 | Desktop Interface (MacBook Pro M4) | Mobile Interface (iPhone 16 Pro) |
 | :---: | :---: |
-| **Portal Welcome Home Desktop**<br>![Javex Portal Home Desktop](screenshots/Javex%20Portal%20Home%20Desktop.png) | **Portal Welcome Home Mobile**<br>![Javex Portal Home Mobile](screenshots/Javex%20Portal%20Home%20Mobile.png) |
-| **Interactive Navigation Hub Desktop**<br>![Javex Interactive Menu Desktop](screenshots/Javex%20Interactive%20Menu%20Desktop.png) | **Interactive Navigation Hub Mobile**<br>![Javex Interactive Menu Mobile](screenshots/Javex%20Interactive%20Menu%20Mobile.png) |
-| **Excel Learning Curriculum Desktop**<br>![Javex Excel Learning Desktop](screenshots/Javex%20Excel%20Learning%20Module%20Desktop.png) | **Excel Learning Curriculum Mobile**<br>![Javex Excel Learning Mobile](screenshots/Javex%20Excel%20Learning%20Module%20Mobile.png) |
-| **Interactive Practice Exercises Desktop**<br>![Javex Practice Quiz Desktop](screenshots/Javex%20Interactive%20Quiz%20Desktop.png) | **Interactive Practice Exercises Mobile**<br>![Javex Practice Quiz Mobile](screenshots/Javex%20Interactive%20Quiz%20Mobile.png) |
-| **Formulas & Functions Cheatsheet Desktop**<br>![Javex Formulas Reference Desktop](screenshots/Javex%20Formulas%20Reference%20Desktop.png) | **Formulas & Functions Cheatsheet Mobile**<br>![Javex Formulas Reference Mobile](screenshots/Javex%20Formulas%20Reference%20Mobile.png) |
+| **Homepage Desktop**<br>![Homepage Desktop](screenshots/Javex%20Homepage%20Desktop.png) | **Homepage Mobile**<br>![Homepage Mobile](screenshots/Javex%20Homepage%20Mobile.png) |
+| **Kompetensi Dasar Desktop**<br>![Kompetensi Dasar Desktop](screenshots/Javex%20Kompetensi%20Dasar%20Desktop.png) | **Kompetensi Dasar Mobile**<br>![Kompetensi Dasar Mobile](screenshots/Javex%20Kompetensi%20Dasar%20Mobile.png) |
+| **Materi Pembelajaran Desktop**<br>![Materi Pembelajaran Desktop](screenshots/Javex%20Materi%20Desktop.png) | **Materi Pembelajaran Mobile**<br>![Materi Pembelajaran Mobile](screenshots/Javex%20Materi%20Mobile.png) |
+| **Latihan Soal Desktop**<br>![Latihan Soal Desktop](screenshots/Javex%20Latihan%20Soal%20Desktop.png) | **Latihan Soal Mobile**<br>![Latihan Soal Mobile](screenshots/Javex%20Latihan%20Soal%20Mobile.png) |
+| **Quiz Evaluasi Desktop**<br>![Quiz Evaluasi Desktop](screenshots/Javex%20Quiz%20Evaluasi%20Desktop.png) | **Quiz Evaluasi Mobile**<br>![Quiz Evaluasi Mobile](screenshots/Javex%20Quiz%20Evaluasi%20Mobile.png) |
+| **Daftar Pustaka Desktop**<br>![Daftar Pustaka Desktop](screenshots/Javex%20Daftar%20Pustaka%20Desktop.png) | **Daftar Pustaka Mobile**<br>![Daftar Pustaka Mobile](screenshots/Javex%20Daftar%20Pustaka%20Mobile.png) |
 
 ---
 
