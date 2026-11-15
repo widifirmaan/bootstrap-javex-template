@@ -2,7 +2,7 @@
 
 > Interactive e-learning media and practice quiz application for Microsoft Excel built with Bootstrap 5 and OneUI design language.
 
-Javex is a responsive, web-based educational multimedia learning platform designed to teach Microsoft Excel fundamentals, workbook formatting, formulas, and functions. Built with Bootstrap 5 and styled with Samsung OneUI aesthetic primitives, Javex provides interactive chapter modules, timed practice drills, graded multiple-choice quizzes, formula cheatsheets, and multimedia video tutorials.
+Javex is an interactive e-learning and quiz web application for learning Microsoft Excel, built with Bootstrap 5 and styled with custom OneUI rounded card elements (`assets/css/oneui.css`). It features structured curriculum modules, an Excel formulas cheatsheet, video lessons, practice exercises with instant feedback, and a timed summative evaluation quiz.
 
 [![Live Demo](https://img.shields.io/badge/Demo-widifirmaan.web.id%2Fjavex-10B981?style=flat-square&logo=googlechrome&logoColor=white)](http://widifirmaan.web.id/bootstrap-javex-template/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?style=flat-square&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
@@ -33,14 +33,14 @@ Javex is a responsive, web-based educational multimedia learning platform design
 
 ## Features
 
-- **Structured Spreadsheet Syllabus (`materi.html`)**: Step-by-step modular Excel guides detailing interface layouts, ribbon menus, workbook formatting, data types, and keyboard shortcuts.
-- **Formulas & Functions Quick Reference (`rumus.html`)**: Interactive formula cheat-sheet with live syntax examples for mathematical operators, SUM, AVERAGE, MIN, MAX, COUNT, and nested logical IF conditions.
+- **Spreadsheet Curriculum Modules (`materi.html`, `format.html`)**: Modular lessons covering Excel interface fundamentals, ribbon navigation, cell formatting, data types, and keyboard shortcuts.
+- **Formulas & Functions Cheatsheet (`rumus.html`)**: Quick reference guide with syntax and usage examples for SUM, AVERAGE, MIN, MAX, COUNT, and nested IF logic.
 - **Interactive Practice Drills (`latsoal.html`, `mulailatsoal.html`)**: Formative exercise questions featuring real-time answer verification, instant feedback, and score calculations.
-- **Summative Evaluation Examination (`quiz.html`, `mulaiquiz.html`)**: Timed end-of-course assessment measuring overall student mastery with automatic score tabulation and ranking.
-- **Embedded Multimedia Video Tutorial (`video.html`)**: Integrated HTML5 video player demonstrating practical spreadsheet workflows directly inside the lesson container.
-- **Curriculum Standards Alignment (`kd.html`)**: Official Kompetensi Dasar (KD) and competency indicators directly aligned with the Indonesian vocational education curriculum.
-- **OneUI-Inspired Design Primitives**: Distinctive soft-rounded card geometry, floating pill bottom navigation, and tactile green color tokens (`assets/css/oneui.css`).
-- **Academic Bibliography & Author Profile (`daftarpustaka.html`, `profilpengembang.html`)**: Complete curriculum bibliography, reference citations, and developer educational biography.
+- **Summative Evaluation Examination (`quiz.html`, `mulaiquiz.html`)**: Timed end-of-course assessment measuring overall student mastery with automated scoring.
+- **Embedded Video Lessons (`video.html`)**: HTML5 video player with guided spreadsheet tutorial demonstrations.
+- **Curriculum Standards Alignment (`kd.html`)**: Indonesian vocational curriculum Kompetensi Dasar (KD) and competency indicators.
+- **OneUI-Inspired Design Primitives**: Card-based interface with pill navigation, rounded corners, and green accent tokens (`assets/css/oneui.css`).
+- **Academic Bibliography & Author Profile (`daftarpustaka.html`, `profilpengembang.html`)**: Reference citations and developer profile information.
 
 ---
 
