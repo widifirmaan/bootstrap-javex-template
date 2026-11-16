@@ -48,7 +48,7 @@ body {
 .oneui-content {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 20px 80px;
+  padding: 0 20px calc(100px + env(safe-area-inset-bottom, 0px));
 }
 
 /* Cards */
@@ -145,20 +145,25 @@ body {
   border-bottom: none;
 }
 
-/* Floating Navigation (Bottom full-width on mobile, top pill on desktop) */
+/* Floating Navigation (Bottom floating pill dock on mobile, top pill on desktop) */
 .oneui-navbar {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  padding: 10px 0;
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+  bottom: max(20px, calc(env(safe-area-inset-bottom, 0px) + 12px));
+  left: 16px;
+  right: 16px;
+  max-width: 440px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 8px 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   display: flex;
   justify-content: space-around;
+  align-items: center;
   z-index: 1000;
-  border-top: 1px solid #e5e5ea;
+  border-radius: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 .oneui-navbar a {
@@ -185,12 +190,15 @@ body {
     top: 20px;
     bottom: auto;
     left: 50%;
+    right: auto;
     transform: translateX(-50%);
     width: auto;
+    max-width: none;
+    margin: 0;
     border-radius: 50px;
     padding: 10px 20px;
     gap: 15px;
-    border-top: none;
+    border: 1px solid rgba(255, 255, 255, 0.8);
     box-shadow: var(--oneui-shadow-hover);
   }
 }
@@ -210,6 +218,23 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Specific fade-up for navbar on desktop to preserve horizontal centering */
+@media (min-width: 768px) {
+  .oneui-navbar.animate-fade-up {
+    animation-name: fadeUpNavbarDesktop;
+  }
+  @keyframes fadeUpNavbarDesktop {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -20px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
   }
 }
 
