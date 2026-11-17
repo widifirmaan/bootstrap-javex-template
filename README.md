@@ -1,148 +1,106 @@
 # Javex
 
-> Responsive Bootstrap 5 e-learning template and practice quiz application.
-
-Javex is a responsive Bootstrap 5 web template designed for spreadsheet learning and e-learning coursework. Styled with custom OneUI-inspired card elements and navigation primitives (`assets/css/oneui.css`), it features structured curriculum modules, competency standards alignment (Kompetensi Dasar), interactive practice drills, automated evaluation quizzes, formulas cheatsheet, video lessons, and academic bibliography pages.
+> Template media pembelajaran interaktif Microsoft Excel berbasis Bootstrap 5 dengan modul kurikulum, latihan soal, dan quiz evaluasi interaktif.
 
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?style=flat-square&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 [![Font Awesome](https://img.shields.io/badge/Icons-Font_Awesome_5-528DD7?style=flat-square&logo=fontawesome&logoColor=white)](https://fontawesome.com/)
 [![HTML5 / CSS3](https://img.shields.io/badge/HTML5%20%2F%20CSS3-Modern_Web-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/)
+[![Live Demo](https://img.shields.io/badge/Demo-widifirmaan.web.id-10B981?style=flat-square)](https://widifirmaan.web.id/bootstrap-javex-template/)
 
 ---
 
-## Showcase
+## Live URL
 
-### 1. Welcome Portal & Competency Alignment (`index.html`, `kd.html`)
-
-| Desktop Interface (MacBook Pro M4) | Mobile Interface (iPhone 16 Pro) |
-| :---: | :---: |
-| **Welcome Portal & Audio Narration**<br>![Javex Homepage Desktop](screenshots/Javex%20Homepage%20&%20Portal%20Desktop.png) | **Welcome Portal & Audio Narration**<br>![Javex Homepage Mobile](screenshots/Javex%20Homepage%20&%20Portal%20Mobile.png) |
-| **Kompetensi Dasar (KD 3.4 & 4.4) & IPK**<br>![Javex Kompetensi Dasar Desktop](screenshots/Javex%20Kompetensi%20Dasar%20&%20IPK%20Desktop.png) | **Kompetensi Dasar (KD 3.4 & 4.4) & IPK**<br>![Javex Kompetensi Dasar Mobile](screenshots/Javex%20Kompetensi%20Dasar%20&%20IPK%20Mobile.png) |
-
-### 2. Spreadsheet Learning Modules & Formatting (`materi.html`, `pendahuluan.html`, `mulai.html`, `format.html`)
-
-| Desktop Interface (MacBook Pro M4) | Mobile Interface (iPhone 16 Pro) |
-| :---: | :---: |
-| **Excel Learning Curriculum Syllabus**<br>![Javex Materi Kurikulum Desktop](screenshots/Javex%20Materi%20Kurikulum%20Desktop.png) | **Excel Learning Curriculum Syllabus**<br>![Javex Materi Kurikulum Mobile](screenshots/Javex%20Materi%20Kurikulum%20Mobile.png) |
-| **Spreadsheet Introductory Concepts**<br>![Javex Pendahuluan Excel Desktop](screenshots/Javex%20Pendahuluan%20Excel%20Desktop.png) | **Spreadsheet Introductory Concepts**<br>![Javex Pendahuluan Excel Mobile](screenshots/Javex%20Pendahuluan%20Excel%20Mobile.png) |
-| **Ribbon Tabs & Commands Guide**<br>![Javex Ribbon Desktop](screenshots/Javex%20Ribbon%20&%20Antarmuka%20Desktop.png) | **Ribbon Tabs & Commands Guide**<br>![Javex Ribbon Mobile](screenshots/Javex%20Ribbon%20&%20Antarmuka%20Mobile.png) |
-| **Workbook Formatting Guide with Pill Tabs**<br>![Javex Format Workbook Desktop](screenshots/Javex%20Format%20Workbook%20Tabs%20Desktop.png) | **Workbook Formatting Guide with Pill Tabs**<br>![Javex Format Workbook Mobile](screenshots/Javex%20Format%20Workbook%20Tabs%20Mobile.png) |
-
-### 3. Formulas Cheatsheet & Practical Worksheets (`rumus.html`, `latsoal.html`, `mulailatsoal.html`)
-
-| Desktop Interface (MacBook Pro M4) | Mobile Interface (iPhone 16 Pro) |
-| :---: | :---: |
-| **Formulas & Functions Cheatsheet**<br>![Javex Rumus Cheatsheet Desktop](screenshots/Javex%20Rumus%20&%20Fungsi%20Cheatsheet%20Desktop.png) | **Formulas & Functions Cheatsheet**<br>![Javex Rumus Cheatsheet Mobile](screenshots/Javex%20Rumus%20&%20Fungsi%20Cheatsheet%20Mobile.png) |
-| **Hands-On Practical Case Study Worksheet**<br>![Javex Lembar Kerja Praktik Desktop](screenshots/Javex%20Lembar%20Kerja%20Praktik%20Desktop.png) | **Hands-On Practical Case Study Worksheet**<br>![Javex Lembar Kerja Praktik Mobile](screenshots/Javex%20Lembar%20Kerja%20Praktik%20Mobile.png) |
-
-### 4. Interactive Examination, Video & Bibliography (`mulaiquiz.html`, `video.html`, `daftarpustaka.html`, `profilpengembang.html`)
-
-| Desktop Interface (MacBook Pro M4) | Mobile Interface (iPhone 16 Pro) |
-| :---: | :---: |
-| **20-Question Examination Arena & Scoring**<br>![Javex Arena Quiz Evaluasi Desktop](screenshots/Javex%20Arena%20Quiz%20Evaluasi%20Desktop.png) | **20-Question Examination Arena & Scoring**<br>![Javex Arena Quiz Evaluasi Mobile](screenshots/Javex%20Arena%20Quiz%20Evaluasi%20Mobile.png) |
-| **Embedded 16:9 YouTube Tutorial Player**<br>![Javex Video Tutorial Desktop](screenshots/Javex%20Video%20Tutorial%2016-9%20Desktop.png) | **Embedded 16:9 YouTube Tutorial Player**<br>![Javex Video Tutorial Mobile](screenshots/Javex%20Video%20Tutorial%2016-9%20Mobile.png) |
-| **Academic Textbook Bibliography References**<br>![Javex Daftar Pustaka Desktop](screenshots/Javex%20Daftar%20Pustaka%20Buku%20Desktop.png) | **Academic Textbook Bibliography References**<br>![Javex Daftar Pustaka Mobile](screenshots/Javex%20Daftar%20Pustaka%20Buku%20Mobile.png) |
-| **Development Team & Academic Advisors**<br>![Javex Profil Pengembang Desktop](screenshots/Javex%20Profil%20Pengembang%20Desktop.png) | **Development Team & Academic Advisors**<br>![Javex Profil Pengembang Mobile](screenshots/Javex%20Profil%20Pengembang%20Mobile.png) |
+- **Production URL**: [https://widifirmaan.web.id/bootstrap-javex-template/](https://widifirmaan.web.id/bootstrap-javex-template/)
 
 ---
 
-## Features
+## Screenshot
 
-- **Spreadsheet Learning Modules (`pendahuluan.html`, `mulai.html`, `format.html`)**: Step-by-step Excel guides covering introductory concepts, interface elements (Ribbon tabs, Name Box, Formula Bar), workbook formatting, and data types with smooth horizontal pill tab navigation.
-- **Formulas & Functions Cheatsheet (`rumus.html`)**: Reference catalog with syntax rules and practical examples for arithmetic formulas, SUM, AVERAGE, MAX, MIN, COUNT, and logical IF statements.
-- **Hands-On Practical Worksheets (`latsoal.html`, `mulailatsoal.html`)**: Case study exercises with spreadsheet sample tables and an external Google Forms submission workflow.
-- **Evaluation Examination (`quiz.html`, `mulaiquiz.html`)**: 20-question multiple-choice assessment with client-side JavaScript scoring, completion validation, pass/fail threshold evaluation (>= 70%), and a Bootstrap 5 modal result popup.
-- **Embedded Video Tutorial (`video.html`)**: Responsive 16:9 Bootstrap ratio container with an embedded YouTube spreadsheet tutorial video.
-- **Curriculum Standards Alignment (`kd.html`)**: Indonesian vocational curriculum Kompetensi Dasar (KD 3.4 & 4.4) and competency achievement indicators (IPK).
-- **OneUI-Inspired Design System (`assets/css/oneui.css`)**: Card-based interface styled with Samsung OneUI rounded corners (`border-radius: 24px`), pill tab navigation, mobile bottom navigation bar, and CSS custom properties.
-- **Audio Narration Player (`index.html`)**: Embedded HTML5 audio player (`audio.mp3`) providing introductory background audio on the welcome portal.
-- **Academic Bibliography & Developer Profile (`daftarpustaka.html`, `profilpengembang.html`)**: Textbook citation modals and academic development team profile.
+| Desktop | Mobile |
+| :---: | :---: |
+| **Portal Selamat Datang & Audio Pengantar**<br>![Beranda](screenshots/Beranda%20Desktop.png) | **Portal Selamat Datang & Audio Pengantar**<br>![Beranda](screenshots/Beranda%20Mobile.png) |
+| **Kompetensi Dasar (KD 3.4 & 4.4) & IPK**<br>![Kompetensi Dasar](screenshots/Kompetensi%20Dasar%20Desktop.png) | **Kompetensi Dasar (KD 3.4 & 4.4) & IPK**<br>![Kompetensi Dasar](screenshots/Kompetensi%20Dasar%20Mobile.png) |
+| **Katalog Silabus Modul Excel**<br>![Materi](screenshots/Materi%20Desktop.png) | **Katalog Silabus Modul Excel**<br>![Materi](screenshots/Materi%20Mobile.png) |
+| **Pendahuluan & Konsep Spreadsheet**<br>![Pendahuluan](screenshots/Pendahuluan%20Desktop.png) | **Pendahuluan & Konsep Spreadsheet**<br>![Pendahuluan](screenshots/Pendahuluan%20Mobile.png) |
+| **Panduan Ribbon Tab & Antarmuka**<br>![Antarmuka](screenshots/Antarmuka%20Desktop.png) | **Panduan Ribbon Tab & Antarmuka**<br>![Antarmuka](screenshots/Antarmuka%20Mobile.png) |
+| **Format Workbook & Tab Pill Navigasi**<br>![Format](screenshots/Format%20Desktop.png) | **Format Workbook & Tab Pill Navigasi**<br>![Format](screenshots/Format%20Mobile.png) |
+| **Cheatsheet Rumus & Fungsi Logika**<br>![Rumus](screenshots/Rumus%20Desktop.png) | **Cheatsheet Rumus & Fungsi Logika**<br>![Rumus](screenshots/Rumus%20Mobile.png) |
+| **Lembar Kasus Praktik Mandiri**<br>![Latihan](screenshots/Latihan%20Desktop.png) | **Lembar Kasus Praktik Mandiri**<br>![Latihan](screenshots/Latihan%20Mobile.png) |
+| **Arena Ujian Kuis 20 Soal & Skoring**<br>![Quiz](screenshots/Quiz%20Desktop.png) | **Arena Ujian Kuis 20 Soal & Skoring**<br>![Quiz](screenshots/Quiz%20Mobile.png) |
+| **Video Pembelajaran Responsif 16:9**<br>![Video](screenshots/Video%20Desktop.png) | **Video Pembelajaran Responsif 16:9**<br>![Video](screenshots/Video%20Mobile.png) |
+| **Daftar Pustaka & Modal Kutipan**<br>![Daftar Pustaka](screenshots/Daftar%20Pustaka%20Desktop.png) | **Daftar Pustaka & Modal Kutipan**<br>![Daftar Pustaka](screenshots/Daftar%20Pustaka%20Mobile.png) |
+| **Profil Tim Pengembang & Pembimbing**<br>![Profil](screenshots/Profil%20Desktop.png) | **Profil Tim Pengembang & Pembimbing**<br>![Profil](screenshots/Profil%20Mobile.png) |
+
+---
+
+## Fitur
+
+- **Modul Pembelajaran Terstruktur (`pendahuluan.html`, `mulai.html`, `format.html`)**: Panduan langkah-demi-langkah penguasaan Microsoft Excel mulai dari pengenalan dasar, identifikasi elemen Ribbon (Name Box, Formula Bar), hingga teknik format cell dengan navigasi tab pill horizontal.
+- **Cheatsheet Rumus & Sintaks (`rumus.html`)**: Katalog rumus aritmatika dan fungsi analitik populer (SUM, AVERAGE, MAX, MIN, COUNT, dan fungsi logika IF tunggal/majemuk) dilengkapi sintaks dan contoh kasus nyata.
+- **Lembar Kasus Latihan (`latsoal.html`, `mulailatsoal.html`)**: Soal studi kasus praktik pengolahan data tabel spreadsheet yang terintegrasi dengan formulir pengumpulan tugas.
+- **Engine Ujian Evaluasi Interaktif (`mulaiquiz.html`)**: Kuis 20 butir pilihan ganda dengan validasi kelengkapan jawaban, penghitungan skor otomatis di sisi client (JavaScript), evaluasi batas kelulusan (>= 70%), dan modal hasil akhir Bootstrap 5.
+- **Pemutar Video Tutorial Tersemat (`video.html`)**: Kontainer rasio 16:9 responsif Bootstrap yang menyematkan video pembelajaran Excel dari YouTube.
+- **Penyelarasan Standar Kurikulum (`kd.html`)**: Rincian Kompetensi Dasar (KD 3.4 & 4.4) dan Indikator Pencapaian Kompetensi (IPK) kurikulum kejuruan.
+- **Desain UI Terinspirasi OneUI (`assets/css/oneui.css`)**: Tata letak kartu dengan sudut membulat halus khas Samsung OneUI (`border-radius: 24px`), tab navigasi pill, dan bottom navigation bar responsif.
+- **Audio Sambutan Interaktif (`index.html`)**: Audio player latar HTML5 (`audio.mp3`) pada beranda untuk memandu pengguna yang baru pertama kali mengakses media.
+- **Daftar Pustaka & Profil Tim (`daftarpustaka.html`, `profilpengembang.html`)**: Modal kutipan referensi buku akademik dan profil tim pengembang beserta dosen pembimbing.
 
 ---
 
 ## Tech Stack
 
-| Category | Technologies | Purpose |
+| Kategori | Teknologi | Deskripsi / Peran |
 | :--- | :--- | :--- |
-| **UI Framework** | Bootstrap `5.0.0-beta2` | Responsive layout grid, tabbed pill navigation, responsive 16:9 ratio, and modals |
-| **JavaScript Library** | jQuery `3.3.1` | DOM manipulation and legacy script support (`vendor/jquery/jquery.min.js`) |
-| **Custom Styling** | OneUI CSS (`assets/css/oneui.css`) | Samsung OneUI-inspired design system, floating pill navbar, and CSS variables |
-| **Typography** | Poppins Font | Modern sans-serif typography (300, 400, 500, 600, 700) via Google Fonts |
-| **Iconography** | Font Awesome `5.15.3` | Vector icons for subject categories and navigation controls via CDNJS |
-| **Interactivity** | Vanilla JavaScript | Quiz answer validation, automatic score tallying, and pass/fail modal triggering |
-| **Multimedia** | HTML5 Audio & YouTube Iframe | Homepage audio player (`audio.mp3`) and embedded responsive tutorial video |
+| **UI Framework** | Bootstrap `5.0.0-beta2` | Grid tata letak responsif, navigasi pill, rasio 16:9, dan modal dialog |
+| **Scripting Library** | jQuery `3.3.1` | Manipulasi DOM dan dukungan plugin bawaan |
+| **Styling Kustom** | OneUI CSS (`assets/css/oneui.css`) | Token desain sudut membulat, navbar mengambang, dan variabel CSS |
+| **Tipografi** | Poppins Font | Font sans-serif modern Google Fonts |
+| **Ikonografi** | Font Awesome `5.15.3` | Ikon vektor kategori materi dan tombol aksi navigasi |
+| **Interaktivitas** | Vanilla JavaScript | Skoring kuis otomatis dan modal evaluasi kelulusan |
+| **Multimedia** | HTML5 Audio & YouTube Iframe | Pemutar audio lokal dan video tutorial tersemat |
 
 ---
 
-## Project Structure
+## Panduan Setup & Menjalankan Lokal
 
-```bash
-/
-├── index.html            # Main entrance portal with category cards and audio player
-├── kd.html               # Basic competencies (KD 3.4 & 4.4) and indicators (IPK)
-├── materi.html           # Excel learning curriculum syllabus cards
-├── pendahuluan.html      # Introductory concepts and Excel advantages
-├── mulai.html            # Interface elements, ribbon tabs, and menu commands guide
-├── format.html           # Workbook formatting guide with pill tabs
-├── rumus.html            # Formulas & functions cheat sheet (SUM, IF, AVERAGE)
-├── latsoal.html          # Practice exercises instruction entrance
-├── mulailatsoal.html     # Hands-on practice worksheet with Google Form submit link
-├── quiz.html             # Final examination instruction entrance
-├── mulaiquiz.html        # 20-question quiz engine with automatic scoring and modal
-├── video.html            # Responsive 16:9 YouTube video tutorial player
-├── daftarpustaka.html    # Academic textbook references and modal descriptions
-├── profilpengembang.html # Developer author and academic advisor profiles
-├── audio.mp3             # Background audio narration for the welcome page
-├── assets/
-│   ├── css/oneui.css     # Custom OneUI design tokens and navigation styles
-│   └── dafpust.png       # Academic reference illustration
-├── daftarpustaka/        # Textbook cover thumbnail assets
-├── vendor/
-│   ├── bootstrap/        # Bootstrap 5.0.0-beta2 CSS and JS bundle
-│   └── jquery/           # jQuery 3.3.1 library
-├── screenshots/          # Showcase mockups
-└── README.md
-```
+### 1. Prasyarat Sistem
 
----
+- Browser web modern (Google Chrome, Firefox, Safari, Microsoft Edge).
+- Python 3 (`python3`) atau Node.js (`npx serve`) untuk menyajikan file statis secara lokal.
+- Database: **Tidak membutuhkan database** (aplikasi statis client-side).
 
-## Local Setup & Deployment
+### 2. Environment Variables
 
-### 1. Prerequisites
+Tidak ada environment variable yang diperlukan.
 
-- Any modern web browser (Google Chrome, Firefox, Edge, Safari).
-- Python 3 (`python3`) or Node.js (`npx serve`) to serve static HTML files locally.
-
-### 2. Menjalankan Server Lokal
-
-Template ini merupakan aplikasi web statis murni tanpa kebutuhan database eksternal:
+### 3. Instalasi & Menjalankan Server Lokal
 
 ```bash
 # 1. Clone repository
 git clone https://github.com/widifirmaan/bootstrap-javex-template.git
 cd bootstrap-javex-template
 
-# 2. Jalankan local static server
+# 2. Jalankan static web server lokal
+# Menggunakan Python 3:
 python3 -m http.server 8000
 
-# Atau menggunakan npx serve (jika ada Node.js)
+# Atau menggunakan npx serve (jika terpasang Node.js):
 npx serve .
 ```
 
 Buka [http://localhost:8000](http://localhost:8000) di browser Anda.
 
-### 3. Panduan Uji Manual (Testing Checklist)
+### 4. Panduan Uji Manual (Testing Checklist)
 
-Lakukan verifikasi manual berikut di browser:
-
-| No | Fitur yang Diuji | Langkah Pengujian | Hasil yang Diharapkan |
+| No | Fitur | Langkah Pengujian | Hasil yang Diharapkan |
 | :---: | :--- | :--- | :--- |
-| 1 | **Portal Utama & Audio** | Buka `http://localhost:8000`, putar tombol audio pengantar | Audio pemandu diputar lancar dan menu OneUI card responsif |
-| 2 | **Kompetensi Dasar** | Buka `/kd.html` | Tabel KD 3.4 & 4.4 serta indikator IPK tertampil terstruktur |
-| 3 | **Materi Pembelajaran** | Buka `/materi.html` lalu klik modul format workbook | Konten panduan Excel tampil dengan tab navigasi pill yang dapat berganti |
-| 4 | **Cheatsheet Rumus** | Buka `/rumus.html` | Katalog fungsi SUM, AVERAGE, MAX, MIN, IF tampil jelas |
-| 5 | **Quiz Interaktif** | Buka `/quiz.html` -> `/mulaiquiz.html`, jawab 20 pertanyaan, submit | Skor terhitung otomatis, modal Bootstrap 5 tampil menampilkan nilai & status lulus |
-| 6 | **Video Player** | Buka `/video.html` | Embed iframe video tutorial YouTube termuat responsif dalam rasio 16:9 |
+| 1 | **Portal Beranda & Audio** | Buka `http://localhost:8000`, klik tombol audio | Audio narasi pemandu terdengar dan kartu navigasi OneUI tampil proporsional |
+| 2 | **Kompetensi Dasar** | Buka `/kd.html` | Matriks tabel KD 3.4 & 4.4 serta indikator IPK tampil rapi |
+| 3 | **Modul Materi** | Buka `/materi.html` lalu pilih modul Format | Materi format cell tampil dengan tab pill yang dapat diklik bergantian |
+| 4 | **Cheatsheet Rumus** | Buka `/rumus.html` | Rumus fungsi SUM, AVERAGE, MAX, MIN, IF tampil lengkap dengan sintaksnya |
+| 5 | **Quiz Evaluasi** | Buka `/mulaiquiz.html`, jawab seluruh pertanyaan, klik Selesai | Skor terhitung otomatis dan modal Bootstrap 5 muncul menampilkan perolehan nilai serta status kelulusan |
+| 6 | **Video Pembelajaran** | Buka `/video.html` | Video tutorial YouTube termuat responsif dalam rasio layar 16:9 |
 
 ---
 
