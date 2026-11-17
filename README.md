@@ -12,14 +12,37 @@ Javex is a responsive Bootstrap 5 web template designed for spreadsheet learning
 
 ## Showcase
 
-| Desktop | Mobile |
+### 1. Welcome Portal & Competency Alignment (`index.html`, `kd.html`)
+
+| Desktop Interface (MacBook Pro M4) | Mobile Interface (iPhone 16 Pro) |
 | :---: | :---: |
-| **Homepage Desktop**<br>![Homepage Desktop](screenshots/Javex%20Homepage%20Desktop.png) | **Homepage Mobile**<br>![Homepage Mobile](screenshots/Javex%20Homepage%20Mobile.png) |
-| **Kompetensi Dasar Desktop**<br>![Kompetensi Dasar Desktop](screenshots/Javex%20Kompetensi%20Dasar%20Desktop.png) | **Kompetensi Dasar Mobile**<br>![Kompetensi Dasar Mobile](screenshots/Javex%20Kompetensi%20Dasar%20Mobile.png) |
-| **Materi Pembelajaran Desktop**<br>![Materi Pembelajaran Desktop](screenshots/Javex%20Materi%20Desktop.png) | **Materi Pembelajaran Mobile**<br>![Materi Pembelajaran Mobile](screenshots/Javex%20Materi%20Mobile.png) |
-| **Latihan Soal Desktop**<br>![Latihan Soal Desktop](screenshots/Javex%20Latihan%20Soal%20Desktop.png) | **Latihan Soal Mobile**<br>![Latihan Soal Mobile](screenshots/Javex%20Latihan%20Soal%20Mobile.png) |
-| **Quiz Evaluasi Desktop**<br>![Quiz Evaluasi Desktop](screenshots/Javex%20Quiz%20Evaluasi%20Desktop.png) | **Quiz Evaluasi Mobile**<br>![Quiz Evaluasi Mobile](screenshots/Javex%20Quiz%20Evaluasi%20Mobile.png) |
-| **Daftar Pustaka Desktop**<br>![Daftar Pustaka Desktop](screenshots/Javex%20Daftar%20Pustaka%20Desktop.png) | **Daftar Pustaka Mobile**<br>![Daftar Pustaka Mobile](screenshots/Javex%20Daftar%20Pustaka%20Mobile.png) |
+| **Welcome Portal & Audio Narration**<br>![Javex Homepage Desktop](screenshots/Javex%20Homepage%20&%20Portal%20Desktop.png) | **Welcome Portal & Audio Narration**<br>![Javex Homepage Mobile](screenshots/Javex%20Homepage%20&%20Portal%20Mobile.png) |
+| **Kompetensi Dasar (KD 3.4 & 4.4) & IPK**<br>![Javex Kompetensi Dasar Desktop](screenshots/Javex%20Kompetensi%20Dasar%20&%20IPK%20Desktop.png) | **Kompetensi Dasar (KD 3.4 & 4.4) & IPK**<br>![Javex Kompetensi Dasar Mobile](screenshots/Javex%20Kompetensi%20Dasar%20&%20IPK%20Mobile.png) |
+
+### 2. Spreadsheet Learning Modules & Formatting (`materi.html`, `pendahuluan.html`, `mulai.html`, `format.html`)
+
+| Desktop Interface (MacBook Pro M4) | Mobile Interface (iPhone 16 Pro) |
+| :---: | :---: |
+| **Excel Learning Curriculum Syllabus**<br>![Javex Materi Kurikulum Desktop](screenshots/Javex%20Materi%20Kurikulum%20Desktop.png) | **Excel Learning Curriculum Syllabus**<br>![Javex Materi Kurikulum Mobile](screenshots/Javex%20Materi%20Kurikulum%20Mobile.png) |
+| **Spreadsheet Introductory Concepts**<br>![Javex Pendahuluan Excel Desktop](screenshots/Javex%20Pendahuluan%20Excel%20Desktop.png) | **Spreadsheet Introductory Concepts**<br>![Javex Pendahuluan Excel Mobile](screenshots/Javex%20Pendahuluan%20Excel%20Mobile.png) |
+| **Ribbon Tabs & Commands Guide**<br>![Javex Ribbon Desktop](screenshots/Javex%20Ribbon%20&%20Antarmuka%20Desktop.png) | **Ribbon Tabs & Commands Guide**<br>![Javex Ribbon Mobile](screenshots/Javex%20Ribbon%20&%20Antarmuka%20Mobile.png) |
+| **Workbook Formatting Guide with Pill Tabs**<br>![Javex Format Workbook Desktop](screenshots/Javex%20Format%20Workbook%20Tabs%20Desktop.png) | **Workbook Formatting Guide with Pill Tabs**<br>![Javex Format Workbook Mobile](screenshots/Javex%20Format%20Workbook%20Tabs%20Mobile.png) |
+
+### 3. Formulas Cheatsheet & Practical Worksheets (`rumus.html`, `latsoal.html`, `mulailatsoal.html`)
+
+| Desktop Interface (MacBook Pro M4) | Mobile Interface (iPhone 16 Pro) |
+| :---: | :---: |
+| **Formulas & Functions Cheatsheet**<br>![Javex Rumus Cheatsheet Desktop](screenshots/Javex%20Rumus%20&%20Fungsi%20Cheatsheet%20Desktop.png) | **Formulas & Functions Cheatsheet**<br>![Javex Rumus Cheatsheet Mobile](screenshots/Javex%20Rumus%20&%20Fungsi%20Cheatsheet%20Mobile.png) |
+| **Hands-On Practical Case Study Worksheet**<br>![Javex Lembar Kerja Praktik Desktop](screenshots/Javex%20Lembar%20Kerja%20Praktik%20Desktop.png) | **Hands-On Practical Case Study Worksheet**<br>![Javex Lembar Kerja Praktik Mobile](screenshots/Javex%20Lembar%20Kerja%20Praktik%20Mobile.png) |
+
+### 4. Interactive Examination, Video & Bibliography (`mulaiquiz.html`, `video.html`, `daftarpustaka.html`, `profilpengembang.html`)
+
+| Desktop Interface (MacBook Pro M4) | Mobile Interface (iPhone 16 Pro) |
+| :---: | :---: |
+| **20-Question Examination Arena & Scoring**<br>![Javex Arena Quiz Evaluasi Desktop](screenshots/Javex%20Arena%20Quiz%20Evaluasi%20Desktop.png) | **20-Question Examination Arena & Scoring**<br>![Javex Arena Quiz Evaluasi Mobile](screenshots/Javex%20Arena%20Quiz%20Evaluasi%20Mobile.png) |
+| **Embedded 16:9 YouTube Tutorial Player**<br>![Javex Video Tutorial Desktop](screenshots/Javex%20Video%20Tutorial%2016-9%20Desktop.png) | **Embedded 16:9 YouTube Tutorial Player**<br>![Javex Video Tutorial Mobile](screenshots/Javex%20Video%20Tutorial%2016-9%20Mobile.png) |
+| **Academic Textbook Bibliography References**<br>![Javex Daftar Pustaka Desktop](screenshots/Javex%20Daftar%20Pustaka%20Buku%20Desktop.png) | **Academic Textbook Bibliography References**<br>![Javex Daftar Pustaka Mobile](screenshots/Javex%20Daftar%20Pustaka%20Buku%20Mobile.png) |
+| **Development Team & Academic Advisors**<br>![Javex Profil Pengembang Desktop](screenshots/Javex%20Profil%20Pengembang%20Desktop.png) | **Development Team & Academic Advisors**<br>![Javex Profil Pengembang Mobile](screenshots/Javex%20Profil%20Pengembang%20Mobile.png) |
 
 ---
 
