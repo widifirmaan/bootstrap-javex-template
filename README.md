@@ -4,16 +4,9 @@
 
 Javex is a responsive Bootstrap 5 web template designed for spreadsheet learning and e-learning coursework. Styled with custom OneUI-inspired card elements and navigation primitives (`assets/css/oneui.css`), it features structured curriculum modules, competency standards alignment (Kompetensi Dasar), interactive practice drills, automated evaluation quizzes, formulas cheatsheet, video lessons, and academic bibliography pages.
 
-[![Live Demo](https://img.shields.io/badge/Demo-widifirmaan.web.id%2Fjavex-10B981?style=flat-square&logo=googlechrome&logoColor=white)](https://widifirmaan.web.id/bootstrap-javex-template/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?style=flat-square&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 [![Font Awesome](https://img.shields.io/badge/Icons-Font_Awesome_5-528DD7?style=flat-square&logo=fontawesome&logoColor=white)](https://fontawesome.com/)
-
----
-
-## Live Production
-
-- **URL:** [https://widifirmaan.web.id/bootstrap-javex-template/](https://widifirmaan.web.id/bootstrap-javex-template/)
-- **Deployment:** GitHub Pages
+[![HTML5 / CSS3](https://img.shields.io/badge/HTML5%20%2F%20CSS3-Modern_Web-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/)
 
 ---
 
@@ -84,35 +77,49 @@ Javex is a responsive Bootstrap 5 web template designed for spreadsheet learning
 ├── vendor/
 │   ├── bootstrap/        # Bootstrap 5.0.0-beta2 CSS and JS bundle
 │   └── jquery/           # jQuery 3.3.1 library
-├── raw_screenshots/      # Source captures with notch offset
-├── screenshots/          # MacBook Pro M4 & iPhone 16 Pro showcase mockups
+├── screenshots/          # Showcase mockups
 └── README.md
 ```
 
 ---
 
-## Getting Started & Local Development
+## Local Setup & Deployment
 
-### Prerequisites
+### 1. Prerequisites
 
-Static HTML/CSS/JS application. No compilers, Node modules, or package managers required.
+- Any modern web browser (Google Chrome, Firefox, Edge, Safari).
+- Python 3 (`python3`) or Node.js (`npx serve`) to serve static HTML files locally.
 
-### Local Development
+### 2. Menjalankan Server Lokal
 
-> **Environment Variables:** No `.env` file or API keys are required. All interactive quizzes, scoring timers, and multimedia elements execute 100% locally in the browser.
+Template ini merupakan aplikasi web statis murni tanpa kebutuhan database eksternal:
 
 ```bash
-# 1. Clone the repository
+# 1. Clone repository
 git clone https://github.com/widifirmaan/bootstrap-javex-template.git
 cd bootstrap-javex-template
 
-# 2. Start local static server
+# 2. Jalankan local static server
 python3 -m http.server 8000
-# or using Node.js:
+
+# Atau menggunakan npx serve (jika ada Node.js)
 npx serve .
 ```
 
-Open [http://localhost:8000](http://localhost:8000) in your web browser.
+Buka [http://localhost:8000](http://localhost:8000) di browser Anda.
+
+### 3. Panduan Uji Manual (Testing Checklist)
+
+Lakukan verifikasi manual berikut di browser:
+
+| No | Fitur yang Diuji | Langkah Pengujian | Hasil yang Diharapkan |
+| :---: | :--- | :--- | :--- |
+| 1 | **Portal Utama & Audio** | Buka `http://localhost:8000`, putar tombol audio pengantar | Audio pemandu diputar lancar dan menu OneUI card responsif |
+| 2 | **Kompetensi Dasar** | Buka `/kd.html` | Tabel KD 3.4 & 4.4 serta indikator IPK tertampil terstruktur |
+| 3 | **Materi Pembelajaran** | Buka `/materi.html` lalu klik modul format workbook | Konten panduan Excel tampil dengan tab navigasi pill yang dapat berganti |
+| 4 | **Cheatsheet Rumus** | Buka `/rumus.html` | Katalog fungsi SUM, AVERAGE, MAX, MIN, IF tampil jelas |
+| 5 | **Quiz Interaktif** | Buka `/quiz.html` -> `/mulaiquiz.html`, jawab 20 pertanyaan, submit | Skor terhitung otomatis, modal Bootstrap 5 tampil menampilkan nilai & status lulus |
+| 6 | **Video Player** | Buka `/video.html` | Embed iframe video tutorial YouTube termuat responsif dalam rasio 16:9 |
 
 ---
 
