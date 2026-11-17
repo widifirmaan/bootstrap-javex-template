@@ -1,26 +1,25 @@
 # Javex
 
-> Modern Bootstrap 5 e-learning template and practice quiz application inspired by Samsung OneUI design language.
+> Responsive Bootstrap 5 e-learning template and practice quiz application.
 
-Javex is a responsive Bootstrap 5 template designed for interactive e-learning media and spreadsheet education, styled with custom OneUI-inspired rounded card elements and navigation primitives (`assets/css/oneui.css`). It features structured curriculum modules, competency standards alignment (Kompetensi Dasar), interactive practice drills, automated evaluation quizzes, formulas cheatsheet, video lessons, and academic bibliography pages.
+Javex is a responsive Bootstrap 5 web template designed for spreadsheet learning and e-learning coursework. Styled with custom OneUI-inspired card elements and navigation primitives (`assets/css/oneui.css`), it features structured curriculum modules, competency standards alignment (Kompetensi Dasar), interactive practice drills, automated evaluation quizzes, formulas cheatsheet, video lessons, and academic bibliography pages.
 
-[![Live Demo](https://img.shields.io/badge/Demo-widifirmaan.web.id%2Fjavex-10B981?style=flat-square&logo=googlechrome&logoColor=white)](http://widifirmaan.web.id/bootstrap-javex-template/)
+[![Live Demo](https://img.shields.io/badge/Demo-widifirmaan.web.id%2Fjavex-10B981?style=flat-square&logo=googlechrome&logoColor=white)](https://widifirmaan.web.id/bootstrap-javex-template/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?style=flat-square&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
-[![Design System](https://img.shields.io/badge/Design-OneUI_Pill_Cards-01723A?style=flat-square)](#features)
 [![Font Awesome](https://img.shields.io/badge/Icons-Font_Awesome_5-528DD7?style=flat-square&logo=fontawesome&logoColor=white)](https://fontawesome.com/)
 
 ---
 
 ## Live Production
 
-- **URL:** [http://widifirmaan.web.id/bootstrap-javex-template/](http://widifirmaan.web.id/bootstrap-javex-template/)
-- **Deployment:** Apache Web Server / Cloudflare Proxy
+- **URL:** [https://widifirmaan.web.id/bootstrap-javex-template/](https://widifirmaan.web.id/bootstrap-javex-template/)
+- **Deployment:** GitHub Pages
 
 ---
 
 ## Showcase
 
-| Desktop Interface (MacBook Pro M4) | Mobile Interface (iPhone 16 Pro) |
+| Desktop | Mobile |
 | :---: | :---: |
 | **Homepage Desktop**<br>![Homepage Desktop](screenshots/Javex%20Homepage%20Desktop.png) | **Homepage Mobile**<br>![Homepage Mobile](screenshots/Javex%20Homepage%20Mobile.png) |
 | **Kompetensi Dasar Desktop**<br>![Kompetensi Dasar Desktop](screenshots/Javex%20Kompetensi%20Dasar%20Desktop.png) | **Kompetensi Dasar Mobile**<br>![Kompetensi Dasar Mobile](screenshots/Javex%20Kompetensi%20Dasar%20Mobile.png) |
