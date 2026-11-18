@@ -26,10 +26,14 @@
 | **Ribbon Tabs & Commands Guide**<br>![Antarmuka](screenshots/Antarmuka%20Desktop.png) | **Ribbon Tabs & Commands Guide**<br>![Antarmuka](screenshots/Antarmuka%20Mobile.png) |
 | **Workbook Formatting & Pill Tabs**<br>![Format](screenshots/Format%20Desktop.png) | **Workbook Formatting & Pill Tabs**<br>![Format](screenshots/Format%20Mobile.png) |
 | **Formulas & Logical Functions Cheatsheet**<br>![Rumus](screenshots/Rumus%20Desktop.png) | **Formulas & Logical Functions Cheatsheet**<br>![Rumus](screenshots/Rumus%20Mobile.png) |
+| **Worksheet Instructions & Submission Guide**<br>![Petunjuk Latihan](screenshots/Petunjuk%20Latihan%20Desktop.png) | **Worksheet Instructions & Submission Guide**<br>![Petunjuk Latihan](screenshots/Petunjuk%20Latihan%20Mobile.png) |
 | **Hands-On Practical Case Study Worksheet**<br>![Latihan](screenshots/Latihan%20Desktop.png) | **Hands-On Practical Case Study Worksheet**<br>![Latihan](screenshots/Latihan%20Mobile.png) |
+| **Quiz Instructions & Assessment Rules**<br>![Petunjuk Quiz](screenshots/Petunjuk%20Quiz%20Desktop.png) | **Quiz Instructions & Assessment Rules**<br>![Petunjuk Quiz](screenshots/Petunjuk%20Quiz%20Mobile.png) |
 | **20-Question Examination Arena & Scoring**<br>![Quiz](screenshots/Quiz%20Desktop.png) | **20-Question Examination Arena & Scoring**<br>![Quiz](screenshots/Quiz%20Mobile.png) |
+| **Quiz Result Modal & Pass/Fail Score**<br>![Quiz Result Modal](screenshots/Quiz%20Result%20Modal%20Desktop.png) | **Quiz Result Modal & Pass/Fail Score**<br>![Quiz Result Modal](screenshots/Quiz%20Result%20Modal%20Mobile.png) |
 | **Embedded 16:9 Video Tutorial**<br>![Video](screenshots/Video%20Desktop.png) | **Embedded 16:9 Video Tutorial**<br>![Video](screenshots/Video%20Mobile.png) |
-| **Academic Bibliography & Citation Modals**<br>![Daftar Pustaka](screenshots/Daftar%20Pustaka%20Desktop.png) | **Academic Bibliography & Citation Modals**<br>![Daftar Pustaka](screenshots/Daftar%20Pustaka%20Mobile.png) |
+| **Academic Bibliography & Book Collection**<br>![Daftar Pustaka](screenshots/Daftar%20Pustaka%20Desktop.png) | **Academic Bibliography & Book Collection**<br>![Daftar Pustaka](screenshots/Daftar%20Pustaka%20Mobile.png) |
+| **Book Detail & Citation Modal**<br>![Daftar Pustaka Modal](screenshots/Daftar%20Pustaka%20Modal%20Desktop.png) | **Book Detail & Citation Modal**<br>![Daftar Pustaka Modal](screenshots/Daftar%20Pustaka%20Modal%20Mobile.png) |
 | **Development Team & Academic Advisors**<br>![Profil](screenshots/Profil%20Desktop.png) | **Development Team & Academic Advisors**<br>![Profil](screenshots/Profil%20Mobile.png) |
 
 ---
