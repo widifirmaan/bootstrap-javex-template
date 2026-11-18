@@ -1,4 +1,4 @@
-# Javex
+# Javex 📊
 
 > Interactive Microsoft Excel e-learning web template built with Bootstrap 5 featuring structured curriculum modules, hands-on practical worksheets, and automated evaluation quizzes.
 
@@ -17,7 +17,7 @@
 
 ## Screenshots
 
-| Desktop | Mobile |
+| Desktop (MacBook Pro M4) | Mobile (iPhone 16 Pro) |
 | :---: | :---: |
 | **Welcome Portal & Audio Narration**<br>![Beranda](screenshots/Beranda%20Desktop.png) | **Welcome Portal & Audio Narration**<br>![Beranda](screenshots/Beranda%20Mobile.png) |
 | **Basic Competencies (KD 3.4 & 4.4) & IPK**<br>![Kompetensi Dasar](screenshots/Kompetensi%20Dasar%20Desktop.png) | **Basic Competencies (KD 3.4 & 4.4) & IPK**<br>![Kompetensi Dasar](screenshots/Kompetensi%20Dasar%20Mobile.png) |
@@ -38,7 +38,7 @@
 
 ---
 
-## Features
+## Fitur
 
 - **Step-by-Step Learning Modules (`pendahuluan.html`, `mulai.html`, `format.html`)**: Guided Excel tutorials covering introductory spreadsheet concepts, interface elements (Ribbon tabs, Name Box, Formula Bar), and workbook cell formatting with smooth horizontal pill tab navigation.
 - **Formulas & Functions Cheatsheet (`rumus.html`)**: Reference catalog with syntax rules and practical examples for arithmetic formulas, SUM, AVERAGE, MAX, MIN, COUNT, and logical IF statements.
