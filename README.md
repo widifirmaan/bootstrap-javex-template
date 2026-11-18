@@ -66,7 +66,7 @@
 
 ---
 
-## Local Setup & Deployment
+## Tutorial Run Local & Setup
 
 ### 1. Prerequisites
 
@@ -74,7 +74,7 @@
 - Python 3 (`python3`) or Node.js (`npx serve`) to serve static HTML files locally.
 - Database: **No database required** (100% static client-side web template).
 
-### 2. Environment Variables
+### 2. Environment Variables Setup
 
 No environment variables are required.
 
@@ -95,19 +95,35 @@ npx serve .
 
 Open [http://localhost:8000](http://localhost:8000) in your browser.
 
-### 4. Manual Testing Checklist
+---
 
-| No | Feature | Test Steps | Expected Result |
-| :---: | :--- | :--- | :--- |
-| 1 | **Welcome Portal & Audio** | Open `http://localhost:8000`, click audio button | Background narration plays and OneUI menu cards render cleanly |
-| 2 | **Competencies Alignment** | Open `/kd.html` | KD 3.4 & 4.4 matrix and IPK indicators display in structured tables |
-| 3 | **Learning Modules** | Open `/materi.html`, select Format Workbook | Displays formatting guide with clickable pill navigation tabs |
-| 4 | **Formulas Cheatsheet** | Open `/rumus.html` | Displays syntax and examples for SUM, AVERAGE, MAX, MIN, and IF |
-| 5 | **Interactive Quiz** | Open `/mulaiquiz.html`, answer all 20 questions, submit | Score calculates automatically; Bootstrap modal pops up with grade and pass/fail status |
-| 6 | **Video Player** | Open `/video.html` | Embedded YouTube tutorial player loads responsively in 16:9 ratio |
+## Testing & QA Automation
+
+Automated testing and QA verification are powered by the system's `qa-toolkit`:
+
+### 1. Playwright Test Suite
+End-to-end smoke verification covering welcome portal navigation and 20-question quiz arena:
+
+```bash
+cd /home/widifirmaan/Projects/qa-toolkit
+npx playwright test tests/playwright/javex.spec.js
+```
+
+### 2. Cypress E2E Verification
+Cross-browser regression testing on DOM structure and production stability:
+
+```bash
+cd /home/widifirmaan/Projects/qa-toolkit
+npx cypress run --spec cypress/e2e/javex.cy.js
+```
+
+### 3. QA Execution Summary
+- **Playwright**: 2 tests passed (Welcome Portal & Quiz Arena `/mulaiquiz.html` Mount)
+- **Cypress**: 2 specs passed (Template Welcome DOM Mount & Quiz Assessment Page Verification)
+- **Status**: ✅ All automated tests verified and passing
 
 ---
 
 ## Author
 
-Developed by **[Widi Firmansyah](https://widifirmaan.web.id)**.
+Made with ❤️ by **Widi Firmansyah** / [widifirmaan.web.id](https://widifirmaan.web.id)
