@@ -1,4 +1,4 @@
-# Javex 📊
+# Javex
 
 > Interactive Microsoft Excel e-learning web template built with Bootstrap 5 featuring structured curriculum modules, hands-on practical worksheets, and automated evaluation quizzes.
 
