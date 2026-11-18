@@ -48,7 +48,7 @@ body {
 .oneui-content {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 20px calc(100px + env(safe-area-inset-bottom, 0px));
+  padding: 0 20px calc(120px + env(safe-area-inset-bottom, 0px));
 }
 
 /* Cards */
@@ -148,12 +148,12 @@ body {
 /* Floating Navigation (Bottom floating pill dock on mobile, top pill on desktop) */
 .oneui-navbar {
   position: fixed;
-  bottom: max(20px, calc(env(safe-area-inset-bottom, 0px) + 12px));
+  bottom: max(32px, calc(env(safe-area-inset-bottom, 0px) + 24px));
   left: 16px;
   right: 16px;
   max-width: 440px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   padding: 8px 14px;
