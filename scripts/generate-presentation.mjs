@@ -18,7 +18,7 @@ function encodeImage(filename) {
   return `data:image/png;base64,${fileBuffer.toString('base64')}`;
 }
 
-console.log('Memproses screenshot Javex...');
+console.log('Memproses screenshot Javex OneUI...');
 
 const images = {
   berandaDesktop: encodeImage('Beranda Desktop.png'),
@@ -40,29 +40,30 @@ const images = {
   pustakaDesktop: encodeImage('Daftar Pustaka Modal Desktop.png'),
 };
 
-console.log('Menyusun HTML dokumen presentasi Javex...');
+console.log('Menyusun HTML presentasi dengan style murni Samsung OneUI & Excel Green...');
 
 const htmlContent = `<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Javex - Platform Pembelajaran Interaktif Microsoft Excel</title>
+  <title>Javex - Samsung OneUI E-Learning Web Architecture</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
-      --oneui-blue: #0072DE;
-      --oneui-blue-light: #EBF3FC;
-      --oneui-blue-dark: #0056B3;
-      --oneui-teal: #00A389;
-      --oneui-indigo: #4A4DE6;
-      --oneui-amber: #F2994A;
-      --oneui-bg: #F8FAFC;
-      --oneui-card: #FFFFFF;
-      --oneui-border: #E2E8F0;
-      --oneui-text-main: #0F172A;
-      --oneui-text-muted: #64748B;
+      --oneui-bg: #f2f2f6;
+      --oneui-card-bg: #ffffff;
+      --oneui-text-primary: #000000;
+      --oneui-text-secondary: #8e8e93;
+      --oneui-accent: #01723A;   /* Excel Green */
+      --oneui-blue: #0072DE;     /* Samsung Blue */
+      --oneui-border: rgba(0, 0, 0, 0.06);
+      --oneui-radius: 28px;
+      --oneui-radius-sm: 16px;
+      --oneui-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+      --font-main: 'Poppins', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
     }
 
     * {
@@ -71,13 +72,13 @@ const htmlContent = `<!DOCTYPE html>
       padding: 0;
       -webkit-print-color-adjust: exact !important;
       print-color-adjust: exact !important;
+      font-family: var(--font-main);
     }
 
     body {
-      background-color: #EEF2F6;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      color: var(--oneui-text-main);
-      line-height: 1.4;
+      background-color: var(--oneui-bg);
+      color: var(--oneui-text-primary);
+      line-height: 1.45;
     }
 
     @page {
@@ -90,34 +91,37 @@ const htmlContent = `<!DOCTYPE html>
       height: 210mm;
       page-break-after: always;
       position: relative;
-      background: var(--oneui-bg);
+      background-color: var(--oneui-bg);
       display: flex;
       flex-direction: column;
-      padding: 16mm 18mm;
+      padding: 14mm 18mm;
       overflow: hidden;
       background-image: 
-        radial-gradient(circle at 100% 0%, rgba(0, 114, 222, 0.05) 0%, transparent 50%),
-        radial-gradient(circle at 0% 100%, rgba(0, 163, 137, 0.04) 0%, transparent 40%);
+        radial-gradient(circle at 100% 0%, rgba(1, 114, 58, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 0% 100%, rgba(0, 114, 222, 0.04) 0%, transparent 40%);
     }
 
+    /* Soft OneUI Accent Top Pill */
     .slide::before {
       content: '';
       position: absolute;
       top: 0;
-      left: 0;
-      right: 0;
+      left: 18mm;
+      right: 18mm;
       height: 4px;
-      background: linear-gradient(90deg, var(--oneui-blue), var(--oneui-indigo), var(--oneui-teal));
+      background: linear-gradient(90deg, var(--oneui-accent), var(--oneui-blue));
+      border-radius: 0 0 4px 4px;
       z-index: 50;
     }
 
+    /* Header */
     .slide-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 5mm;
-      border-bottom: 1px solid var(--oneui-border);
       padding-bottom: 3.5mm;
+      border-bottom: 1px solid var(--oneui-border);
     }
 
     .brand-cluster {
@@ -127,34 +131,37 @@ const htmlContent = `<!DOCTYPE html>
     }
 
     .brand-badge {
-      background: var(--oneui-blue-light);
-      border: 1px solid rgba(0, 114, 222, 0.3);
-      color: var(--oneui-blue);
-      padding: 4px 10px;
-      font-family: 'JetBrains Mono', monospace;
+      background: rgba(1, 114, 58, 0.1);
+      color: var(--oneui-accent);
+      padding: 5px 14px;
+      font-family: var(--font-mono);
       font-weight: 700;
       font-size: 10px;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
-      border-radius: 6px;
+      border-radius: 50px;
     }
 
     .slide-section-title {
-      font-family: 'Space Grotesk', sans-serif;
       font-size: 13px;
       font-weight: 700;
-      color: var(--oneui-text-muted);
-      letter-spacing: 0.04em;
+      color: var(--oneui-text-secondary);
+      letter-spacing: -0.01em;
       text-transform: uppercase;
     }
 
     .slide-number {
-      font-family: 'JetBrains Mono', monospace;
+      font-family: var(--font-mono);
       font-size: 11px;
       font-weight: 700;
-      color: var(--oneui-blue);
+      color: var(--oneui-accent);
+      background: var(--oneui-card-bg);
+      padding: 4px 12px;
+      border-radius: 50px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     }
 
+    /* Body */
     .slide-body {
       display: grid;
       grid-template-columns: 1fr 1.35fr;
@@ -173,62 +180,55 @@ const htmlContent = `<!DOCTYPE html>
     .headline-group {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 6px;
     }
 
     .slide-title {
-      font-size: 24px;
+      font-size: 26px;
       font-weight: 800;
       line-height: 1.2;
-      color: var(--oneui-text-main);
-      letter-spacing: -0.02em;
+      color: var(--oneui-text-primary);
+      letter-spacing: -0.03em;
     }
 
     .slide-desc {
-      font-size: 12.5px;
-      color: var(--oneui-text-muted);
+      font-size: 12px;
+      color: var(--oneui-text-secondary);
       line-height: 1.55;
+      font-weight: 400;
     }
 
     .feature-list {
       display: flex;
       flex-direction: column;
       gap: 10px;
-      margin: 10px 0;
+      margin: 8px 0;
     }
 
     .feature-card {
-      background: var(--oneui-card);
+      background: var(--oneui-card-bg);
+      border-radius: var(--oneui-radius-sm);
+      padding: 12px 16px;
+      box-shadow: var(--oneui-shadow);
       border: 1px solid var(--oneui-border);
-      border-radius: 8px;
-      padding: 10px 14px;
-      border-left: 3px solid var(--oneui-blue);
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+      border-left: 4px solid var(--oneui-accent);
     }
 
-    .feature-card.teal {
-      border-left-color: var(--oneui-teal);
-    }
-
-    .feature-card.indigo {
-      border-left-color: var(--oneui-indigo);
-    }
-
-    .feature-card.amber {
-      border-left-color: var(--oneui-amber);
+    .feature-card.blue {
+      border-left-color: var(--oneui-blue);
     }
 
     .feature-card-title {
-      font-size: 12.5px;
+      font-size: 13px;
       font-weight: 700;
-      color: var(--oneui-text-main);
-      margin-bottom: 3px;
+      color: var(--oneui-text-primary);
+      margin-bottom: 2px;
       letter-spacing: -0.01em;
     }
 
     .feature-card-text {
       font-size: 11px;
-      color: var(--oneui-text-muted);
+      color: var(--oneui-text-secondary);
       line-height: 1.45;
     }
 
@@ -239,19 +239,19 @@ const htmlContent = `<!DOCTYPE html>
     }
 
     .metric-box {
-      background: var(--oneui-card);
-      border: 1px solid var(--oneui-border);
-      border-radius: 6px;
-      padding: 8px 10px;
+      background: var(--oneui-card-bg);
+      border-radius: var(--oneui-radius-sm);
+      padding: 10px 12px;
       text-align: center;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+      box-shadow: var(--oneui-shadow);
+      border: 1px solid var(--oneui-border);
     }
 
     .metric-val {
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 15px;
+      font-family: var(--font-mono);
+      font-size: 16px;
       font-weight: 800;
-      color: var(--oneui-blue);
+      color: var(--oneui-accent);
     }
 
     .metric-lbl {
@@ -259,10 +259,11 @@ const htmlContent = `<!DOCTYPE html>
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: var(--oneui-text-muted);
+      color: var(--oneui-text-secondary);
       margin-top: 2px;
     }
 
+    /* Visual Stage */
     .visual-stage {
       position: relative;
       display: flex;
@@ -271,6 +272,11 @@ const htmlContent = `<!DOCTYPE html>
       width: 100%;
       height: 100%;
       min-height: 0;
+      background: var(--oneui-card-bg);
+      border-radius: var(--oneui-radius);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--oneui-border);
+      padding: 16px;
     }
 
     .screenshot-desktop {
@@ -278,45 +284,48 @@ const htmlContent = `<!DOCTYPE html>
       max-height: 380px;
       object-fit: contain;
       display: block;
-      filter: drop-shadow(0 14px 28px rgba(0, 40, 100, 0.16));
+      filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.08));
     }
 
     .screenshot-mobile {
       position: absolute;
-      right: 0px;
-      bottom: -8px;
-      max-height: 280px;
-      max-width: 28%;
+      right: 14px;
+      bottom: 8px;
+      max-height: 270px;
+      max-width: 29%;
       object-fit: contain;
       display: block;
-      filter: drop-shadow(0 16px 32px rgba(0, 40, 100, 0.22));
+      filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.12));
     }
 
+    /* Footer */
     .slide-footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-top: 5mm;
-      border-top: 1px solid var(--oneui-border);
       padding-top: 3mm;
+      border-top: 1px solid var(--oneui-border);
     }
 
     .footer-tech {
-      font-family: 'JetBrains Mono', monospace;
+      font-family: var(--font-mono);
       font-size: 10px;
-      color: var(--oneui-text-muted);
+      font-weight: 600;
+      color: var(--oneui-text-secondary);
     }
 
     .footer-url {
-      font-family: 'JetBrains Mono', monospace;
+      font-family: var(--font-mono);
       font-size: 10px;
-      color: var(--oneui-blue);
+      font-weight: 700;
+      color: var(--oneui-accent);
     }
 
     /* Cover Styling */
     .cover-body {
       display: grid;
-      grid-template-columns: 1.1fr 1fr;
+      grid-template-columns: 1.15fr 1fr;
       gap: 30px;
       align-items: center;
       flex: 1;
@@ -324,10 +333,10 @@ const htmlContent = `<!DOCTYPE html>
     }
 
     .cover-tagline {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 12px;
+      font-family: var(--font-mono);
+      font-size: 11px;
       font-weight: 700;
-      color: var(--oneui-blue);
+      color: var(--oneui-accent);
       letter-spacing: 0.1em;
       text-transform: uppercase;
       margin-bottom: 8px;
@@ -335,16 +344,16 @@ const htmlContent = `<!DOCTYPE html>
 
     .cover-title {
       font-size: 38px;
-      font-weight: 900;
-      color: var(--oneui-text-main);
+      font-weight: 800;
+      color: var(--oneui-text-primary);
       line-height: 1.15;
       letter-spacing: -0.03em;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
 
     .cover-desc {
-      font-size: 13.5px;
-      color: var(--oneui-text-muted);
+      font-size: 13px;
+      color: var(--oneui-text-secondary);
       line-height: 1.6;
       margin-bottom: 20px;
     }
@@ -356,30 +365,30 @@ const htmlContent = `<!DOCTYPE html>
     }
 
     .spec-card {
-      background: var(--oneui-card);
-      border: 1px solid var(--oneui-border);
-      border-radius: 8px;
+      background: var(--oneui-card-bg);
+      border-radius: var(--oneui-radius-sm);
       padding: 10px 14px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+      box-shadow: var(--oneui-shadow);
+      border: 1px solid var(--oneui-border);
     }
 
     .spec-k {
       font-size: 9px;
-      font-weight: 700;
-      color: var(--oneui-text-muted);
+      font-weight: 600;
+      color: var(--oneui-text-secondary);
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
 
     .spec-v {
-      font-family: 'JetBrains Mono', monospace;
+      font-family: var(--font-mono);
       font-size: 12px;
       font-weight: 700;
-      color: var(--oneui-text-main);
+      color: var(--oneui-accent);
       margin-top: 2px;
     }
 
-    /* Overview Grid */
+    /* Architecture Grid */
     .arch-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -390,32 +399,33 @@ const htmlContent = `<!DOCTYPE html>
     }
 
     .arch-card {
-      background: var(--oneui-card);
-      border: 1px solid var(--oneui-border);
-      border-radius: 10px;
-      padding: 18px;
+      background: var(--oneui-card-bg);
+      border-radius: var(--oneui-radius);
+      padding: 20px;
       display: flex;
       flex-direction: column;
       gap: 10px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+      box-shadow: var(--oneui-shadow);
+      border: 1px solid var(--oneui-border);
     }
 
     .arch-title {
-      font-size: 14px;
-      font-weight: 800;
-      color: var(--oneui-text-main);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--oneui-text-primary);
       border-bottom: 1px solid var(--oneui-border);
       padding-bottom: 8px;
     }
 
     .arch-item {
-      font-size: 11px;
-      color: var(--oneui-text-muted);
+      font-size: 11.5px;
+      color: var(--oneui-text-secondary);
       line-height: 1.5;
     }
 
     .arch-item strong {
-      color: var(--oneui-text-main);
+      color: var(--oneui-text-primary);
+      font-weight: 600;
     }
   </style>
 </head>
@@ -425,7 +435,7 @@ const htmlContent = `<!DOCTYPE html>
   <section class="slide">
     <div class="slide-header">
       <div class="brand-cluster">
-        <span class="brand-badge">E-LEARNING WEB</span>
+        <span class="brand-badge">SAMSUNG ONEUI E-LEARNING</span>
         <span class="slide-section-title">Dokumentasi Rekayasa Perangkat Lunak</span>
       </div>
       <div class="slide-number">01 / 10</div>
@@ -433,83 +443,83 @@ const htmlContent = `<!DOCTYPE html>
 
     <div class="cover-body">
       <div>
-        <div class="cover-tagline">OneUI Design Language & Multimedia Web</div>
+        <div class="cover-tagline">OneUI Design & Interactive Education</div>
         <h1 class="cover-title">Javex Media Pembelajaran Microsoft Excel</h1>
         <p class="cover-desc">
-          Aplikasi media pembelajaran interaktif berbasis web dengan implementasi antarmuka modern Samsung OneUI, dilengkapi modul kompetensi, panduan rumus komprehensif, video pembelajaran terintegrasi, dan kuis evaluasi mandiri.
+          Media pembelajaran interaktif berbasis web dengan bahasa desain Samsung OneUI (radius 28px, kartu elevasi lembut, palet Excel Green #01723A). Menyajikan modul kompetensi, kamus rumus formula, pemutar video tutorial, dan kuis evaluasi 20 soal otomatis.
         </p>
 
         <div class="cover-specs">
           <div class="spec-card">
-            <div class="spec-k">UI Framework</div>
-            <div class="spec-v">Bootstrap 5.3 & Custom CSS</div>
+            <div class="spec-k">Design System</div>
+            <div class="spec-v">Samsung OneUI (28px Squircle)</div>
           </div>
           <div class="spec-card">
-            <div class="spec-k">Design Language</div>
-            <div class="spec-v">Samsung OneUI Aesthetics</div>
+            <div class="spec-k">Core Typography</div>
+            <div class="spec-v">Poppins & JetBrains Mono</div>
           </div>
           <div class="spec-card">
-            <div class="spec-k">Core Logic</div>
-            <div class="spec-v">Vanilla JavaScript ES6+</div>
+            <div class="spec-k">Theme Palette</div>
+            <div class="spec-v">Excel Green (#01723A)</div>
           </div>
           <div class="spec-card">
-            <div class="spec-k">Multimedia Integration</div>
-            <div class="spec-v">HTML5 Audio & Video Embed</div>
+            <div class="spec-k">Engine</div>
+            <div class="spec-v">Bootstrap 5.3 & Vanilla JS</div>
           </div>
         </div>
       </div>
 
       <div class="visual-stage">
-        <img src="${images.berandaDesktop}" class="screenshot-desktop" alt="Javex Homepage">
+        <img src="${images.berandaDesktop}" class="screenshot-desktop" alt="Javex Beranda">
       </div>
     </div>
 
     <div class="slide-footer">
-      <span class="footer-tech">Bootstrap 5 + OneUI Design + Vanilla JS + HTML5 Multimedia</span>
+      <span class="footer-tech">Bootstrap 5.3 + OneUI CSS + Poppins + HTML5 Audio/Video</span>
       <span class="footer-url">widifirmaan.web.id/bootstrap-javex-template</span>
     </div>
   </section>
 
-  <!-- SLIDE 2: ARSITEKTUR & DESAIN -->
+  <!-- SLIDE 2: ARSITEKTUR & DESAIN ONEUI -->
   <section class="slide">
     <div class="slide-header">
       <div class="brand-cluster">
         <span class="brand-badge">ARCHITECTURE</span>
-        <span class="slide-section-title">Fondasi Sistem & Struktur Antarmuka</span>
+        <span class="slide-section-title">Fondasi Sistem & Desain Ergonomis OneUI</span>
       </div>
       <div class="slide-number">02 / 10</div>
     </div>
 
-    <div class="headline-group" style="margin-bottom: 12px;">
-      <h2 class="slide-title">Arsitektur Modular & Pengalaman Pengguna</h2>
-      <p class="slide-desc">Desain antarmuka yang mengadaptasi prinsip OneUI untuk interaksi yang ergonomis, ramah navigasi satu tangan di mobile, serta keterbacaan tinggi di desktop.</p>
+    <div class="headline-group" style="margin-bottom: 8px;">
+      <h2 class="slide-title">Arsitektur Modular & Pengalaman Pengguna OneUI</h2>
+      <p class="slide-desc">Desain antarmuka yang mengadaptasi prinsip OneUI: area tampilan besar di bagian atas, kartu interaksi terjangkau jempol di bagian bawah, dan elevasi lembut.</p>
     </div>
 
     <div class="arch-grid">
       <div class="arch-card">
-        <div class="arch-title" style="color: var(--oneui-blue);">Struktur View & Layout</div>
-        <div class="arch-item"><strong>Sistem Grid Bootstrap 5:</strong> Layout 12-kolom yang sepenuhnya responsif dari layar smartphone hingga monitor desktop.</div>
-        <div class="arch-item"><strong>Komponen OneUI:</strong> Kartu sudut melengkung, badge warna tematik, dan tipografi hierarkis untuk memandu fokus pengguna.</div>
-        <div class="arch-item"><strong>Navigasi Bawah Mobile:</strong> Bottom navigation bar yang memudahkan transisi antar materi utama pada perangkat sentuh.</div>
+        <div class="arch-title" style="color: var(--oneui-accent);">Struktur View & Layout</div>
+        <div class="arch-item"><strong>Kartu Squircle 28px:</strong> Sudut melengkung halus khas Samsung OneUI yang ramah visual dan nyaman dipandang.</div>
+        <div class="arch-item"><strong>Grid Responsif 12-Kolom:</strong> Tata letak Bootstrap 5 yang menyesuaikan presisi dari ponsel hingga layar proyektor kelas.</div>
+        <div class="arch-item"><strong>Navigasi Bawah Sentuh:</strong> Bottom navigation bar pada perangkat seluler untuk memudahkan transisi materi satu tangan.</div>
       </div>
 
       <div class="arch-card">
-        <div class="arch-title" style="color: var(--oneui-indigo);">Manajemen Logika & State</div>
-        <div class="arch-item"><strong>Modular Vanilla JavaScript:</strong> Pengelolaan event DOM, filter tabel, kalkulasi skor kuis, dan navigasi tab tanpa dependensi berat.</div>
-        <div class="arch-item"><strong>Audio Narration Controller:</strong> Fitur kontrol latar audio ambient untuk meningkatkan pengalaman interaktif pengguna.</div>
-        <div class="arch-item"><strong>Penyimpanan Progres Sesi:</strong> Pelacakan riwayat kuis dan status latihan selama sesi pembelajaran berlangsung.</div>
+        <div class="arch-title" style="color: var(--oneui-blue);">Logika Interaktif Sisi Klien</div>
+        <div class="arch-item"><strong>Vanilla JavaScript Mandiri:</strong> Pengelolaan event DOM, validasi rumus, kalkulasi skor kuis, dan navigasi modal tanpa dependensi berat.</div>
+        <div class="arch-item"><strong>Narasi Audio Latar:</strong> Pemutar audio ambient yang dapat dihidupkan/dimatikan untuk meningkatkan fokus belajar siswa.</div>
+        <div class="arch-item"><strong>Penyimpanan Progres Sesi:</strong> Pelacakan riwayat jawaban kuis dan status latihan selama sesi pembelajaran berlangsung.</div>
       </div>
 
       <div class="arch-card">
-        <div class="arch-title" style="color: var(--oneui-teal);">Aksesibilitas & Multimedia</div>
-        <div class="arch-item"><strong>Aksesibilitas Modal Dialog:</strong> Penggunaan modal interaktif untuk daftar pustaka, hasil kuis, dan petunjuk penggunaan.</div>
-        <div class="arch-item"><strong>Penyajian Multimedia Responsif:</strong> Pemutar video terintegrasi dengan wrapper rasio aspek 16:9 yang stabil.</div>
-        <div class="arch-item"><strong>Performa Ringan:</strong> Ukuran bundle minimal yang memastikan pemuatan halaman cepat bahkan pada koneksi terbatas.</div>
+        <div class="arch-title" style="color: #2E7D32;">Aksesibilitas & Multimedia</div>
+        <div class="arch-item"><strong>Dialog Modal Ergonomis:</strong> Jendela modal dengan sudut membulat untuk menampilkan daftar pustaka dan analisis nilai kuis.</div>
+        <div class="arch-item"><strong>Pemutar Video Rasio 16:9:</strong> Integrasi tutorial langkah visual Excel dengan pemutar video responsif tanpa layout shift.</div>
+        <div class="arch-item"><strong>Operasional Mandiri Offline:</strong> Siap dijalankan langsung di laboratorium komputer sekolah tanpa ketergantungan koneksi internet.</div>
       </div>
     </div>
 
     <div class="slide-footer">
-      <span class="footer-tech">Javex Architecture Blueprint</span>
+      <span class="footer-tech">Javex OneUI Architecture Blueprint</span>
       <span class="footer-url">widifirmaan.web.id/bootstrap-javex-template</span>
     </div>
   </section>
@@ -518,8 +528,8 @@ const htmlContent = `<!DOCTYPE html>
   <section class="slide">
     <div class="slide-header">
       <div class="brand-cluster">
-        <span class="brand-badge">HOMEPAGE</span>
-        <span class="slide-section-title">Portal Beranda & Menu Pembelajaran</span>
+        <span class="brand-badge">PORTAL</span>
+        <span class="slide-section-title">Halaman Beranda & Menu Pembelajaran</span>
       </div>
       <div class="slide-number">03 / 10</div>
     </div>
@@ -528,36 +538,36 @@ const htmlContent = `<!DOCTYPE html>
       <div class="slide-info">
         <div class="headline-group">
           <h2 class="slide-title">Portal Beranda & Akses Navigasi</h2>
-          <p class="slide-desc">Pintu masuk utama media pembelajaran dengan tata letak menu terpusat, kontrol audio latar, dan kartu ringkasan topik materi.</p>
+          <p class="slide-desc">Pintu masuk pembelajaran dengan tata letak kartu OneUI terpusat, kontrol audio latar, dan akses langsung ke seluruh bab materi.</p>
         </div>
 
         <div class="feature-list">
           <div class="feature-card">
-            <div class="feature-card-title">Grid Menu Terstruktur</div>
-            <div class="feature-card-text">Kartu akses langsung ke Kompetensi, Antarmuka, Rumus, Latihan, Video, dan Kuis dengan visual ikonik.</div>
+            <div class="feature-card-title">Grid Kartu Menu Terstruktur</div>
+            <div class="feature-card-text">Akses satu klik ke modul Kompetensi Dasar, Pengenalan Ribbon, Kamus Rumus, Latihan, dan Evaluasi Kuis.</div>
           </div>
-          <div class="feature-card teal">
-            <div class="feature-card-title">Kontrol Narasi & Audio Latar</div>
-            <div class="feature-card-text">Tombol toggle pemutar audio ambient yang dapat dihidupkan atau dimatikan sewaktu-waktu oleh pengguna.</div>
+          <div class="feature-card blue">
+            <div class="feature-card-title">Audio Narasi & Musik Latar</div>
+            <div class="feature-card-text">Tombol toggle audio ambient yang dapat diatur sewaktu-waktu untuk kenyamanan suasana belajar mandiri.</div>
           </div>
-          <div class="feature-card indigo">
-            <div class="feature-card-title">Pengalaman OneUI Adaptif</div>
-            <div class="feature-card-text">Penataan visual bersih dengan warna latar lembut yang meminimalkan kelelahan mata pengguna.</div>
+          <div class="feature-card">
+            <div class="feature-card-title">Estetika OneUI Halus</div>
+            <div class="feature-card-text">Latar belakang abu-abu lembut #f2f2f6 dengan kartu putih terangkat yang meminimalkan kelelahan mata pengguna.</div>
           </div>
         </div>
 
         <div class="metrics-row">
           <div class="metric-box">
-            <div class="metric-val">Fast</div>
-            <div class="metric-lbl">First Paint</div>
+            <div class="metric-val">28px</div>
+            <div class="metric-lbl">Squircle Radius</div>
+          </div>
+          <div class="metric-box">
+            <div class="metric-val">Poppins</div>
+            <div class="metric-lbl">Web Font</div>
           </div>
           <div class="metric-box">
             <div class="metric-val">100%</div>
             <div class="metric-lbl">Responsive</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-val">Zero Bug</div>
-            <div class="metric-lbl">Layout Flow</div>
           </div>
         </div>
       </div>
@@ -569,7 +579,7 @@ const htmlContent = `<!DOCTYPE html>
     </div>
 
     <div class="slide-footer">
-      <span class="footer-tech">Template: index.html</span>
+      <span class="footer-tech">Page: index.html & assets/css/oneui.css</span>
       <span class="footer-url">widifirmaan.web.id/bootstrap-javex-template</span>
     </div>
   </section>
@@ -579,7 +589,7 @@ const htmlContent = `<!DOCTYPE html>
     <div class="slide-header">
       <div class="brand-cluster">
         <span class="brand-badge">CURRICULUM</span>
-        <span class="slide-section-title">Standar Kompetensi & Indikator</span>
+        <span class="slide-section-title">Standar Kompetensi & Indikator Pencapaian</span>
       </div>
       <div class="slide-number">04 / 10</div>
     </div>
@@ -593,16 +603,16 @@ const htmlContent = `<!DOCTYPE html>
 
         <div class="feature-list">
           <div class="feature-card">
-            <div class="feature-card-title">Struktur Capaian Akademik</div>
-            <div class="feature-card-text">Rincian kompetensi aspek pengetahuan (3.1) dan aspek keterampilan (4.1) dalam format tabel yang mudah dipahami.</div>
+            <div class="feature-card-title">Struktur Akademik Terarah</div>
+            <div class="feature-card-text">Rincian kompetensi aspek pengetahuan (KD 3.1) dan aspek keterampilan (KD 4.1) dalam format kartu teratur.</div>
           </div>
-          <div class="feature-card teal">
-            <div class="feature-card-title">Indikator Terukur</div>
-            <div class="feature-card-text">Daftar target capaian belajar konkret mulai dari identifikasi formula hingga manipulasi sel data.</div>
+          <div class="feature-card blue">
+            <div class="feature-card-title">Indikator Terukur Konkret</div>
+            <div class="feature-card-text">Daftar target capaian belajar mulai dari pemahaman fungsi barisan sel hingga formula logika bertingkat.</div>
           </div>
-          <div class="feature-card indigo">
-            <div class="feature-card-title">Tipografi Hierarkis</div>
-            <div class="feature-card-text">Gaya teks yang terstruktur dengan badge penanda status untuk memudahkan penelaahan kurikulum.</div>
+          <div class="feature-card">
+            <div class="feature-card-title">Tipografi Hierarkis Poppins</div>
+            <div class="feature-card-text">Pemisahan bobot font teks yang jelas dengan badge penanda status untuk memudahkan penelaahan materi.</div>
           </div>
         </div>
 
@@ -639,7 +649,7 @@ const htmlContent = `<!DOCTYPE html>
     <div class="slide-header">
       <div class="brand-cluster">
         <span class="brand-badge">TUTORIAL</span>
-        <span class="slide-section-title">Anatomi Antarmuka Microsoft Excel</span>
+        <span class="slide-section-title">Anatomi Ribbon & Navigasi Lembar Kerja</span>
       </div>
       <div class="slide-number">05 / 10</div>
     </div>
@@ -648,21 +658,21 @@ const htmlContent = `<!DOCTYPE html>
       <div class="slide-info">
         <div class="headline-group">
           <h2 class="slide-title">Panduan Elemen Antarmuka Ribbon</h2>
-          <p class="slide-desc">Visualisasi komponen antarmuka aplikasi spreadsheet seperti Title Bar, Quick Access, Ribbon Tab, Formula Bar, dan Worksheet Area.</p>
+          <p class="slide-desc">Visualisasi komponen antarmuka spreadsheet: Title Bar, Quick Access Toolbar, Ribbon Tab, Formula Bar, dan Worksheet Grid.</p>
         </div>
 
         <div class="feature-list">
           <div class="feature-card">
-            <div class="feature-card-title">Identifikasi Komponen Visual</div>
-            <div class="feature-card-text">Diagram antarmuka berlabel yang menerangkan fungsi masing-masing elemen pada jendela lembar kerja Excel.</div>
+            <div class="feature-card-title">Diagram Interaktif Berlabel</div>
+            <div class="feature-card-text">Ilustrasi antarmuka Excel dengan penomoran bagian untuk mempermudah identifikasi fungsi tombol kerja.</div>
           </div>
-          <div class="feature-card teal">
-            <div class="feature-card-title">Interaksi Kartu Deskripsi</div>
-            <div class="feature-card-text">Penjelasan fungsi lengkap saat setiap kartu elemen dipilih untuk memperjelas kegunaan masing-masing bar.</div>
+          <div class="feature-card blue">
+            <div class="feature-card-title">Kartu Deskripsi Komponen</div>
+            <div class="feature-card-text">Penjelasan fungsi mendalam saat kartu elemen dipilih untuk memahami kegunaan tiap ribbon bar.</div>
           </div>
-          <div class="feature-card indigo">
-            <div class="feature-card-title">Adaptasi Visual Mobile</div>
-            <div class="feature-card-text">Penskalaan gambar diagram yang tajam dan responsif pada berbagai ukuran layar gawai siswa.</div>
+          <div class="feature-card">
+            <div class="feature-card-title">Skalabilitas Gambar Vektor</div>
+            <div class="feature-card-text">Diagram antarmuka tetap tajam di layar gawai siswa berkat optimasi rasio kontainer responsif.</div>
           </div>
         </div>
 
@@ -672,12 +682,12 @@ const htmlContent = `<!DOCTYPE html>
             <div class="metric-lbl">Elemen Ribbon</div>
           </div>
           <div class="metric-box">
-            <div class="metric-val">Crisp</div>
-            <div class="metric-lbl">Vector Diagram</div>
+            <div class="metric-val">Visual</div>
+            <div class="metric-lbl">Diagram Mode</div>
           </div>
           <div class="metric-box">
-            <div class="metric-val">Step-wise</div>
-            <div class="metric-lbl">Visual Guide</div>
+            <div class="metric-val">Crisp</div>
+            <div class="metric-lbl">Vector Guide</div>
           </div>
         </div>
       </div>
@@ -699,7 +709,7 @@ const htmlContent = `<!DOCTYPE html>
     <div class="slide-header">
       <div class="brand-cluster">
         <span class="brand-badge">FORMULA</span>
-        <span class="slide-section-title">Katalog Rumus & Sintaks Perhitungan</span>
+        <span class="slide-section-title">Kamus Rumus & Sintaks Perhitungan</span>
       </div>
       <div class="slide-number">06 / 10</div>
     </div>
@@ -708,36 +718,36 @@ const htmlContent = `<!DOCTYPE html>
       <div class="slide-info">
         <div class="headline-group">
           <h2 class="slide-title">Kamus Rumus & Sintaks Perhitungan</h2>
-          <p class="slide-desc">Pustaka fungsi esensial spreadsheet mencakup formula matematika, statistik dasar (SUM, AVERAGE, MIN, MAX), serta fungsi logika IF.</p>
+          <p class="slide-desc">Pustaka fungsi esensial spreadsheet mencakup fungsi statistik (SUM, AVERAGE, MIN, MAX, COUNT) dan formula logika bersyarat IF.</p>
         </div>
 
         <div class="feature-list">
           <div class="feature-card">
-            <div class="feature-card-title">Struktur Sintaks Baku</div>
-            <div class="feature-card-text">Penulisan struktur argumen formula yang disajikan dalam blok kode rapi untuk mempermudah pemahaman logika fungsi.</div>
+            <div class="feature-card-title">Struktur Sintaks Baku Monospaced</div>
+            <div class="feature-card-text">Penulisan argumen rumus dalam blok kode rapi untuk mempermudah pemahaman susunan formula matematika.</div>
           </div>
-          <div class="feature-card teal">
-            <div class="feature-card-title">Contoh Kasus Riil</div>
-            <div class="feature-card-text">Ilustrasi penerapan rumus pada tabel nilai siswa dan rekapitulasi data penjualan nyata.</div>
+          <div class="feature-card blue">
+            <div class="feature-card-title">Contoh Kasus Riil Siswa</div>
+            <div class="feature-card-text">Penerapan rumus pada tabel nilai ujian dan rekapitulasi penjualan toko nyata sebagai studi kasus langsung.</div>
           </div>
-          <div class="feature-card indigo">
-            <div class="feature-card-title">Tab Pengelompokan Kategori</div>
-            <div class="feature-card-text">Pemisahan materi formula berdasarkan kategori fungsi statistik, aritmatika, dan fungsi kondisi.</div>
+          <div class="feature-card">
+            <div class="feature-card-title">Pengelompokan Kategori Tab</div>
+            <div class="feature-card-text">Pemisahan materi formula berdasarkan jenis fungsi aritmatika dasar, statistik, dan logika kondisional.</div>
           </div>
         </div>
 
         <div class="metrics-row">
           <div class="metric-box">
-            <div class="metric-val">SUM/AVG</div>
+            <div class="metric-val">SUM / AVG</div>
             <div class="metric-lbl">Statistik</div>
           </div>
           <div class="metric-box">
-            <div class="metric-val">IF/LOGIC</div>
+            <div class="metric-val">IF LOGIC</div>
             <div class="metric-lbl">Kondisional</div>
           </div>
           <div class="metric-box">
-            <div class="metric-val">Code View</div>
-            <div class="metric-lbl">Syntax Style</div>
+            <div class="metric-val">Syntax</div>
+            <div class="metric-lbl">Monospace Code</div>
           </div>
         </div>
       </div>
@@ -759,7 +769,7 @@ const htmlContent = `<!DOCTYPE html>
     <div class="slide-header">
       <div class="brand-cluster">
         <span class="brand-badge">PRACTICE</span>
-        <span class="slide-section-title">Studi Kasus & Lembar Latihan</span>
+        <span class="slide-section-title">Studi Kasus & Lembar Latihan Mandiri</span>
       </div>
       <div class="slide-number">07 / 10</div>
     </div>
@@ -768,21 +778,21 @@ const htmlContent = `<!DOCTYPE html>
       <div class="slide-info">
         <div class="headline-group">
           <h2 class="slide-title">Latihan Mandiri & Studi Kasus</h2>
-          <p class="slide-desc">Kumpulan skenario latihan mandiri pengolahan data dengan panduan pengerjaan langkah demi langkah untuk menguji keterampilan terapan.</p>
+          <p class="slide-desc">Kumpulan skenario latihan pengolahan lembar kerja mandiri dengan instruksi pengerjaan terarah untuk menguji keterampilan terapan.</p>
         </div>
 
         <div class="feature-list">
           <div class="feature-card">
             <div class="feature-card-title">Tabel Data Studi Kasus</div>
-            <div class="feature-card-text">Penyajian dataset tabel terstruktur yang merefleksikan persoalan bisnis dan administrasi sehari-hari.</div>
+            <div class="feature-card-text">Dataset tabel terstruktur yang merefleksikan persoalan administrasi nilai dan rekapitulasi data nyata.</div>
           </div>
-          <div class="feature-card teal">
-            <div class="feature-card-title">Instruksi Langkah Pengerjaan</div>
-            <div class="feature-card-text">Daftar tugas yang jelas mengenai rumus apa yang harus diaplikasikan pada kolom atau sel target tertentu.</div>
+          <div class="feature-card blue">
+            <div class="feature-card-title">Instruksi Pengerjaan Langkah Demi Langkah</div>
+            <div class="feature-card-text">Daftar petunjuk formula apa yang harus diaplikasikan pada kolom atau sel target tertentu.</div>
           </div>
-          <div class="feature-card indigo">
-            <div class="feature-card-title">Kunci Verifikasi Mandiri</div>
-            <div class="feature-card-text">Panel verifikasi hasil untuk memungkinkan siswa memeriksa ketepatan formula yang telah dibuat.</div>
+          <div class="feature-card">
+            <div class="feature-card-title">Verifikasi Kunci Mandiri</div>
+            <div class="feature-card-text">Panel verifikasi hasil agar siswa dapat mengonfirmasi ketepatan rumus yang telah dibuat secara independen.</div>
           </div>
         </div>
 
@@ -792,12 +802,12 @@ const htmlContent = `<!DOCTYPE html>
             <div class="metric-lbl">Task Flow</div>
           </div>
           <div class="metric-box">
-            <div class="metric-val">Real Case</div>
-            <div class="metric-lbl">Dataset Type</div>
+            <div class="metric-val">Step-wise</div>
+            <div class="metric-lbl">Instruction</div>
           </div>
           <div class="metric-box">
-            <div class="metric-val">Step Guide</div>
-            <div class="metric-lbl">Instruction</div>
+            <div class="metric-val">Self Test</div>
+            <div class="metric-lbl">Verification</div>
           </div>
         </div>
       </div>
@@ -814,12 +824,12 @@ const htmlContent = `<!DOCTYPE html>
     </div>
   </section>
 
-  <!-- SLIDE 8: QUIZ EVALUASI -->
+  <!-- SLIDE 8: EVALUASI KUIS -->
   <section class="slide">
     <div class="slide-header">
       <div class="brand-cluster">
-        <span class="brand-badge">ASSESSMENT</span>
-        <span class="slide-section-title">Evaluasi Kuis & Uji Pemahaman</span>
+        <span class="brand-badge">EVALUATION</span>
+        <span class="slide-section-title">Kuis Interaktif & Mesin Penilaian</span>
       </div>
       <div class="slide-number">08 / 10</div>
     </div>
@@ -827,33 +837,33 @@ const htmlContent = `<!DOCTYPE html>
     <div class="slide-body">
       <div class="slide-info">
         <div class="headline-group">
-          <h2 class="slide-title">Kuis Interaktif & Mesin Evaluasi</h2>
-          <p class="slide-desc">Modul evaluasi pilihan ganda berbasis JavaScript dengan pengacak soal, pelacak waktu pengerjaan, dan kartu pertanyaan adaptif.</p>
+          <h2 class="slide-title">Kuis Interaktif & Evaluasi Otomatis</h2>
+          <p class="slide-desc">Modul evaluasi 20 butir soal pilihan ganda berbasis JavaScript dengan pengacak soal, pelacak waktu pengerjaan, dan kartu radio OneUI.</p>
         </div>
 
         <div class="feature-list">
           <div class="feature-card">
-            <div class="feature-card-title">Logika Penilaian Otomatis</div>
-            <div class="feature-card-text">Kalkulasi skor secara otomatis di sisi klien dengan verifikasi opsi jawaban tanpa muat ulang halaman.</div>
+            <div class="feature-card-title">Penilaian Otomatis Sisi Klien</div>
+            <div class="feature-card-text">Kalkulasi skor nilai langsung di browser tanpa perlu reload halaman atau pengiriman form berat ke server.</div>
           </div>
-          <div class="feature-card teal">
-            <div class="feature-card-title">Penunjuk Progres Soal</div>
-            <div class="feature-card-text">Indikator visual nomor soal aktif dan persentase kelengkapan jawaban kuis secara realtime.</div>
+          <div class="feature-card blue">
+            <div class="feature-card-title">Indikator Nomor Soal Berjalan</div>
+            <div class="feature-card-text">Penanda visual nomor soal aktif dan persentase kelengkapan jawaban kuis secara realtime.</div>
           </div>
-          <div class="feature-card indigo">
-            <div class="feature-card-title">Pengalaman Interaksi Bersih</div>
-            <div class="feature-card-text">Desain radio button kustom ala OneUI dengan efek transisi halus saat siswa menentukan pilihan.</div>
+          <div class="feature-card">
+            <div class="feature-card-title">Interaksi Radio Button Kustom</div>
+            <div class="feature-card-text">Desain opsi jawaban OneUI melengkung dengan feedback transisi warna hijau lembut saat dipilih.</div>
           </div>
         </div>
 
         <div class="metrics-row">
           <div class="metric-box">
             <div class="metric-val">20 Soal</div>
-            <div class="metric-lbl">Bank Kuis</div>
+            <div class="metric-lbl">Bank Soal</div>
           </div>
           <div class="metric-box">
             <div class="metric-val">Instant</div>
-            <div class="metric-lbl">Client Eval</div>
+            <div class="metric-lbl">Scoring Engine</div>
           </div>
           <div class="metric-box">
             <div class="metric-val">Timer</div>
@@ -874,12 +884,12 @@ const htmlContent = `<!DOCTYPE html>
     </div>
   </section>
 
-  <!-- SLIDE 9: HASIL QUIZ & MODAL -->
+  <!-- SLIDE 9: MODAL HASIL & ANALISIS -->
   <section class="slide">
     <div class="slide-header">
       <div class="brand-cluster">
-        <span class="brand-badge">RESULT</span>
-        <span class="slide-section-title">Modal Skor & Analisis Jawaban</span>
+        <span class="brand-badge">RESULT MODAL</span>
+        <span class="slide-section-title">Modal Skor & Rekomendasi Kelulusan</span>
       </div>
       <div class="slide-number">09 / 10</div>
     </div>
@@ -887,22 +897,22 @@ const htmlContent = `<!DOCTYPE html>
     <div class="slide-body">
       <div class="slide-info">
         <div class="headline-group">
-          <h2 class="slide-title">Modal Analisis Hasil & Rekomendasi</h2>
-          <p class="slide-desc">Dialog modal yang menyajikan rekapitulasi perolehan nilai, jumlah jawaban benar/salah, serta rekomendasi kelulusan materi.</p>
+          <h2 class="slide-title">Modal Skor & Analisis Pemahaman</h2>
+          <p class="slide-desc">Dialog modal hasil kuis yang menampilkan rekapitulasi nilai akhir berskala 100, jumlah jawaban benar/salah, dan status kelulusan KKM.</p>
         </div>
 
         <div class="feature-list">
           <div class="feature-card">
-            <div class="feature-card-title">Kalkulasi Skor Persentase</div>
-            <div class="feature-card-text">Perhitungan nilai akhir berskala 100 dengan indikator visual status kelulusan KKM kurikulum.</div>
+            <div class="feature-card-title">Perhitungan Nilai Akhir Otomatis</div>
+            <div class="feature-card-text">Kalkulasi persentase skor riil dengan badge kelulusan hijau (Lulus KKM) atau peringatan remedial.</div>
           </div>
-          <div class="feature-card teal">
+          <div class="feature-card blue">
             <div class="feature-card-title">Rincian Benar dan Salah</div>
-            <div class="feature-card-text">Ringkasan akurat jumlah butir soal yang dijawab dengan benar berbanding soal yang membutuhkan evaluasi ulang.</div>
+            <div class="feature-card-text">Ringkasan akurat jumlah butir soal yang berhasil dijawab benar berbanding soal yang butuh pemahaman ulang.</div>
           </div>
-          <div class="feature-card indigo">
-            <div class="feature-card-title">Aksi Ulangi Kuis Cepat</div>
-            <div class="feature-card-text">Tombol reset terintegrasi untuk mengulang latihan soal dari awal dengan status bersih.</div>
+          <div class="feature-card">
+            <div class="feature-card-title">Aksi Ulangi Kuis Satu-Sentuhan</div>
+            <div class="feature-card-text">Tombol reset terintegrasi untuk mengulang pengerjaan kuis dari awal dalam kondisi state bersih.</div>
           </div>
         </div>
 
@@ -916,7 +926,7 @@ const htmlContent = `<!DOCTYPE html>
             <div class="metric-lbl">KKM Gauge</div>
           </div>
           <div class="metric-box">
-            <div class="metric-val">One-Click</div>
+            <div class="metric-val">1-Click</div>
             <div class="metric-lbl">Retry Action</div>
           </div>
         </div>
@@ -938,8 +948,8 @@ const htmlContent = `<!DOCTYPE html>
   <section class="slide">
     <div class="slide-header">
       <div class="brand-cluster">
-        <span class="brand-badge">MULTIMEDIA & SPECS</span>
-        <span class="slide-section-title">Video Pembelajaran & Kesiapan Produksi</span>
+        <span class="brand-badge">SPECIFICATION</span>
+        <span class="slide-section-title">Video Pembelajaran & Kesiapan Distribusi</span>
       </div>
       <div class="slide-number">10 / 10</div>
     </div>
@@ -953,16 +963,16 @@ const htmlContent = `<!DOCTYPE html>
 
         <div class="feature-list">
           <div class="feature-card">
-            <div class="feature-card-title">Video Player Tersemat</div>
-            <div class="feature-card-text">Pemutar video HTML5 responsif yang menyajikan tutorial visual tata cara penulisan rumus kompleks.</div>
+            <div class="feature-card-title">Video Player HTML5 Terintegrasi</div>
+            <div class="feature-card-text">Pemutar video responsif dengan rasio 16:9 yang memvisualisasikan praktik pengisian tabel Excel nyata.</div>
           </div>
-          <div class="feature-card teal">
+          <div class="feature-card blue">
             <div class="feature-card-title">Daftar Pustaka Lengkap</div>
             <div class="feature-card-text">Modal bibliografi yang mencantumkan sumber buku referensi dan standar kurikulum resmi secara transparan.</div>
           </div>
-          <div class="feature-card indigo">
-            <div class="feature-card-title">Operasi Mandiri Offline-Ready</div>
-            <div class="feature-card-text">Dapat dijalankan langsung di browser lokal laboratorium komputer sekolah tanpa perlu koneksi internet aktif.</div>
+          <div class="feature-card">
+            <div class="feature-card-title">Distribusi Tanpa Server (Serverless)</div>
+            <div class="feature-card-text">Dapat dijalankan langsung di peramban laboratorium komputer sekolah tanpa perlu instalasi database atau server backend.</div>
           </div>
         </div>
 
@@ -972,7 +982,7 @@ const htmlContent = `<!DOCTYPE html>
             <div class="metric-lbl">Video Stream</div>
           </div>
           <div class="metric-box">
-            <div class="metric-val">Local-First</div>
+            <div class="metric-val">Local First</div>
             <div class="metric-lbl">Deployment</div>
           </div>
           <div class="metric-box">
@@ -989,7 +999,7 @@ const htmlContent = `<!DOCTYPE html>
     </div>
 
     <div class="slide-footer">
-      <span class="footer-tech">Page: video.html & pustaka modal</span>
+      <span class="footer-tech">Javex Platform Production Specification Document</span>
       <span class="footer-url">widifirmaan.web.id/bootstrap-javex-template</span>
     </div>
   </section>
@@ -1003,7 +1013,7 @@ fs.writeFileSync(htmlFilePath, htmlContent, 'utf-8');
 console.log(`HTML presentasi disimpan di: ${htmlFilePath}`);
 
 async function renderPDF() {
-  console.log('Menjalankan Playwright Chromium untuk render PDF Javex...');
+  console.log('Menjalankan Playwright Chromium untuk render PDF Javex OneUI...');
   
   const playwrightPath = '/home/widifirmaan/Projects/qa-toolkit/node_modules/playwright/index.mjs';
   const { chromium } = await import(playwrightPath);
@@ -1036,7 +1046,7 @@ async function renderPDF() {
         margin: 0;
       }
       body {
-        background-color: #F8FAFC !important;
+        background-color: #f2f2f6 !important;
       }
       .slide {
         page-break-after: unset !important;
@@ -1064,7 +1074,7 @@ async function renderPDF() {
   const slideStat = fs.statSync(slidePdfPath);
   const contStat = fs.statSync(contPdfPath);
 
-  console.log('\nPDF Javex berhasil dibuat:');
+  console.log('\nPDF Javex OneUI berhasil dibuat:');
   console.log(`- Multi-Page Deck: ${(slideStat.size / 1024 / 1024).toFixed(2)} MB (${slidePdfPath})`);
   console.log(`- Continuous Poster: ${(contStat.size / 1024 / 1024).toFixed(2)} MB (${contPdfPath})\n`);
 }
