@@ -39,10 +39,10 @@
 
 ## Fitur
 
-- **Step-by-Step Learning Modules (`pendahuluan.html`, `mulai.html`, `format.html`)**: Guided Excel tutorials covering introductory spreadsheet concepts, interface elements (Ribbon tabs, Name Box, Formula Bar), and workbook cell formatting with smooth horizontal pill tab navigation.
+- **Step-by-Step Learning Modules (`materi.html`, `pendahuluan.html`, `mulai.html`, `format.html`)**: Guided Excel tutorials covering introductory spreadsheet concepts, interface elements (Ribbon tabs, Name Box, Formula Bar), and workbook cell formatting with smooth horizontal pill tab navigation.
 - **Formulas & Functions Cheatsheet (`rumus.html`)**: Reference catalog with syntax rules and practical examples for arithmetic formulas, SUM, AVERAGE, MAX, MIN, COUNT, and logical IF statements.
 - **Hands-On Practical Worksheets (`latsoal.html`, `mulailatsoal.html`)**: Spreadsheet case study exercises with sample tables and external assignment submission links.
-- **Evaluation Examination Arena (`mulaiquiz.html`)**: 20-question multiple-choice assessment engine featuring client-side JavaScript scoring, answer completion validation, pass/fail threshold calculation (>= 70%), and a Bootstrap 5 result modal.
+- **Evaluation Examination Arena (`quiz.html`, `mulaiquiz.html`)**: 20-question multiple-choice assessment engine featuring client-side JavaScript scoring, answer completion validation, pass/fail threshold calculation (>= 70%), and a Bootstrap 5 result modal.
 - **Embedded Video Tutorial Player (`video.html`)**: Responsive 16:9 Bootstrap ratio container with an embedded YouTube spreadsheet tutorial video.
 - **Curriculum Standards Alignment (`kd.html`)**: Alignment with vocational curriculum Kompetensi Dasar (KD 3.4 & 4.4) and competency achievement indicators (IPK).
 - **OneUI-Inspired Design System (`assets/css/oneui.css`)**: Card-based interface styled with Samsung OneUI-inspired rounded corners (`border-radius: 24px`), pill tab navigation, and mobile bottom navigation controls.
