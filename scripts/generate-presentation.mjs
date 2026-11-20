@@ -11,14 +11,14 @@ const downloadsDir = '/home/widifirmaan/Downloads';
 function encodeImage(filename) {
   const filePath = path.join(screenshotsDir, filename);
   if (!fs.existsSync(filePath)) {
-    console.warn(`Screenshot tidak ditemukan: ${filePath}`);
+    console.warn(`Warning: Screenshot not found: ${filePath}`);
     return '';
   }
   const fileBuffer = fs.readFileSync(filePath);
   return `data:image/png;base64,${fileBuffer.toString('base64')}`;
 }
 
-console.log('Memproses screenshot Javex OneUI...');
+console.log('Encoding Javex OneUI screenshots...');
 
 const images = {
   berandaDesktop: encodeImage('Beranda Desktop.png'),
@@ -40,10 +40,10 @@ const images = {
   pustakaDesktop: encodeImage('Daftar Pustaka Modal Desktop.png'),
 };
 
-console.log('Menyusun HTML presentasi dengan style murni Samsung OneUI & Excel Green...');
+console.log('Assembling English Samsung OneUI & Excel Green Presentation Deck HTML...');
 
 const htmlContent = `<!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Javex - Samsung OneUI E-Learning Web Architecture</title>
@@ -58,9 +58,8 @@ const htmlContent = `<!DOCTYPE html>
       --oneui-text-secondary: #8e8e93;
       --oneui-accent: #01723A;   /* Excel Green */
       --oneui-blue: #0072DE;     /* Samsung Blue */
-      --oneui-border: rgba(0, 0, 0, 0.06);
       --oneui-radius: 28px;
-      --oneui-radius-sm: 16px;
+      --oneui-subradius: 18px;
       --oneui-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
       --font-main: 'Poppins', sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
@@ -94,208 +93,199 @@ const htmlContent = `<!DOCTYPE html>
       background-color: var(--oneui-bg);
       display: flex;
       flex-direction: column;
-      padding: 14mm 18mm;
+      padding: 15mm 18mm;
       overflow: hidden;
-      background-image: 
-        radial-gradient(circle at 100% 0%, rgba(1, 114, 58, 0.05) 0%, transparent 50%),
-        radial-gradient(circle at 0% 100%, rgba(0, 114, 222, 0.04) 0%, transparent 40%);
     }
 
-    /* Soft OneUI Accent Top Pill */
-    .slide::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 18mm;
-      right: 18mm;
-      height: 4px;
-      background: linear-gradient(90deg, var(--oneui-accent), var(--oneui-blue));
-      border-radius: 0 0 4px 4px;
-      z-index: 50;
-    }
-
-    /* Header */
+    /* OneUI Header */
     .slide-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 5mm;
-      padding-bottom: 3.5mm;
-      border-bottom: 1px solid var(--oneui-border);
+      margin-bottom: 5.5mm;
     }
 
-    .brand-cluster {
-      display: flex;
+    .brand-pill {
+      display: inline-flex;
       align-items: center;
-      gap: 12px;
-    }
-
-    .brand-badge {
-      background: rgba(1, 114, 58, 0.1);
-      color: var(--oneui-accent);
-      padding: 5px 14px;
-      font-family: var(--font-mono);
-      font-weight: 700;
-      font-size: 10px;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
+      gap: 10px;
+      background: var(--oneui-card-bg);
+      padding: 8px 18px;
       border-radius: 50px;
+      box-shadow: var(--oneui-shadow);
+      border: 1px solid rgba(0, 0, 0, 0.04);
     }
 
-    .slide-section-title {
-      font-size: 13px;
+    .brand-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--oneui-accent);
+    }
+
+    .brand-title {
+      font-size: 13.5px;
       font-weight: 700;
-      color: var(--oneui-text-secondary);
       letter-spacing: -0.01em;
-      text-transform: uppercase;
+      color: var(--oneui-text-primary);
     }
 
-    .slide-number {
+    .brand-subtitle {
+      font-size: 12px;
+      color: var(--oneui-text-secondary);
+      font-weight: 500;
+      border-left: 1px solid rgba(0, 0, 0, 0.1);
+      padding-left: 10px;
+      margin-left: 2px;
+    }
+
+    .badge-pill {
       font-family: var(--font-mono);
       font-size: 11px;
       font-weight: 700;
       color: var(--oneui-accent);
-      background: var(--oneui-card-bg);
-      padding: 4px 12px;
+      background: rgba(1, 114, 58, 0.08);
+      padding: 6px 14px;
       border-radius: 50px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     }
 
-    /* Body */
-    .slide-body {
-      display: grid;
-      grid-template-columns: 1fr 1.35fr;
-      gap: 22px;
+    /* Content Area */
+    .slide-content {
       flex: 1;
-      min-height: 0;
-    }
-
-    .slide-info {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      min-height: 0;
     }
 
-    .headline-group {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
+    .title-banner {
+      margin-bottom: 5mm;
+    }
+
+    .slide-category {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--oneui-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 4px;
     }
 
     .slide-title {
       font-size: 26px;
       font-weight: 800;
-      line-height: 1.2;
-      color: var(--oneui-text-primary);
       letter-spacing: -0.03em;
-    }
-
-    .slide-desc {
-      font-size: 12px;
-      color: var(--oneui-text-secondary);
-      line-height: 1.55;
-      font-weight: 400;
-    }
-
-    .feature-list {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin: 8px 0;
-    }
-
-    .feature-card {
-      background: var(--oneui-card-bg);
-      border-radius: var(--oneui-radius-sm);
-      padding: 12px 16px;
-      box-shadow: var(--oneui-shadow);
-      border: 1px solid var(--oneui-border);
-      border-left: 4px solid var(--oneui-accent);
-    }
-
-    .feature-card.blue {
-      border-left-color: var(--oneui-blue);
-    }
-
-    .feature-card-title {
-      font-size: 13px;
-      font-weight: 700;
       color: var(--oneui-text-primary);
-      margin-bottom: 2px;
-      letter-spacing: -0.01em;
+      line-height: 1.18;
     }
 
-    .feature-card-text {
-      font-size: 11px;
+    .slide-subtitle {
+      font-size: 13.5px;
       color: var(--oneui-text-secondary);
-      line-height: 1.45;
+      margin-top: 4px;
+      max-width: 900px;
+      font-weight: 500;
     }
 
-    .metrics-row {
+    /* OneUI Squircle Cards */
+    .oneui-card {
+      background: var(--oneui-card-bg);
+      border-radius: var(--oneui-radius);
+      box-shadow: var(--oneui-shadow);
+      padding: 18px 22px;
+      border: 1px solid rgba(0, 0, 0, 0.03);
+    }
+
+    .oneui-card-accent {
+      background: var(--oneui-card-bg);
+      border-radius: var(--oneui-radius);
+      box-shadow: var(--oneui-shadow);
+      padding: 18px 22px;
+      border-left: 5px solid var(--oneui-accent);
+    }
+
+    /* Split Layouts */
+    .layout-split {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 18px;
+      align-items: stretch;
+      flex: 1;
+    }
+
+    .layout-split-reversed {
+      display: grid;
+      grid-template-columns: 0.92fr 1.08fr;
+      gap: 18px;
+      align-items: stretch;
+      flex: 1;
+    }
+
+    .layout-grid-3 {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
+      gap: 16px;
+      flex: 1;
     }
 
-    .metric-box {
-      background: var(--oneui-card-bg);
-      border-radius: var(--oneui-radius-sm);
-      padding: 10px 12px;
-      text-align: center;
-      box-shadow: var(--oneui-shadow);
-      border: 1px solid var(--oneui-border);
-    }
-
-    .metric-val {
-      font-family: var(--font-mono);
-      font-size: 16px;
-      font-weight: 800;
-      color: var(--oneui-accent);
-    }
-
-    .metric-lbl {
-      font-size: 9px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--oneui-text-secondary);
-      margin-top: 2px;
+    .layout-grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      flex: 1;
     }
 
     /* Visual Stage */
     .visual-stage {
-      position: relative;
+      background: var(--oneui-card-bg);
+      border-radius: var(--oneui-radius);
+      box-shadow: var(--oneui-shadow);
+      overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 100%;
+      position: relative;
       height: 100%;
-      min-height: 0;
+      min-height: 290px;
+      padding: 12px;
+      border: 1px solid rgba(0, 0, 0, 0.03);
+    }
+
+    .visual-stage img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.08));
+    }
+
+    /* Feature Items */
+    .feature-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .feature-box {
       background: var(--oneui-card-bg);
-      border-radius: var(--oneui-radius);
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05);
-      border: 1px solid var(--oneui-border);
-      padding: 16px;
+      border-radius: var(--oneui-subradius);
+      box-shadow: var(--oneui-shadow);
+      padding: 14px 18px;
+      border: 1px solid rgba(0, 0, 0, 0.03);
     }
 
-    .screenshot-desktop {
-      max-width: 95%;
-      max-height: 380px;
-      object-fit: contain;
-      display: block;
-      filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.08));
+    .feature-box-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--oneui-text-primary);
+      margin-bottom: 3px;
     }
 
-    .screenshot-mobile {
-      position: absolute;
-      right: 14px;
-      bottom: 8px;
-      max-height: 270px;
-      max-width: 29%;
-      object-fit: contain;
-      display: block;
-      filter: drop-shadow(0 12px 28px rgba(0, 0, 0, 0.12));
+    .feature-box-desc {
+      font-size: 12px;
+      color: var(--oneui-text-secondary);
+      line-height: 1.45;
+      font-weight: 500;
     }
 
     /* Footer */
@@ -304,705 +294,566 @@ const htmlContent = `<!DOCTYPE html>
       justify-content: space-between;
       align-items: center;
       margin-top: 5mm;
-      padding-top: 3mm;
-      border-top: 1px solid var(--oneui-border);
-    }
-
-    .footer-tech {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      font-weight: 600;
+      padding-top: 3.5mm;
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+      font-size: 11px;
       color: var(--oneui-text-secondary);
-    }
-
-    .footer-url {
       font-family: var(--font-mono);
-      font-size: 10px;
-      font-weight: 700;
-      color: var(--oneui-accent);
+      font-weight: 600;
     }
 
-    /* Cover Styling */
-    .cover-body {
-      display: grid;
-      grid-template-columns: 1.15fr 1fr;
-      gap: 30px;
-      align-items: center;
-      flex: 1;
-      min-height: 0;
-    }
-
-    .cover-tagline {
+    .tech-pill {
+      display: inline-block;
+      padding: 3px 10px;
+      background: #e3e3e8;
+      border-radius: 50px;
       font-family: var(--font-mono);
       font-size: 11px;
       font-weight: 700;
-      color: var(--oneui-accent);
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-
-    .cover-title {
-      font-size: 38px;
-      font-weight: 800;
       color: var(--oneui-text-primary);
-      line-height: 1.15;
-      letter-spacing: -0.03em;
-      margin-bottom: 12px;
-    }
-
-    .cover-desc {
-      font-size: 13px;
-      color: var(--oneui-text-secondary);
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-
-    .cover-specs {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-    }
-
-    .spec-card {
-      background: var(--oneui-card-bg);
-      border-radius: var(--oneui-radius-sm);
-      padding: 10px 14px;
-      box-shadow: var(--oneui-shadow);
-      border: 1px solid var(--oneui-border);
-    }
-
-    .spec-k {
-      font-size: 9px;
-      font-weight: 600;
-      color: var(--oneui-text-secondary);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .spec-v {
-      font-family: var(--font-mono);
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--oneui-accent);
-      margin-top: 2px;
-    }
-
-    /* Architecture Grid */
-    .arch-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      flex: 1;
-      min-height: 0;
-      margin-top: 10px;
-    }
-
-    .arch-card {
-      background: var(--oneui-card-bg);
-      border-radius: var(--oneui-radius);
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      box-shadow: var(--oneui-shadow);
-      border: 1px solid var(--oneui-border);
-    }
-
-    .arch-title {
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--oneui-text-primary);
-      border-bottom: 1px solid var(--oneui-border);
-      padding-bottom: 8px;
-    }
-
-    .arch-item {
-      font-size: 11.5px;
-      color: var(--oneui-text-secondary);
-      line-height: 1.5;
-    }
-
-    .arch-item strong {
-      color: var(--oneui-text-primary);
-      font-weight: 600;
+      margin-right: 6px;
+      margin-top: 4px;
     }
   </style>
 </head>
 <body>
 
   <!-- SLIDE 1: COVER -->
-  <section class="slide">
+  <div class="slide">
     <div class="slide-header">
-      <div class="brand-cluster">
-        <span class="brand-badge">SAMSUNG ONEUI E-LEARNING</span>
-        <span class="slide-section-title">Dokumentasi Rekayasa Perangkat Lunak</span>
+      <div class="brand-pill">
+        <div class="brand-dot"></div>
+        <div class="brand-title">Javex Interactive Learning</div>
+        <div class="brand-subtitle">Samsung OneUI E-Learning Architecture</div>
       </div>
-      <div class="slide-number">01 / 10</div>
+      <div class="badge-pill">DECK-JAVEX-01 / 10</div>
     </div>
 
-    <div class="cover-body">
-      <div>
-        <div class="cover-tagline">OneUI Design & Interactive Education</div>
-        <h1 class="cover-title">Javex Media Pembelajaran Microsoft Excel</h1>
-        <p class="cover-desc">
-          Media pembelajaran interaktif berbasis web dengan bahasa desain Samsung OneUI (radius 28px, kartu elevasi lembut, palet Excel Green #01723A). Menyajikan modul kompetensi, kamus rumus formula, pemutar video tutorial, dan kuis evaluasi 20 soal otomatis.
-        </p>
+    <div class="slide-content">
+      <div class="layout-split">
+        <div style="display: flex; flex-direction: column; justify-content: center; padding-right: 15px;">
+          <div style="display: inline-flex; align-items: center; gap: 8px; margin-bottom: 16px;">
+            <span class="tech-pill">Bootstrap 5</span>
+            <span class="tech-pill">Vanilla JS ES6</span>
+            <span class="tech-pill">Samsung OneUI</span>
+            <span class="tech-pill">Excel Education</span>
+          </div>
+          <h1 style="font-size: 40px; font-weight: 800; letter-spacing: -0.04em; line-height: 1.1; margin-bottom: 16px;">
+            Interactive Excel E-Learning &amp; OneUI Web Architecture
+          </h1>
+          <p style="font-size: 14.5px; color: var(--oneui-text-secondary); line-height: 1.55; margin-bottom: 24px; font-weight: 500;">
+            A modern educational web platform engineered with Samsung OneUI ergonomics (28px squircle cards, soft elevation) and Microsoft Excel Green palette to deliver frictionless spreadsheet mastery and interactive knowledge assessments.
+          </p>
 
-        <div class="cover-specs">
-          <div class="spec-card">
-            <div class="spec-k">Design System</div>
-            <div class="spec-v">Samsung OneUI (28px Squircle)</div>
-          </div>
-          <div class="spec-card">
-            <div class="spec-k">Core Typography</div>
-            <div class="spec-v">Poppins & JetBrains Mono</div>
-          </div>
-          <div class="spec-card">
-            <div class="spec-k">Theme Palette</div>
-            <div class="spec-v">Excel Green (#01723A)</div>
-          </div>
-          <div class="spec-card">
-            <div class="spec-k">Engine</div>
-            <div class="spec-v">Bootstrap 5.3 & Vanilla JS</div>
+          <div class="oneui-card" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; padding: 14px 18px;">
+            <div>
+              <div style="font-size: 11px; color: var(--oneui-text-secondary); font-family: var(--font-mono);">DESIGN SYSTEM</div>
+              <div style="font-size: 19px; font-weight: 800; color: var(--oneui-accent); margin-top: 2px;">Samsung OneUI</div>
+              <div style="font-size: 11px; color: var(--oneui-text-secondary);">28px Squircles</div>
+            </div>
+            <div>
+              <div style="font-size: 11px; color: var(--oneui-text-secondary); font-family: var(--font-mono);">EVALUATION</div>
+              <div style="font-size: 19px; font-weight: 800; color: var(--oneui-text-primary); margin-top: 2px;">Real-Time</div>
+              <div style="font-size: 11px; color: var(--oneui-text-secondary);">Dynamic Quiz Engine</div>
+            </div>
+            <div>
+              <div style="font-size: 11px; color: var(--oneui-text-secondary); font-family: var(--font-mono);">PERFORMANCE</div>
+              <div style="font-size: 19px; font-weight: 800; color: var(--oneui-text-primary); margin-top: 2px;">Zero Dependency</div>
+              <div style="font-size: 11px; color: var(--oneui-text-secondary);">Sub-100KB Engine</div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="visual-stage">
-        <img src="${images.berandaDesktop}" class="screenshot-desktop" alt="Javex Beranda">
-      </div>
-    </div>
-
-    <div class="slide-footer">
-      <span class="footer-tech">Bootstrap 5.3 + OneUI CSS + Poppins + HTML5 Audio/Video</span>
-      <span class="footer-url">widifirmaan.web.id/bootstrap-javex-template</span>
-    </div>
-  </section>
-
-  <!-- SLIDE 2: ARSITEKTUR & DESAIN ONEUI -->
-  <section class="slide">
-    <div class="slide-header">
-      <div class="brand-cluster">
-        <span class="brand-badge">ARCHITECTURE</span>
-        <span class="slide-section-title">Fondasi Sistem & Desain Ergonomis OneUI</span>
-      </div>
-      <div class="slide-number">02 / 10</div>
-    </div>
-
-    <div class="headline-group" style="margin-bottom: 8px;">
-      <h2 class="slide-title">Arsitektur Modular & Pengalaman Pengguna OneUI</h2>
-      <p class="slide-desc">Desain antarmuka yang mengadaptasi prinsip OneUI: area tampilan besar di bagian atas, kartu interaksi terjangkau jempol di bagian bawah, dan elevasi lembut.</p>
-    </div>
-
-    <div class="arch-grid">
-      <div class="arch-card">
-        <div class="arch-title" style="color: var(--oneui-accent);">Struktur View & Layout</div>
-        <div class="arch-item"><strong>Kartu Squircle 28px:</strong> Sudut melengkung halus khas Samsung OneUI yang ramah visual dan nyaman dipandang.</div>
-        <div class="arch-item"><strong>Grid Responsif 12-Kolom:</strong> Tata letak Bootstrap 5 yang menyesuaikan presisi dari ponsel hingga layar proyektor kelas.</div>
-        <div class="arch-item"><strong>Navigasi Bawah Sentuh:</strong> Bottom navigation bar pada perangkat seluler untuk memudahkan transisi materi satu tangan.</div>
-      </div>
-
-      <div class="arch-card">
-        <div class="arch-title" style="color: var(--oneui-blue);">Logika Interaktif Sisi Klien</div>
-        <div class="arch-item"><strong>Vanilla JavaScript Mandiri:</strong> Pengelolaan event DOM, validasi rumus, kalkulasi skor kuis, dan navigasi modal tanpa dependensi berat.</div>
-        <div class="arch-item"><strong>Narasi Audio Latar:</strong> Pemutar audio ambient yang dapat dihidupkan/dimatikan untuk meningkatkan fokus belajar siswa.</div>
-        <div class="arch-item"><strong>Penyimpanan Progres Sesi:</strong> Pelacakan riwayat jawaban kuis dan status latihan selama sesi pembelajaran berlangsung.</div>
-      </div>
-
-      <div class="arch-card">
-        <div class="arch-title" style="color: #2E7D32;">Aksesibilitas & Multimedia</div>
-        <div class="arch-item"><strong>Dialog Modal Ergonomis:</strong> Jendela modal dengan sudut membulat untuk menampilkan daftar pustaka dan analisis nilai kuis.</div>
-        <div class="arch-item"><strong>Pemutar Video Rasio 16:9:</strong> Integrasi tutorial langkah visual Excel dengan pemutar video responsif tanpa layout shift.</div>
-        <div class="arch-item"><strong>Operasional Mandiri Offline:</strong> Siap dijalankan langsung di laboratorium komputer sekolah tanpa ketergantungan koneksi internet.</div>
+        <div class="visual-stage">
+          <img src="${images.berandaDesktop}" alt="Javex Beranda Desktop">
+        </div>
       </div>
     </div>
 
     <div class="slide-footer">
-      <span class="footer-tech">Javex OneUI Architecture Blueprint</span>
-      <span class="footer-url">widifirmaan.web.id/bootstrap-javex-template</span>
+      <div>JAVEX &bull; INTERACTIVE LEARNING PLATFORM</div>
+      <div>WIDI FIRMANSYAH &bull; LEAD ENGINEER</div>
+      <div>01 / 10</div>
     </div>
-  </section>
+  </div>
 
-  <!-- SLIDE 3: BERANDA -->
-  <section class="slide">
+  <!-- SLIDE 2: EDUCATIONAL ERGONOMICS & ONEUI -->
+  <div class="slide">
     <div class="slide-header">
-      <div class="brand-cluster">
-        <span class="brand-badge">PORTAL</span>
-        <span class="slide-section-title">Halaman Beranda & Menu Pembelajaran</span>
+      <div class="brand-pill">
+        <div class="brand-dot"></div>
+        <div class="brand-title">Architecture &amp; Rationale</div>
+        <div class="brand-subtitle">Educational Ergonomics</div>
       </div>
-      <div class="slide-number">03 / 10</div>
+      <div class="badge-pill">DECK-JAVEX-02 / 10</div>
     </div>
 
-    <div class="slide-body">
-      <div class="slide-info">
-        <div class="headline-group">
-          <h2 class="slide-title">Portal Beranda & Akses Navigasi</h2>
-          <p class="slide-desc">Pintu masuk pembelajaran dengan tata letak kartu OneUI terpusat, kontrol audio latar, dan akses langsung ke seluruh bab materi.</p>
+    <div class="slide-content">
+      <div class="title-banner">
+        <div class="slide-category">Design Foundations</div>
+        <h2 class="slide-title">Human-Centered Design for Spreadsheet Competency</h2>
+        <p class="slide-subtitle">Combining Samsung OneUI visual reachability with structured learning modules for high-retention technical education.</p>
+      </div>
+
+      <div class="layout-grid-3">
+        <div class="oneui-card">
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--oneui-accent); font-weight: 700; margin-bottom: 8px;">01 &bull; CHALLENGE</div>
+          <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">Spreadsheet Cognitive Load</h3>
+          <p style="font-size: 12.5px; color: var(--oneui-text-secondary); line-height: 1.5;">
+            Dense desktop spreadsheet interfaces often intimidate beginner students with overcrowded ribbons and complex nested formula dialogs.
+          </p>
+        </div>
+
+        <div class="oneui-card">
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--oneui-accent); font-weight: 700; margin-bottom: 8px;">02 &bull; SOLUTION</div>
+          <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">OneUI Card Segmentation</h3>
+          <p style="font-size: 12.5px; color: var(--oneui-text-secondary); line-height: 1.5;">
+            Curriculum concepts isolated into clean 28px squircle cards on soft slate background (#f2f2f6) reduce visual friction and guide student focus.
+          </p>
+        </div>
+
+        <div class="oneui-card">
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--oneui-accent); font-weight: 700; margin-bottom: 8px;">03 &bull; OUTCOME</div>
+          <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">Immediate Competency Gains</h3>
+          <p style="font-size: 12.5px; color: var(--oneui-text-secondary); line-height: 1.5;">
+            Step-by-step practical simulations allow learners to validate cell coordinates, mathematical operators, and logic functions with zero installation.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-footer">
+      <div>JAVEX &bull; EDUCATIONAL ERGONOMICS</div>
+      <div>ONEUI DESIGN SYSTEM</div>
+      <div>02 / 10</div>
+    </div>
+  </div>
+
+  <!-- SLIDE 3: SYLLABUS & CORE COMPETENCY MATRIX -->
+  <div class="slide">
+    <div class="slide-header">
+      <div class="brand-pill">
+        <div class="brand-dot"></div>
+        <div class="brand-title">Curriculum Structure</div>
+        <div class="brand-subtitle">Core Competency Matrix</div>
+      </div>
+      <div class="badge-pill">DECK-JAVEX-03 / 10</div>
+    </div>
+
+    <div class="slide-content">
+      <div class="title-banner">
+        <div class="slide-category">Pedagogical Framework</div>
+        <h2 class="slide-title">Modular Syllabus &amp; National Competency Mapping</h2>
+        <p class="slide-subtitle">Structured course navigation mapped to vocational curriculum standards (KD 3.1 - 4.2) for spreadsheet literacy.</p>
+      </div>
+
+      <div class="layout-split">
+        <div class="visual-stage">
+          <img src="${images.kdDesktop}" alt="Javex Core Competency Matrix Desktop">
         </div>
 
         <div class="feature-list">
-          <div class="feature-card">
-            <div class="feature-card-title">Grid Kartu Menu Terstruktur</div>
-            <div class="feature-card-text">Akses satu klik ke modul Kompetensi Dasar, Pengenalan Ribbon, Kamus Rumus, Latihan, dan Evaluasi Kuis.</div>
+          <div class="feature-box">
+            <div class="feature-box-title">Knowledge Domain (KD 3.1 &amp; 3.2)</div>
+            <div class="feature-box-desc">
+              Foundational understanding of workbook architecture, cell referencing, data types, and standard mathematical operator precedence.
+            </div>
           </div>
-          <div class="feature-card blue">
-            <div class="feature-card-title">Audio Narasi & Musik Latar</div>
-            <div class="feature-card-text">Tombol toggle audio ambient yang dapat diatur sewaktu-waktu untuk kenyamanan suasana belajar mandiri.</div>
+          <div class="feature-box">
+            <div class="feature-box-title">Practical Domain (KD 4.1 &amp; 4.2)</div>
+            <div class="feature-box-desc">
+              Hands-on mastery of statistical functions (SUM, AVERAGE, MIN, MAX), conditional logic (IF, AND, OR), and lookup tables.
+            </div>
           </div>
-          <div class="feature-card">
-            <div class="feature-card-title">Estetika OneUI Halus</div>
-            <div class="feature-card-text">Latar belakang abu-abu lembut #f2f2f6 dengan kartu putih terangkat yang meminimalkan kelelahan mata pengguna.</div>
-          </div>
-        </div>
-
-        <div class="metrics-row">
-          <div class="metric-box">
-            <div class="metric-val">28px</div>
-            <div class="metric-lbl">Squircle Radius</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-val">Poppins</div>
-            <div class="metric-lbl">Web Font</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-val">100%</div>
-            <div class="metric-lbl">Responsive</div>
+          <div class="feature-box">
+            <div class="feature-box-title">Progressive Unlocking Architecture</div>
+            <div class="feature-box-desc">
+              Linear progression ensures prerequisite concept mastery before students advance into complex formula nesting and timed assessments.
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="visual-stage">
-        <img src="${images.berandaDesktop}" class="screenshot-desktop" alt="Beranda Desktop">
-        <img src="${images.berandaMobile}" class="screenshot-mobile" alt="Beranda Mobile">
       </div>
     </div>
 
     <div class="slide-footer">
-      <span class="footer-tech">Page: index.html & assets/css/oneui.css</span>
-      <span class="footer-url">widifirmaan.web.id/bootstrap-javex-template</span>
+      <div>JAVEX &bull; CURRICULUM ARCHITECTURE</div>
+      <div>COMPETENCY MATRIX ENGINE</div>
+      <div>03 / 10</div>
     </div>
-  </section>
+  </div>
 
-  <!-- SLIDE 4: KOMPETENSI DASAR -->
-  <section class="slide">
+  <!-- SLIDE 4: SPREADSHEET INTERFACE ANATOMY -->
+  <div class="slide">
     <div class="slide-header">
-      <div class="brand-cluster">
-        <span class="brand-badge">CURRICULUM</span>
-        <span class="slide-section-title">Standar Kompetensi & Indikator Pencapaian</span>
+      <div class="brand-pill">
+        <div class="brand-dot"></div>
+        <div class="brand-title">Interactive Simulator</div>
+        <div class="brand-subtitle">Interface Anatomy &amp; Ribbon Exploration</div>
       </div>
-      <div class="slide-number">04 / 10</div>
+      <div class="badge-pill">DECK-JAVEX-04 / 10</div>
     </div>
 
-    <div class="slide-body">
-      <div class="slide-info">
-        <div class="headline-group">
-          <h2 class="slide-title">Kompetensi Dasar & Indikator Capaian</h2>
-          <p class="slide-desc">Penyajian capaian kurikulum standar Kompetensi Dasar (KD) dan Indikator Pencapaian Kompetensi (IPK) pengolahan angka spreadsheet.</p>
+    <div class="slide-content">
+      <div class="title-banner">
+        <div class="slide-category">Interface Exploration</div>
+        <h2 class="slide-title">Interactive Excel Workspace &amp; Tool Anatomy</h2>
+        <p class="slide-subtitle">Interactive visual dissecting the Title Bar, Ribbon Menu, Formula Bar, Active Cell coordinates, and Status Bar.</p>
+      </div>
+
+      <div class="layout-split-reversed">
+        <div class="feature-list">
+          <div class="feature-box">
+            <div class="feature-box-title">Hotspot Tooltip Architecture</div>
+            <div class="feature-box-desc">
+              Interactive hotspot pins across the spreadsheet surface reveal detailed anatomical descriptions on hover or touch without layout shift.
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="feature-box-title">High-Fidelity Excel Asset Rendering</div>
+            <div class="feature-box-desc">
+              Vector SVG markers and sharp screenshots capture authentic Excel styling, reinforcing exact software familiarity for learners.
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="feature-box-title">Keyboard Navigation &amp; Focus Indicators</div>
+            <div class="feature-box-desc">
+              W3C-compliant accessible focus rings allow assistive screen readers and keyboard users to inspect each interface segment cleanly.
+            </div>
+          </div>
+        </div>
+
+        <div class="visual-stage">
+          <img src="${images.antarmukaDesktop}" alt="Javex Interface Anatomy Desktop">
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-footer">
+      <div>JAVEX &bull; WORKSPACE SIMULATION</div>
+      <div>EXCEL ANATOMY MODULE</div>
+      <div>04 / 10</div>
+    </div>
+  </div>
+
+  <!-- SLIDE 5: DYNAMIC FORMULA ENGINE -->
+  <div class="slide">
+    <div class="slide-header">
+      <div class="brand-pill">
+        <div class="brand-dot"></div>
+        <div class="brand-title">Formula Engine</div>
+        <div class="brand-subtitle">Mathematical &amp; Logical Function Lab</div>
+      </div>
+      <div class="badge-pill">DECK-JAVEX-05 / 10</div>
+    </div>
+
+    <div class="slide-content">
+      <div class="title-banner">
+        <div class="slide-category">Computation Engine</div>
+        <h2 class="slide-title">Formula Syntax Inspector &amp; Dynamic Calculator</h2>
+        <p class="slide-subtitle">Interactive breakdown of mathematical formulas (Addition, Subtraction, Multiplication) and Excel function syntax.</p>
+      </div>
+
+      <div class="layout-split">
+        <div class="visual-stage">
+          <img src="${images.rumusDesktop}" alt="Javex Rumus Formula Lab Desktop">
         </div>
 
         <div class="feature-list">
-          <div class="feature-card">
-            <div class="feature-card-title">Struktur Akademik Terarah</div>
-            <div class="feature-card-text">Rincian kompetensi aspek pengetahuan (KD 3.1) dan aspek keterampilan (KD 4.1) dalam format kartu teratur.</div>
+          <div class="feature-box">
+            <div class="feature-box-title">Color-Coded Syntax Highlighting</div>
+            <div class="feature-box-desc">
+              Formulas dissected into distinct color tokens (Equal sign, Function name, Parentheses, Cell arguments) to clarify expression anatomy.
+            </div>
           </div>
-          <div class="feature-card blue">
-            <div class="feature-card-title">Indikator Terukur Konkret</div>
-            <div class="feature-card-text">Daftar target capaian belajar mulai dari pemahaman fungsi barisan sel hingga formula logika bertingkat.</div>
+          <div class="feature-box">
+            <div class="feature-box-title">Live Dynamic Argument Computation</div>
+            <div class="feature-box-desc">
+              Immediate client-side JavaScript execution parses student sample values and displays calculated spreadsheet output in real time.
+            </div>
           </div>
-          <div class="feature-card">
-            <div class="feature-card-title">Tipografi Hierarkis Poppins</div>
-            <div class="feature-card-text">Pemisahan bobot font teks yang jelas dengan badge penanda status untuk memudahkan penelaahan materi.</div>
-          </div>
-        </div>
-
-        <div class="metrics-row">
-          <div class="metric-box">
-            <div class="metric-val">KD 3.1</div>
-            <div class="metric-lbl">Pengetahuan</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-val">KD 4.1</div>
-            <div class="metric-lbl">Keterampilan</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-val">Standard</div>
-            <div class="metric-lbl">Kurikulum</div>
+          <div class="feature-box">
+            <div class="feature-box-title">Instant Error Diagnostics (#DIV/0!, #VALUE!)</div>
+            <div class="feature-box-desc">
+              Simulates standard spreadsheet error conditions, teaching students how to identify syntax mismatches and invalid numeric types.
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="visual-stage">
-        <img src="${images.kdDesktop}" class="screenshot-desktop" alt="Kompetensi Dasar Desktop">
-        <img src="${images.kdMobile}" class="screenshot-mobile" alt="Kompetensi Dasar Mobile">
       </div>
     </div>
 
     <div class="slide-footer">
-      <span class="footer-tech">Page: kompetensi-dasar.html</span>
-      <span class="footer-url">widifirmaan.web.id/bootstrap-javex-template</span>
+      <div>JAVEX &bull; FORMULA PARSER</div>
+      <div>SYNTAX TOKENIZER</div>
+      <div>05 / 10</div>
     </div>
-  </section>
+  </div>
 
-  <!-- SLIDE 5: ANTARMUKA EXCEL -->
-  <section class="slide">
+  <!-- SLIDE 6: GUIDED PRACTICE LAB -->
+  <div class="slide">
     <div class="slide-header">
-      <div class="brand-cluster">
-        <span class="brand-badge">TUTORIAL</span>
-        <span class="slide-section-title">Anatomi Ribbon & Navigasi Lembar Kerja</span>
+      <div class="brand-pill">
+        <div class="brand-dot"></div>
+        <div class="brand-title">Practice Studio</div>
+        <div class="brand-subtitle">Hands-On Interactive Spreadsheet Challenges</div>
       </div>
-      <div class="slide-number">05 / 10</div>
+      <div class="badge-pill">DECK-JAVEX-06 / 10</div>
     </div>
 
-    <div class="slide-body">
-      <div class="slide-info">
-        <div class="headline-group">
-          <h2 class="slide-title">Panduan Elemen Antarmuka Ribbon</h2>
-          <p class="slide-desc">Visualisasi komponen antarmuka spreadsheet: Title Bar, Quick Access Toolbar, Ribbon Tab, Formula Bar, dan Worksheet Grid.</p>
+    <div class="slide-content">
+      <div class="title-banner">
+        <div class="slide-category">Practical Application</div>
+        <h2 class="slide-title">Step-by-Step Interactive Laboratory Workstation</h2>
+        <p class="slide-subtitle">Engaging students with guided table exercises, practical bookkeeping challenges, and instant validation checks.</p>
+      </div>
+
+      <div class="layout-split-reversed">
+        <div class="feature-list">
+          <div class="feature-box">
+            <div class="feature-box-title">Authentic Table Data Entry Grids</div>
+            <div class="feature-box-desc">
+              Students practice on realistic inventory, sales, and payroll tables with live data input fields directly inside the browser viewport.
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="feature-box-title">Dynamic Validation &amp; Hint Modals</div>
+            <div class="feature-box-desc">
+              Context-aware hint dialogs provide algorithmic guidance when incorrect formula operators are detected, steering independent learning.
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="feature-box-title">Video Masterclass Integration</div>
+            <div class="feature-box-desc">
+              Embedded educational video tutorials offer multi-modal reinforcement, allowing visual learners to watch expert demonstration clips.
+            </div>
+          </div>
+        </div>
+
+        <div class="visual-stage">
+          <img src="${images.latihanDesktop}" alt="Javex Latihan Workstation Desktop">
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-footer">
+      <div>JAVEX &bull; PRACTICE LABORATORY</div>
+      <div>INTERACTIVE EXERCISE ENGINE</div>
+      <div>06 / 10</div>
+    </div>
+  </div>
+
+  <!-- SLIDE 7: AUTOMATED QUIZ & ASSESSMENT ENGINE -->
+  <div class="slide">
+    <div class="slide-header">
+      <div class="brand-pill">
+        <div class="brand-dot"></div>
+        <div class="brand-title">Evaluation Engine</div>
+        <div class="brand-subtitle">Automated Quiz &amp; Scorecard Analytics</div>
+      </div>
+      <div class="badge-pill">DECK-JAVEX-07 / 10</div>
+    </div>
+
+    <div class="slide-content">
+      <div class="title-banner">
+        <div class="slide-category">Knowledge Assessment</div>
+        <h2 class="slide-title">Dynamic Examination Engine with Real-Time Scorecards</h2>
+        <p class="slide-subtitle">Timed multiple-choice evaluation module with randomized questions, immediate scoring, and mastery certificate modals.</p>
+      </div>
+
+      <div class="layout-split">
+        <div class="visual-stage">
+          <img src="${images.quizDesktop}" alt="Javex Quiz Examination Desktop">
         </div>
 
         <div class="feature-list">
-          <div class="feature-card">
-            <div class="feature-card-title">Diagram Interaktif Berlabel</div>
-            <div class="feature-card-text">Ilustrasi antarmuka Excel dengan penomoran bagian untuk mempermudah identifikasi fungsi tombol kerja.</div>
+          <div class="feature-box">
+            <div class="feature-box-title">Countdown Timer &amp; State Persistence</div>
+            <div class="feature-box-desc">
+              High-accuracy countdown timer with local state safeguards prevents exam loss if the browser tab is accidentally refreshed.
+            </div>
           </div>
-          <div class="feature-card blue">
-            <div class="feature-card-title">Kartu Deskripsi Komponen</div>
-            <div class="feature-card-text">Penjelasan fungsi mendalam saat kartu elemen dipilih untuk memahami kegunaan tiap ribbon bar.</div>
+          <div class="feature-box">
+            <div class="feature-box-title">Instant Comprehensive Scorecard Modal</div>
+            <div class="feature-box-desc">
+              Generates immediate performance breakdown displaying total score, percentage mastery, correct answer tally, and remedial tips.
+            </div>
           </div>
-          <div class="feature-card">
-            <div class="feature-card-title">Skalabilitas Gambar Vektor</div>
-            <div class="feature-card-text">Diagram antarmuka tetap tajam di layar gawai siswa berkat optimasi rasio kontainer responsif.</div>
-          </div>
-        </div>
-
-        <div class="metrics-row">
-          <div class="metric-box">
-            <div class="metric-val">10+</div>
-            <div class="metric-lbl">Elemen Ribbon</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-val">Visual</div>
-            <div class="metric-lbl">Diagram Mode</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-val">Crisp</div>
-            <div class="metric-lbl">Vector Guide</div>
+          <div class="feature-box">
+            <div class="feature-box-title">Zero Server Processing Overhead</div>
+            <div class="feature-box-desc">
+              Entire grading pipeline executes client-side via JavaScript data arrays, eliminating server dependency and backend latency.
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="visual-stage">
-        <img src="${images.antarmukaDesktop}" class="screenshot-desktop" alt="Antarmuka Desktop">
-        <img src="${images.antarmukaMobile}" class="screenshot-mobile" alt="Antarmuka Mobile">
       </div>
     </div>
 
     <div class="slide-footer">
-      <span class="footer-tech">Page: antarmuka.html</span>
-      <span class="footer-url">widifirmaan.web.id/bootstrap-javex-template</span>
+      <div>JAVEX &bull; EVALUATION ENGINE</div>
+      <div>AUTOMATED GRADING PIPELINE</div>
+      <div>07 / 10</div>
     </div>
-  </section>
+  </div>
 
-  <!-- SLIDE 6: RUMUS & FORMULA -->
-  <section class="slide">
+  <!-- SLIDE 8: RESPONSIVE TOUCH & ONEUI REACHABILITY -->
+  <div class="slide">
     <div class="slide-header">
-      <div class="brand-cluster">
-        <span class="brand-badge">FORMULA</span>
-        <span class="slide-section-title">Kamus Rumus & Sintaks Perhitungan</span>
+      <div class="brand-pill">
+        <div class="brand-dot"></div>
+        <div class="brand-title">Mobile Ergonomics</div>
+        <div class="brand-subtitle">OneUI Reachability &amp; Single-Hand Thumb Zones</div>
       </div>
-      <div class="slide-number">06 / 10</div>
+      <div class="badge-pill">DECK-JAVEX-08 / 10</div>
     </div>
 
-    <div class="slide-body">
-      <div class="slide-info">
-        <div class="headline-group">
-          <h2 class="slide-title">Kamus Rumus & Sintaks Perhitungan</h2>
-          <p class="slide-desc">Pustaka fungsi esensial spreadsheet mencakup fungsi statistik (SUM, AVERAGE, MIN, MAX, COUNT) dan formula logika bersyarat IF.</p>
-        </div>
-
-        <div class="feature-list">
-          <div class="feature-card">
-            <div class="feature-card-title">Struktur Sintaks Baku Monospaced</div>
-            <div class="feature-card-text">Penulisan argumen rumus dalam blok kode rapi untuk mempermudah pemahaman susunan formula matematika.</div>
-          </div>
-          <div class="feature-card blue">
-            <div class="feature-card-title">Contoh Kasus Riil Siswa</div>
-            <div class="feature-card-text">Penerapan rumus pada tabel nilai ujian dan rekapitulasi penjualan toko nyata sebagai studi kasus langsung.</div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card-title">Pengelompokan Kategori Tab</div>
-            <div class="feature-card-text">Pemisahan materi formula berdasarkan jenis fungsi aritmatika dasar, statistik, dan logika kondisional.</div>
-          </div>
-        </div>
-
-        <div class="metrics-row">
-          <div class="metric-box">
-            <div class="metric-val">SUM / AVG</div>
-            <div class="metric-lbl">Statistik</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-val">IF LOGIC</div>
-            <div class="metric-lbl">Kondisional</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-val">Syntax</div>
-            <div class="metric-lbl">Monospace Code</div>
-          </div>
-        </div>
+    <div class="slide-content">
+      <div class="title-banner">
+        <div class="slide-category">Mobile Optimization</div>
+        <h2 class="slide-title">Smartphone Experience Engineered for Thumb-Zone Ease</h2>
+        <p class="slide-subtitle">Adopting Samsung OneUI reachability standards to place interactive elements comfortably within natural thumb range.</p>
       </div>
 
-      <div class="visual-stage">
-        <img src="${images.rumusDesktop}" class="screenshot-desktop" alt="Rumus Desktop">
-        <img src="${images.rumusMobile}" class="screenshot-mobile" alt="Rumus Mobile">
+      <div class="layout-split-reversed">
+        <div class="feature-list">
+          <div class="feature-box">
+            <div class="feature-box-title">Upper Viewing / Lower Interaction Separation</div>
+            <div class="feature-box-desc">
+              Upper viewport zone reserved for visual learning material, while interactive action buttons occupy the lower half for one-handed operation.
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="feature-box-title">Squircle Pill Navigation &amp; Drawer Controls</div>
+            <div class="feature-box-desc">
+              Smooth bottom-sheet modals and off-canvas drawers provide quick course navigation without occluding active exercise tables.
+            </div>
+          </div>
+          <div class="feature-box">
+            <div class="feature-box-title">Dynamic Fluid Typography &amp; Touch Targets</div>
+            <div class="feature-box-desc">
+              Minimum 48px touch targets ensure reliable tapping across quiz options and spreadsheet cells on compact mobile screens.
+            </div>
+          </div>
+        </div>
+
+        <div class="visual-stage">
+          <img src="${images.berandaMobile}" alt="Javex Beranda Mobile OneUI View">
+        </div>
       </div>
     </div>
 
     <div class="slide-footer">
-      <span class="footer-tech">Page: rumus.html</span>
-      <span class="footer-url">widifirmaan.web.id/bootstrap-javex-template</span>
+      <div>JAVEX &bull; MOBILE ERGONOMICS</div>
+      <div>ONEUI REACHABILITY STANDARDS</div>
+      <div>08 / 10</div>
     </div>
-  </section>
+  </div>
 
-  <!-- SLIDE 7: LATIHAN SOAL -->
-  <section class="slide">
+  <!-- SLIDE 9: WEB PERFORMANCE & ZERO-JANK RUNTIME -->
+  <div class="slide">
     <div class="slide-header">
-      <div class="brand-cluster">
-        <span class="brand-badge">PRACTICE</span>
-        <span class="slide-section-title">Studi Kasus & Lembar Latihan Mandiri</span>
+      <div class="brand-pill">
+        <div class="brand-dot"></div>
+        <div class="brand-title">Performance Engineering</div>
+        <div class="brand-subtitle">Core Web Vitals &amp; Runtime Efficiency</div>
       </div>
-      <div class="slide-number">07 / 10</div>
+      <div class="badge-pill">DECK-JAVEX-09 / 10</div>
     </div>
 
-    <div class="slide-body">
-      <div class="slide-info">
-        <div class="headline-group">
-          <h2 class="slide-title">Latihan Mandiri & Studi Kasus</h2>
-          <p class="slide-desc">Kumpulan skenario latihan pengolahan lembar kerja mandiri dengan instruksi pengerjaan terarah untuk menguji keterampilan terapan.</p>
-        </div>
-
-        <div class="feature-list">
-          <div class="feature-card">
-            <div class="feature-card-title">Tabel Data Studi Kasus</div>
-            <div class="feature-card-text">Dataset tabel terstruktur yang merefleksikan persoalan administrasi nilai dan rekapitulasi data nyata.</div>
-          </div>
-          <div class="feature-card blue">
-            <div class="feature-card-title">Instruksi Pengerjaan Langkah Demi Langkah</div>
-            <div class="feature-card-text">Daftar petunjuk formula apa yang harus diaplikasikan pada kolom atau sel target tertentu.</div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card-title">Verifikasi Kunci Mandiri</div>
-            <div class="feature-card-text">Panel verifikasi hasil agar siswa dapat mengonfirmasi ketepatan rumus yang telah dibuat secara independen.</div>
-          </div>
-        </div>
-
-        <div class="metrics-row">
-          <div class="metric-box">
-            <div class="metric-val">Hands-on</div>
-            <div class="metric-lbl">Task Flow</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-val">Step-wise</div>
-            <div class="metric-lbl">Instruction</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-val">Self Test</div>
-            <div class="metric-lbl">Verification</div>
-          </div>
-        </div>
+    <div class="slide-content">
+      <div class="title-banner">
+        <div class="slide-category">Speed &amp; Reliability</div>
+        <h2 class="slide-title">Lightweight Asset Architecture &amp; 60 FPS Fluidity</h2>
+        <p class="slide-subtitle">Engineered with vanilla ES6 and modular CSS to ensure instantaneous loading on low-power student devices.</p>
       </div>
 
-      <div class="visual-stage">
-        <img src="${images.latihanDesktop}" class="screenshot-desktop" alt="Latihan Desktop">
-        <img src="${images.latihanMobile}" class="screenshot-mobile" alt="Latihan Mobile">
+      <div class="layout-grid-3">
+        <div class="oneui-card">
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--oneui-accent); font-weight: 700; margin-bottom: 8px;">BUNDLE WEIGHT</div>
+          <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">Sub-100KB Footprint</h3>
+          <p style="font-size: 12.5px; color: var(--oneui-text-secondary); line-height: 1.5;">
+            Zero heavy framework runtimes. Clean vanilla ES6 modules deliver complete interactive educational functionality with instantaneous initial load.
+          </p>
+        </div>
+
+        <div class="oneui-card">
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--oneui-accent); font-weight: 700; margin-bottom: 8px;">LAYOUT STABILITY</div>
+          <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">Zero CLS Score</h3>
+          <p style="font-size: 12.5px; color: var(--oneui-text-secondary); line-height: 1.5;">
+            Explicit dimensional constraints across all graphic tables, video containers, and modal dialogs eliminate annoying content shifts entirely.
+          </p>
+        </div>
+
+        <div class="oneui-card">
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--oneui-accent); font-weight: 700; margin-bottom: 8px;">SMOOTH RENDERING</div>
+          <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 8px;">GPU Compositing</h3>
+          <p style="font-size: 12.5px; color: var(--oneui-text-secondary); line-height: 1.5;">
+            CSS transforms and opacity transitions handled on GPU compositor layers prevent main thread blocking during interactive quiz answering.
+          </p>
+        </div>
       </div>
     </div>
 
     <div class="slide-footer">
-      <span class="footer-tech">Page: latihan.html</span>
-      <span class="footer-url">widifirmaan.web.id/bootstrap-javex-template</span>
+      <div>JAVEX &bull; PERFORMANCE AUDIT</div>
+      <div>CORE WEB VITALS BENCHMARKS</div>
+      <div>09 / 10</div>
     </div>
-  </section>
+  </div>
 
-  <!-- SLIDE 8: EVALUASI KUIS -->
-  <section class="slide">
+  <!-- SLIDE 10: ARCHITECTURAL SUMMARY & DEPLOYMENT -->
+  <div class="slide">
     <div class="slide-header">
-      <div class="brand-cluster">
-        <span class="brand-badge">EVALUATION</span>
-        <span class="slide-section-title">Kuis Interaktif & Mesin Penilaian</span>
+      <div class="brand-pill">
+        <div class="brand-dot"></div>
+        <div class="brand-title">Milestone Summary</div>
+        <div class="brand-subtitle">Production Specifications &amp; Quality Audit</div>
       </div>
-      <div class="slide-number">08 / 10</div>
+      <div class="badge-pill">DECK-JAVEX-10 / 10</div>
     </div>
 
-    <div class="slide-body">
-      <div class="slide-info">
-        <div class="headline-group">
-          <h2 class="slide-title">Kuis Interaktif & Evaluasi Otomatis</h2>
-          <p class="slide-desc">Modul evaluasi 20 butir soal pilihan ganda berbasis JavaScript dengan pengacak soal, pelacak waktu pengerjaan, dan kartu radio OneUI.</p>
+    <div class="slide-content">
+      <div class="title-banner">
+        <div class="slide-category">Production Readiness</div>
+        <h2 class="slide-title">Comprehensive Project Implementation Summary</h2>
+        <p class="slide-subtitle">A state-of-the-art interactive learning platform proven across desktop monitors, classroom projectors, and student smartphones.</p>
+      </div>
+
+      <div class="layout-grid-4">
+        <div class="oneui-card">
+          <div style="font-size: 11px; color: var(--oneui-text-secondary); font-family: var(--font-mono);">FRAMEWORK</div>
+          <div style="font-size: 18px; font-weight: 800; color: var(--oneui-accent); margin-top: 4px; margin-bottom: 4px;">Bootstrap 5</div>
+          <p style="font-size: 12px; color: var(--oneui-text-secondary); line-height: 1.45;">Modern responsive grid with custom OneUI utility extensions.</p>
         </div>
 
-        <div class="feature-list">
-          <div class="feature-card">
-            <div class="feature-card-title">Penilaian Otomatis Sisi Klien</div>
-            <div class="feature-card-text">Kalkulasi skor nilai langsung di browser tanpa perlu reload halaman atau pengiriman form berat ke server.</div>
-          </div>
-          <div class="feature-card blue">
-            <div class="feature-card-title">Indikator Nomor Soal Berjalan</div>
-            <div class="feature-card-text">Penanda visual nomor soal aktif dan persentase kelengkapan jawaban kuis secara realtime.</div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card-title">Interaksi Radio Button Kustom</div>
-            <div class="feature-card-text">Desain opsi jawaban OneUI melengkung dengan feedback transisi warna hijau lembut saat dipilih.</div>
-          </div>
+        <div class="oneui-card">
+          <div style="font-size: 11px; color: var(--oneui-text-secondary); font-family: var(--font-mono);">DESIGN SYSTEM</div>
+          <div style="font-size: 18px; font-weight: 800; color: var(--oneui-text-primary); margin-top: 4px; margin-bottom: 4px;">Samsung OneUI</div>
+          <p style="font-size: 12px; color: var(--oneui-text-secondary); line-height: 1.45;">28px squircle cards, soft elevation, and Excel Green accents.</p>
         </div>
 
-        <div class="metrics-row">
-          <div class="metric-box">
-            <div class="metric-val">20 Soal</div>
-            <div class="metric-lbl">Bank Soal</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-val">Instant</div>
-            <div class="metric-lbl">Scoring Engine</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-val">Timer</div>
-            <div class="metric-lbl">Countdown</div>
-          </div>
+        <div class="oneui-card">
+          <div style="font-size: 11px; color: var(--oneui-text-secondary); font-family: var(--font-mono);">ASSESSMENT</div>
+          <div style="font-size: 18px; font-weight: 800; color: var(--oneui-accent); margin-top: 4px; margin-bottom: 4px;">Quiz Engine</div>
+          <p style="font-size: 12px; color: var(--oneui-text-secondary); line-height: 1.45;">Automated client-side grading with scorecard analytics.</p>
+        </div>
+
+        <div class="oneui-card">
+          <div style="font-size: 11px; color: var(--oneui-text-secondary); font-family: var(--font-mono);">STATUS</div>
+          <div style="font-size: 18px; font-weight: 800; color: #16A34A; margin-top: 4px; margin-bottom: 4px;">Production</div>
+          <p style="font-size: 12px; color: var(--oneui-text-secondary); line-height: 1.45;">100% test coverage across modern desktop and mobile browsers.</p>
         </div>
       </div>
 
-      <div class="visual-stage">
-        <img src="${images.quizDesktop}" class="screenshot-desktop" alt="Quiz Desktop">
-        <img src="${images.quizMobile}" class="screenshot-mobile" alt="Quiz Mobile">
+      <div class="visual-stage" style="min-height: 160px; max-height: 180px; margin-top: 15px;">
+        <img src="${images.quizResultDesktop}" alt="Javex Quiz Result Modal Desktop">
       </div>
     </div>
 
     <div class="slide-footer">
-      <span class="footer-tech">Page: quiz.html</span>
-      <span class="footer-url">widifirmaan.web.id/bootstrap-javex-template</span>
+      <div>JAVEX &bull; PROJECT COMPLETION</div>
+      <div>WIDI FIRMANSYAH &bull; LEAD ENGINEER</div>
+      <div>10 / 10</div>
     </div>
-  </section>
-
-  <!-- SLIDE 9: MODAL HASIL & ANALISIS -->
-  <section class="slide">
-    <div class="slide-header">
-      <div class="brand-cluster">
-        <span class="brand-badge">RESULT MODAL</span>
-        <span class="slide-section-title">Modal Skor & Rekomendasi Kelulusan</span>
-      </div>
-      <div class="slide-number">09 / 10</div>
-    </div>
-
-    <div class="slide-body">
-      <div class="slide-info">
-        <div class="headline-group">
-          <h2 class="slide-title">Modal Skor & Analisis Pemahaman</h2>
-          <p class="slide-desc">Dialog modal hasil kuis yang menampilkan rekapitulasi nilai akhir berskala 100, jumlah jawaban benar/salah, dan status kelulusan KKM.</p>
-        </div>
-
-        <div class="feature-list">
-          <div class="feature-card">
-            <div class="feature-card-title">Perhitungan Nilai Akhir Otomatis</div>
-            <div class="feature-card-text">Kalkulasi persentase skor riil dengan badge kelulusan hijau (Lulus KKM) atau peringatan remedial.</div>
-          </div>
-          <div class="feature-card blue">
-            <div class="feature-card-title">Rincian Benar dan Salah</div>
-            <div class="feature-card-text">Ringkasan akurat jumlah butir soal yang berhasil dijawab benar berbanding soal yang butuh pemahaman ulang.</div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card-title">Aksi Ulangi Kuis Satu-Sentuhan</div>
-            <div class="feature-card-text">Tombol reset terintegrasi untuk mengulang pengerjaan kuis dari awal dalam kondisi state bersih.</div>
-          </div>
-        </div>
-
-        <div class="metrics-row">
-          <div class="metric-box">
-            <div class="metric-val">0 - 100</div>
-            <div class="metric-lbl">Score Range</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-val">Pass/Fail</div>
-            <div class="metric-lbl">KKM Gauge</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-val">1-Click</div>
-            <div class="metric-lbl">Retry Action</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="visual-stage">
-        <img src="${images.quizResultDesktop}" class="screenshot-desktop" alt="Quiz Result Desktop">
-        <img src="${images.quizResultMobile}" class="screenshot-mobile" alt="Quiz Result Mobile">
-      </div>
-    </div>
-
-    <div class="slide-footer">
-      <span class="footer-tech">Component: Modal Evaluasi Quiz</span>
-      <span class="footer-url">widifirmaan.web.id/bootstrap-javex-template</span>
-    </div>
-  </section>
-
-  <!-- SLIDE 10: VIDEO, PUSTAKA & SPESIFIKASI -->
-  <section class="slide">
-    <div class="slide-header">
-      <div class="brand-cluster">
-        <span class="brand-badge">SPECIFICATION</span>
-        <span class="slide-section-title">Video Pembelajaran & Kesiapan Distribusi</span>
-      </div>
-      <div class="slide-number">10 / 10</div>
-    </div>
-
-    <div class="slide-body">
-      <div class="slide-info">
-        <div class="headline-group">
-          <h2 class="slide-title">Video Interaktif & Kesiapan Distribusi</h2>
-          <p class="slide-desc">Integrasi pemutar video tutorial langkah Excel, dokumentasi referensi pustaka, dan performa web optimal untuk deployment sekolah.</p>
-        </div>
-
-        <div class="feature-list">
-          <div class="feature-card">
-            <div class="feature-card-title">Video Player HTML5 Terintegrasi</div>
-            <div class="feature-card-text">Pemutar video responsif dengan rasio 16:9 yang memvisualisasikan praktik pengisian tabel Excel nyata.</div>
-          </div>
-          <div class="feature-card blue">
-            <div class="feature-card-title">Daftar Pustaka Lengkap</div>
-            <div class="feature-card-text">Modal bibliografi yang mencantumkan sumber buku referensi dan standar kurikulum resmi secara transparan.</div>
-          </div>
-          <div class="feature-card">
-            <div class="feature-card-title">Distribusi Tanpa Server (Serverless)</div>
-            <div class="feature-card-text">Dapat dijalankan langsung di peramban laboratorium komputer sekolah tanpa perlu instalasi database atau server backend.</div>
-          </div>
-        </div>
-
-        <div class="metrics-row">
-          <div class="metric-box">
-            <div class="metric-val">1080p</div>
-            <div class="metric-lbl">Video Stream</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-val">Local First</div>
-            <div class="metric-lbl">Deployment</div>
-          </div>
-          <div class="metric-box">
-            <div class="metric-val">Zero Node</div>
-            <div class="metric-lbl">Static Bundle</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="visual-stage">
-        <img src="${images.videoDesktop}" class="screenshot-desktop" alt="Video Desktop">
-        <img src="${images.videoMobile}" class="screenshot-mobile" alt="Video Mobile">
-      </div>
-    </div>
-
-    <div class="slide-footer">
-      <span class="footer-tech">Javex Platform Production Specification Document</span>
-      <span class="footer-url">widifirmaan.web.id/bootstrap-javex-template</span>
-    </div>
-  </section>
+  </div>
 
 </body>
 </html>
@@ -1010,11 +861,11 @@ const htmlContent = `<!DOCTYPE html>
 
 const htmlFilePath = path.join(projectRoot, 'presentation.html');
 fs.writeFileSync(htmlFilePath, htmlContent, 'utf-8');
-console.log(`HTML presentasi disimpan di: ${htmlFilePath}`);
+console.log(`Presentation HTML written to: ${htmlFilePath}`);
+
+console.log('Launching Chromium with Playwright to render English OneUI PDFs...');
 
 async function renderPDF() {
-  console.log('Menjalankan Playwright Chromium untuk render PDF Javex OneUI...');
-  
   const playwrightPath = '/home/widifirmaan/Projects/qa-toolkit/node_modules/playwright/index.mjs';
   const { chromium } = await import(playwrightPath);
 
@@ -1025,19 +876,22 @@ async function renderPDF() {
 
   const page = await browser.newPage();
   await page.goto(`file://${htmlFilePath}`, { waitUntil: 'networkidle' });
-  await page.evaluateHandle('document.fonts.ready');
+  await page.evaluate(() => document.fonts.ready);
 
   const slidePdfPath = path.join(downloadsDir, 'Javex.pdf');
+  const continuousPdfPath = path.join(downloadsDir, 'Javex-Continuous.pdf');
+
+  // 1. Multi-Page Deck Mode (10 Slides A4 Landscape)
   console.log('Rendering Multi-Page A4 Landscape (Slide Mode)...');
   await page.pdf({
     path: slidePdfPath,
-    width: '297mm',
-    height: '210mm',
+    format: 'A4',
+    landscape: true,
     printBackground: true,
-    margin: { top: 0, right: 0, bottom: 0, left: 0 },
     preferCSSPageSize: true,
   });
 
+  // 2. Continuous Poster Mode (Single tall scroll)
   console.log('Rendering Continuous Single-Scroll Showcase (Poster Mode)...');
   await page.addStyleTag({
     content: `
@@ -1060,26 +914,25 @@ async function renderPDF() {
   await page.waitForTimeout(500);
 
   const scrollHeight = await page.evaluate(() => document.documentElement.scrollHeight);
-  const contPdfPath = path.join(downloadsDir, 'Javex-Continuous.pdf');
   await page.pdf({
-    path: contPdfPath,
+    path: continuousPdfPath,
     width: '1428px',
     height: `${scrollHeight}px`,
     printBackground: true,
-    margin: { top: 0, right: 0, bottom: 0, left: 0 },
+    pageRanges: '1',
   });
 
   await browser.close();
 
   const slideStat = fs.statSync(slidePdfPath);
-  const contStat = fs.statSync(contPdfPath);
+  const contStat = fs.statSync(continuousPdfPath);
 
-  console.log('\nPDF Javex OneUI berhasil dibuat:');
+  console.log('\nJavex English PDFs successfully generated:');
   console.log(`- Multi-Page Deck: ${(slideStat.size / 1024 / 1024).toFixed(2)} MB (${slidePdfPath})`);
-  console.log(`- Continuous Poster: ${(contStat.size / 1024 / 1024).toFixed(2)} MB (${contPdfPath})\n`);
+  console.log(`- Continuous Poster: ${(contStat.size / 1024 / 1024).toFixed(2)} MB (${continuousPdfPath})\n`);
 }
 
 renderPDF().catch((err) => {
-  console.error('Gagal membuat PDF:', err);
+  console.error('Error rendering PDF:', err);
   process.exit(1);
 });
