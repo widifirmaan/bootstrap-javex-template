@@ -59,7 +59,7 @@ Interactive Microsoft Excel learning web template built with Bootstrap 5 featuri
 - **Python 3** or **Node.js** (`npx serve`) to serve static HTML files over HTTP
 - **No database or environment variables required**
 
-### Run Locally
+### Quick Start
 
 ```bash
 git clone https://github.com/widifirmaan/bootstrap-javex-template.git
